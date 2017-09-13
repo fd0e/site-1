@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+
+    <title>Getting Started | tilde.team</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="tilde.team unix group">
+    <meta name="author" content="Ben Harris">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#111111">
+
+    <link rel="stylesheet" href="/css/hacker.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>~~~How to ~tilde; a n00b's primer~~~~</h1>
+
+
+        <h2>Welcome</h2>
+
+        <p>New to the command line and all this webby cowfoolery? You're in luck! Here's a basic HELLO WORLD tutorial.</p>
+
+        <ol class="menu">
+            <li><a href="#login">Logging in</a></li>
+            <li><a href="#browse">Finding your index.html file</a></li>
+            <li><a href="#edit">Editing your index.html file</a></li>
+            <li><a href="#refresh">Refreshing your editor view (when chat interrupts)</a></li>
+            <li><a href="#more">How to be l33t</a></li>
+        </ol>
+
+        <h2 id="login">Logging in</h2>
+
+        <pre>
+         _______________________________________
+        / WELCOME TO TILDE.TEAM A PLACE FOR WEB \
+        \ PAGES                                 /
+         ---------------------------------------
+                \   ^__^
+                 \  (oo)\_______
+                    (__)\       )\/\
+                        ||----w |
+                        ||     ||
+        </pre>
+
+        <p>* On a PC, you'll need to get an ssh client. <a href="http://www.putty.org/" target="_blank">PuTTY</a> is a good one.</p>
+
+        <p>Linux</p>
+        <ol>
+            <li>Open a terminal. Try <kbd>ctrl + alt + t</kbd>.</li>
+            <li><pre>ssh your_username@tilde.team</pre></li>
+            <li>Enter your password.</li>
+        </ol>
+
+        <p>Mac</p>
+        <ol>
+            <li>Browse to <code>Applications/Utilities/Terminal</code> and launch Terminal (or press cmd+space, start typing Terminal, and press return)</li>
+            <li><pre>ssh your_username@tilde.team</pre></li>
+            <li>Enter your password.</li>
+        </ol>
+
+
+        <h2 id="browse">Finding your index.html file</h2>
+
+        <p>There are some basic command line commands you'll want to Google and learn, but for this tutorial you only need a few:</p>
+        <ul>
+            <li><code>ls</code> = list files and folders in current directory</li>
+            <li><code>cd</code> = change directories</li>
+            <li><code>nano</code> = a command line text editor</li>
+        </ul>
+
+        <ol>
+            <li>Type: <code>ls</code> to see where you are. You should see a directory called "public_html"</li>
+            <li>Type: <code>cd public_html</code> to move into that folder. (<code>cd</code> stands for <code>c</code>hange <code>d</code>irectory.)</li>
+            <li>Type: <code>ls</code> to see where you are. You should see your index.html file</li>
+        </ol>
+
+        <h2 id="edit">Editing your index.html file</h2>
+
+        <ol>
+            <li>Type: <code>nano index.html</code> to open your index.html file and begin editing</li>
+            <li>Edit your file, willy nilly</li>
+            <li>When done editing, use <kbd>ctrl + x</kbd> to close the file</li>
+            <li>You'll be asked if you want to save; say <kbd>y</kbd> and to return to the command line</li>
+            <li>Refresh your tilde page in your browser to see your new website</li>
+        </ol>
+
+        <p>Note: If at any time you feel you made a mistake in editing, you can exit and <kbd>n</kbd> to not save.</p>
+
+        <h2 id="refresh">Refreshing your editor view (when chat interrupts)</h2>
+
+        <p>You may have been caught off guard while editing and had some random chat messages muss up your view. It didn't actually edit your HTML page but you need to refresh your editor view.</p>
+
+
+
+
+        <h2 id="more">How to be l33t (from our friends over at <a href="http://tilde.club">tilde.club</a>)</h2>
+
+        <p>Now that you've made it this far, the community has been busy compiling additional resources for you to experiment with.</p>
+
+        <p>There are TONS of resources elsewhere on the internet. Use your favorite search engine to find out more.</p>
+
+        <ul>
+            <li>~pfhawkins // <a href="http://tilde.club/~pfhawkins/tipsntricks.html">Tips &amp; Tricks (a more complete listing)</a></li>
+            <li>~proclad // <a href="http://tilde.club/~procload/">More command line tricks (intermediate)</a></li>
+            <li>~jeffbonhag // <a href="http://tilde.club/~jeffbonhag/sshfs.txt">How to mount your tilde as a drive (intermediate)</a></li>
+            <li>~jonathan // <a href="http://tilde.club/~jonathan/screen/">How to use GNU Screen (intermediate to advanced)</a></li>
+        </ul>
+
+    </div>
+
+
+</body>
+</html>
