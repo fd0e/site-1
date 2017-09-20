@@ -68,13 +68,15 @@
     <hr>
 
     <h1>users:</h1>
-        <?php foreach (array_diff(scandir("/home"), ['..', '.']) as $user): ?>
+        <?php foreach (array_diff(scandir("/home"), ['..', '.']) as $user) {
+            if (!is_dir("/home/$user/public_html")) continue;
+        ?>
             <div class="list-group">
-                <a href="/~<?=$user?>" class="list-group-item">
+                <a href="/~<?=$user?>/" class="list-group-item">
                     <h4 class="list-group-item-heading">~<?=$user?></h4>
                 </a>
             </div>
-        <?php endforeach; ?>
+        <?php } ?>
 
     <hr>
     </div>
