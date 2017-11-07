@@ -58,12 +58,10 @@
 
     <h1>other tilde services</h1>
 
-    <a class="btn btn-info" href="https://cloud.tilde.team"><i class="fa fa-cloud"></i> tilde~cloud</a>
     <a class="btn btn-info" href="https://gitlab.com/tilde.team"><i class="fa fa-gitlab"></i> tilde~gitlab</a>
     <a class="btn btn-info" href="https://bhh.sh"><i class="fa fa-link"></i> url shortener</a>
     <a class="btn btn-info" href="https://bag.tilde.team"><i class="fa fa-shopping-bag"></i> tilde~wallabag read it later</a>
     <a class="btn btn-info" href="https://paste.tilde.team"><i class="fa fa-clipboard"></i> tilde~pastebin</a>
-    <a class="btn btn-info" href="https://drop.tilde.team"><i class="fa fa-file"></i> tilde~filedrop</a>
     <br>
     <hr>
 
