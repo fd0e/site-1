@@ -58,6 +58,7 @@
 
     <h1>other tilde services</h1>
 
+    <a class="btn btn-info" href="https://github.com/tilde-team"><i class="fa fa-github"></i> tilde~githuborg</a>
     <a class="btn btn-info" href="https://gitlab.com/tilde.team"><i class="fa fa-gitlab"></i> tilde~gitlab</a>
     <a class="btn btn-info" href="https://bhh.sh"><i class="fa fa-link"></i> url shortener</a>
     <a class="btn btn-info" href="https://bag.tilde.team"><i class="fa fa-shopping-bag"></i> tilde~wallabag read it later</a>
