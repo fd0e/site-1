@@ -81,8 +81,8 @@
         ?>
             <div class="list-group">
                 <a href="/~<?=$user?>/" class="list-group-item">
-                    <h4 class="list-group-item-heading">~
-                        <?=$user?>
+                    <h4 class="list-group-item-heading">
+                        ~<?=$user?>
                     </h4>
                 </a>
             </div>
