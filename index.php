@@ -71,6 +71,8 @@
             <i class="fa fa-github"></i> tilde~githuborg</a>
         <a class="btn btn-info" href="https://bhh.sh">
             <i class="fa fa-link"></i> url shortener</a>
+        <a class="btn btn-info" href="https://social.tilde.team/">
+            <i class="fa fa-share-square"></i> tilde~hub social network</a>
 
         <br>
         <hr>
