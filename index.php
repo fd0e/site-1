@@ -72,7 +72,7 @@
         <a class="btn btn-info" href="https://bhh.sh">
             <i class="fa fa-link"></i> url shortener</a>
         <a class="btn btn-info" href="https://social.tilde.team/">
-            <i class="fa fa-share-square"></i> tilde~hub social network</a>
+            <i class="fa fa-retweet"></i> tilde.team mastodon instance</a>
 
         <br>
         <hr>
