@@ -6,8 +6,9 @@ foreach (array_reverse(glob("news/*.json")) as $file):
 
     <div class="list-group">
         <div class="list-group-item">
-            <h4 class="list-group-item-heading"><?=$post->title?></h4>
+            <h3 class="list-group-item-heading"><?=$post->title?></h3>
                 <em><?=$post->date?> - <?=$post->author?></em>
+                <hr style="border-top: 1px solid #000;">
                 <p class="list-group-item-text"><?=$post->content?></p>
         </div>
     </div>
