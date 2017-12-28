@@ -34,8 +34,10 @@
 
 <body>
     <div class="container">
-        <h1>~~~tilde.team~~~</h1>
-        <pre>
+
+        <div class="jumbotron">
+            <h1>~~~tilde.team~~~</h1>
+            <pre>
    __  _ __    __      __
   / /_(_) /___/ /__   / /____  ____ _____ ___
  / __/ / / __  / _ \ / __/ _ \/ __ `/ __ `__ \
@@ -43,16 +45,16 @@
 \__/_/_/\__,_/\___(_)__/\___/\__,_/_/ /_/ /_/
 </pre>
 
-        <br>
+            <br>
+            <p>a digital community for socializing, learning, and making cool stuff</p>
+        </div>
+
         <p>tilde.team is one tiny standard unix computer in the cloud that anyone can use and learn to use in the shared pursuit
             of cool sites and unix tools.</p>
-
-        <p>i created this site after hearing about paul ford's
-            <a href="http://tilde.club">tilde.club</a>. when i was unable to join due to the waitlist, i decided to create my own. see
-            <a href="/~ben/">my tilde page</a> or my
-            <a href="https://benharr.is/">personal site</a> for more info about me.</p>
+        <p>i created this site after hearing about paul ford's <a href="http://tilde.club">tilde.club</a>. when i was unable to join due to the waitlist, i decided to create my own. see <a href="/~ben/">my tilde page</a> or my <a href="https://benharr.is/">personal site</a> for more info about me.</p>
 
         <br>
+
         <a href="/signup/" class="btn btn-primary btn-lg">
             <i class="fa fa-user-plus"></i> signup</a>
 
@@ -63,7 +65,7 @@
         <br>
         <hr>
 
-        <h1>other tilde things</h1>
+        <h1>other tilde stuff</h1>
 
         <a class="btn btn-success" href="/discord/">
             <i class="fa fa-comments"></i> tilde~discord</a>
