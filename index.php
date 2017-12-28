@@ -65,29 +65,32 @@
 
         <h1>other tilde things</h1>
 
-        <a class="btn btn-info" href="/discord/">
+        <a class="btn btn-success" href="/discord/">
             <i class="fa fa-comments"></i> tilde~discord</a>
-        <a class="btn btn-info" href="https://github.com/tilde-team">
+        <a class="btn btn-success" href="https://github.com/tilde-team">
             <i class="fa fa-github"></i> tilde~githuborg</a>
-        <a class="btn btn-info" href="https://bhh.sh">
+        <a class="btn btn-success" href="https://bhh.sh">
             <i class="fa fa-link"></i> url shortener</a>
-        <a class="btn btn-info" href="https://social.tilde.team/">
+        <a class="btn btn-success" href="https://social.tilde.team/">
             <i class="fa fa-retweet"></i> tilde.team mastodon instance</a>
+        <a class="btn btn-success" href="https://twitter.com/tildeteam">
+            <i class="fa fa-twitter"></i> tilde.team updates on twitter</a>
 
         <br>
         <hr>
 
-        <h1>users:</h1>
-        <a href="/tilde.24h.html">last updated users (only shows changes in the last 24 hours)</a>
-        <br><br>
-
-        <?php foreach (array_diff(scandir("/home"), ['..', '.']) as $user) { if (!is_dir("/home/$user/public_html")) continue; ?>
-            <div class="list-group">
-                <a href="/~<?=$user?>/" class="list-group-item">
-                    <h5 class="list-group-item-heading">~<?=$user?></h5>
-                </a>
+        <div class="row">
+            <div class="col-md-7">
+                <h1>~news~</h1>
+                <?php include "news.php"; ?>
             </div>
-        <?php } ?>
+            <div class="col-md-5">
+                <h1>~users~</h1>
+                <a href="/tilde.24h.html">last updated users (only shows changes in the last 24 hours)</a>
+                <br><br>
+                <?php include "users.php"; ?>
+            </div>
+        </div>
 
         <hr>
     </div>
