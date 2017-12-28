@@ -78,6 +78,8 @@
         <hr>
 
         <h1>users:</h1>
+        <strong><a href="/tilde.24h.html">last updated users</a></strong>
+        <br><br>
         <?php foreach (array_diff(scandir("/home"), ['..', '.']) as $user) {
             if (!is_dir("/home/$user/public_html")) continue;
         ?>
