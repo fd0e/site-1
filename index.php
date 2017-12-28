@@ -49,14 +49,14 @@
 
         <p>i created this site after hearing about paul ford's
             <a href="http://tilde.club">tilde.club</a>. when i was unable to join due to the waitlist, i decided to create my own. see
-            <a href="/~ben">my tilde page</a> or my
-            <a href="https://benharr.is">personal site</a> for more info about me.</p>
+            <a href="/~ben/">my tilde page</a> or my
+            <a href="https://benharr.is/">personal site</a> for more info about me.</p>
 
         <br>
-        <a href="/signup" class="btn btn-primary btn-lg">
+        <a href="/signup/" class="btn btn-primary btn-lg">
             <i class="fa fa-user-plus"></i> signup</a>
 
-        <a href="/faq" class="btn btn-warning btn-lg">
+        <a href="/faq/" class="btn btn-warning btn-lg">
             <i class="fa fa-info"></i> faq</a>
 
         <br>
@@ -78,16 +78,13 @@
         <hr>
 
         <h1>users:</h1>
-        <strong><a href="/tilde.24h.html">last updated users</a></strong>
+        <a href="/tilde.24h.html">last updated users (only shows changes in the last 24 hours)</a>
         <br><br>
-        <?php foreach (array_diff(scandir("/home"), ['..', '.']) as $user) {
-            if (!is_dir("/home/$user/public_html")) continue;
-        ?>
+
+        <?php foreach (array_diff(scandir("/home"), ['..', '.']) as $user) { if (!is_dir("/home/$user/public_html")) continue; ?>
             <div class="list-group">
                 <a href="/~<?=$user?>/" class="list-group-item">
-                    <h4 class="list-group-item-heading">
-                        ~<?=$user?>
-                    </h4>
+                    <h5 class="list-group-item-heading">~<?=$user?></h5>
                 </a>
             </div>
         <?php } ?>
