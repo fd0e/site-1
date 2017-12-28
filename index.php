@@ -35,7 +35,7 @@
 <body>
     <div class="container">
         <h1>~~~tilde.team~~~</h1>
-        <pre style="background-color:#333;">
+        <pre>
    __  _ __    __      __
   / /_(_) /___/ /__   / /____  ____ _____ ___
  / __/ / / __  / _ \ / __/ _ \/ __ `/ __ `__ \
