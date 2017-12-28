@@ -73,8 +73,6 @@
             <i class="fa fa-link"></i> url shortener</a>
         <a class="btn btn-success" href="https://social.tilde.team/">
             <i class="fa fa-retweet"></i> tilde.team mastodon instance</a>
-        <a class="btn btn-success" href="https://twitter.com/tildeteam">
-            <i class="fa fa-twitter"></i> tilde.team updates on twitter</a>
 
         <br>
         <hr>
