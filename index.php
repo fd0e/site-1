@@ -86,7 +86,7 @@
             </div>
             <div class="col-md-5">
                 <h1>~users~</h1>
-                <a href="/tilde.24h.html">last updated users (only shows changes in the last 24 hours)</a>
+                <em><a href="/tilde.24h.html"><i class="fa fa-clock-o"></i> recent updates</a></em>
                 <br><br>
                 <?php include "users.php"; ?>
             </div>
