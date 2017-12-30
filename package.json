@@ -1,0 +1,17 @@
+{
+    "name": "tilde.team-site",
+    "version": "1.0.0",
+    "description": "tilde.team homepage",
+    "author": "Ben Harris <ben@tilde.team>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tilde-team/site"
+    },
+    "bugs": {
+        "url": "https://github.com/tilde-team/site/issues"
+    },
+    "dependencies": {
+        "@ibm/type": "^0.5.3"
+    },
+    "license": "MIT"
+}
