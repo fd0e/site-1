@@ -88,9 +88,9 @@
             </div>
             <div class="col-md-5">
                 <h1>~users~</h1>
-                <em><a href="/tilde.24h.html"><i class="fa fa-clock-o"></i> recent updates</a></em>
+                <em><a href="https://tilde.team/tilde.24h.html"><i class="fa fa-clock-o"></i> recent updates</a></em>
                 <br><br>
-                <?php include "users.php"; ?>
+                <?php echo file_get_contents("https://tilde.team/users.php"); ?>
             </div>
         </div>
 
