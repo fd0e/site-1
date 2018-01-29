@@ -32,41 +32,32 @@
         <form method="post">
 
             <?php
-            if ($_SERVER["SERVER_NAME"] != "localhost") {
+            if ($_SERVER["SERVER_NAME"] != "localhost")
                 require_once "/home/ben/ultimate-email/support/smtp.php";
-            }
 
             $message = "";
             if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
                 // Check the name.
                 $name = trim($_REQUEST["username"]);
-                if ($name == "") {
+                if ($name == "")
                     $message .= "<li>please fill in your desired username</li>";
-                }
-                if (strlen($name) > 32) {
+                if (strlen($name) > 32)
                     $message .= "<li>username too long (32 character max)</li>";
-                }
-                if (preg_match("/([a-z_][a-z0-9_]{0,30})/", $name) == 1) {
-                    echo '';
-                } else {
+                if (preg_match("/([a-z_][a-z0-9_]{0,30})/", $name) != 1)
                     $message .= "<li>username contains invalid characters (lowercase only)</li>";
-                }
-
-                if (posix_getpwnam($name)) {
+                if (posix_getpwnam($name))
                     $message .= "<li>sorry, the username $name is unavailable</li>";
-                }
 
                 // Check the e-mail address.
                 $email = trim($_REQUEST["email"]);
-                if ($email == "")  {
+                if ($email == "")
                     $message .= "<li>please fill in your email address</li>";
-                } else {
+                else {
                     $result = SMTP::MakeValidEmailAddress($_REQUEST["email"]);
-                    if (!$result["success"]) {
+                    if (!$result["success"])
                         $message .= "<li>invalid email address: " . htmlspecialchars($result["error"]) . "</li>";
-                    } elseif ($result["email"] != $email) {
+                    elseif ($result["email"] != $email)
                         $message .= "<li>invalid email address. did you mean:  " . htmlspecialchars($result["email"]) . "</li>";
-                    }
                 }
 
                 if ($message == "") {
@@ -105,7 +96,7 @@
             ?>
 
             <div class="form-group">
-                <label>your desired username (numbers and letters only, no spaces)</label>
+                <label>your desired username (numbers and lowercase letters only, no spaces)</label>
                 <input v-model="username" class="form-control" name="username" value="<?=$_REQUEST["username"] ?? ""?>" type="text" required>
             </div>
 

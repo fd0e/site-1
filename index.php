@@ -92,7 +92,14 @@
                 <h1>~users~</h1>
                 <em><a href="https://tilde.team/tilde.24h.html"><i class="fa fa-clock-o"></i> recent updates</a></em>
                 <br><br>
-                <?php echo file_get_contents("https://tilde.team/users.php"); ?>
+                <?php $users = json_decode(file_get_contents("https://tilde.team/~ben/api/?users"));
+                foreach ($users as $user): ?>
+                    <div class="list-group">
+                        <a href="https://tilde.team/~<?=$user?>/" class="list-group-item">
+                            <h5 class="list-group-item-heading">~<?=$user?></h5>
+                        </a>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </div>
 
