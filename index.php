@@ -66,8 +66,6 @@
             <i class="fa fa-link"></i> ~url-shortener~</a>
         <a class="btn btn-default" href="https://social.tilde.team/">
             <i class="fa fa-retweet"></i> ~mastodon~</a>
-        <a class="btn btn-default" href="https://notes.tilde.team/">
-            <i class="fa fa-sticky-note"></i> ~notepad~</a>
 
         <br>
         <hr>
