@@ -73,8 +73,6 @@
             <i class="fa fa-comments"></i> ~discord~</a>
         <a class="btn btn-default" href="https://github.com/tilde-team">
             <i class="fa fa-github"></i> ~github-org~</a>
-        <a class="btn btn-default" href="https://git.tilde.team">
-            <i class="fa fa-git"></i> ~tildegit~</a>
         <a class="btn btn-default" href="https://bhh.sh">
             <i class="fa fa-link"></i> ~url-shortener~</a>
         <a class="btn btn-default" href="https://social.tilde.team/">
