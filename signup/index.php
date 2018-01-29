@@ -91,7 +91,7 @@
                                 email sent! i\'ll get back to you soon with login instructions! <a href="/">back to tilde.team home</a>
                              </div>';
                     } else {
-                       echo "The email has failed!";
+                       echo 'The email has failed! Send me a message manually at <a href="mailto:ben@tilde.team">ben@tilde.team</a>';
                     }
                 } else {
                     ?>
