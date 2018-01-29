@@ -9,23 +9,12 @@
     <meta name="author" content="Ben Harris">
     <title>tilde.team</title>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#00cc00">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-310x310.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/apple-touch-icon-precomposed.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 
     <link rel="stylesheet" href="/css/hacker.css">
     <link rel="stylesheet" href="/css/font-awesome.css">
@@ -36,7 +25,7 @@
     <div class="container">
 
         <div class="jumbotron">
-            <h1>~~~tilde.team~~~</h1>
+            <h1>~.team</h1>
             <pre>
    __  _ __    __      __
   / /_(_) /___/ /__   / /____  ____ _____ ___
@@ -86,8 +75,21 @@
         <div class="row">
             <div class="col-md-7">
                 <h1>~news~</h1>
-                <?php include "news.php"; ?>
+                <?php foreach (array_reverse(glob("news/*.json")) as $file):
+                    $post = json_decode(file_get_contents($file));
+                    if (!$post->published) continue; ?>
+
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <h3 class="list-group-item-heading"><?=$post->title?></h3>
+                                <em><?=$post->date?> - <?=$post->author?></em>
+                                <hr style="border-top: 1px solid #000;">
+                                <p class="list-group-item-text"><?=$post->content?></p>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
             </div>
+
             <div class="col-md-5">
                 <h1>~users~</h1>
                 <em><a href="https://tilde.team/tilde.24h.html"><i class="fa fa-clock-o"></i> recent updates</a></em>

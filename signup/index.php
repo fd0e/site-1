@@ -8,7 +8,12 @@
     <meta name="author" content="Ben Harris">
     <title>signup~tilde.team</title>
 
+    <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#00cc00">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-310x310.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/apple-touch-icon-precomposed.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 
     <script src="/js/vue.min.js"></script>
     <link rel="stylesheet" href="https://tilde.team/css/hacker.css">
