@@ -66,6 +66,8 @@
             <i class="fa fa-link"></i> ~url-shortener~</a>
         <a class="btn btn-default" href="https://social.tilde.team/">
             <i class="fa fa-retweet"></i> ~mastodon~</a>
+        <a class="btn btn-default" href="https://forum.tilde.team/">
+            <i class="fa fa-comment"></i> ~forum~</a>
 
         <br>
         <hr>
