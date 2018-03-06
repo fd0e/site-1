@@ -56,7 +56,7 @@
         <br>
         <hr>
 
-        <h1>other tilde.team stuff</h1>
+        <h3>other tilde.team stuff</h3>
 
         <a class="btn btn-default" href="/discord/">
             <i class="fa fa-comments"></i> ~discord~</a>
@@ -68,6 +68,8 @@
             <i class="fa fa-retweet"></i> ~mastodon~</a>
         <a class="btn btn-default" href="https://forum.tilde.team/">
             <i class="fa fa-comment"></i> ~forum~</a>
+        <a class="btn btn-default" href="http://webchat.freenode.net/?channels=%23%23tilde.team">
+            <i class="fa fa-comments-o"></i> ~irc~</a>
 
         <br>
         <hr>
