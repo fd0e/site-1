@@ -90,6 +90,27 @@
                         </div>
                     </div>
                 <?php endforeach; ?>
+
+                <h1>~current projects~</h1>
+                <h4>on our <a href="https://github.com/tilde-team">github org</a></h4>
+                <hr>
+                <?php
+                    ini_set('user_agent', 'tilde-team');
+                    foreach (json_decode(file_get_contents("https://api.github.com/orgs/tilde-team/repos")) as $repo): ?>
+
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <a href="<?=$repo->html_url?>">
+                                <h3 class="list-group-item-heading"><?=$repo->name?></h3>
+                            </a>
+                            <p class="list-group-item-text"><?=$repo->description?></p>
+                            <?php if ($repo->homepage != ""): ?>
+                                <hr style="border-top: 1px solid #000;">
+                                <em><a href="<?=$repo->homepage?>"><?=$repo->homepage?></a></em>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
             </div>
 
             <div class="col-md-5">
