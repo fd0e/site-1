@@ -33,11 +33,12 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<%= thread_path(@conn, :index) %>"><img src="https://tilde.team/favicon-32x32.png" alt="tilde.team logo"></a>
+            <a class="navbar-brand" href="/"><img src="https://tilde.team/favicon-32x32.png" alt="tilde.team logo"></a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/faq/">faq</a></li>
+                <li><a href="/signup/">sign up</a></li>
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">tildeverse
@@ -170,6 +171,9 @@
 
     <br>
     <br>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>
 
 </html>
