@@ -52,6 +52,8 @@
                             <i class="fa fa-comments"></i> ~discord~</a></li>
                         <li><a class="btn btn-default" href="https://forum.tilde.team/">
                             <i class="fa fa-comment"></i> ~forum~</a></li>
+                        <li><a class="btn btn-default" href="http://webchat.freenode.net/?channels=%23%23tilde.team">
+                            <i class="fa fa-comments-o"></i> ~irc~</a></li>
                     </ul>
                 </li>
             </ul>
@@ -91,7 +93,7 @@
         <br>
         <hr>
 
-        <h1>other tilde.team stuff</h1>
+        <h3>other tilde.team stuff</h3>
 
         <a class="btn btn-default" href="https://github.com/tilde-team">
             <i class="fa fa-github"></i> ~github-org~</a>
@@ -103,6 +105,8 @@
             <i class="fa fa-comment"></i> ~forum~</a>
         <a class="btn btn-default" href="https://bhh.sh">
             <i class="fa fa-link"></i> ~url-shortener~</a>
+        <a class="btn btn-default" href="http://webchat.freenode.net/?channels=%23%23tilde.team">
+            <i class="fa fa-comments-o"></i> ~irc~</a>
 
         <br>
         <hr>
@@ -120,6 +124,27 @@
                                 <em><?=$post->date?> - <?=$post->author?></em>
                                 <hr>
                                 <p class="list-group-item-text"><?=$post->content?></p>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+
+                <h1>~current projects~</h1>
+                <h4>on our <a href="https://github.com/tilde-team">github org</a></h4>
+                <hr>
+                <?php
+                    ini_set('user_agent', 'tilde-team');
+                    foreach (json_decode(file_get_contents("https://api.github.com/orgs/tilde-team/repos")) as $repo): ?>
+
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <a href="<?=$repo->html_url?>">
+                                <h3 class="list-group-item-heading"><?=$repo->name?></h3>
+                            </a>
+                            <p class="list-group-item-text"><?=$repo->description?></p>
+                            <?php if ($repo->homepage != ""): ?>
+                                <hr style="border-top: 1px solid #000;">
+                                <em><a href="<?=$repo->homepage?>"><?=$repo->homepage?></a></em>
+                            <?php endif; ?>
                         </div>
                     </div>
                 <?php endforeach; ?>
