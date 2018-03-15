@@ -21,11 +21,46 @@
 
 </head>
 
-<body>
+<body style="padding-top: 70px;">
     <div class="container">
 
+        <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="<%= thread_path(@conn, :index) %>"><img src="https://tilde.team/favicon-32x32.png" alt="tilde.team logo"></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/faq/">faq</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">tildeverse
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a class="btn btn-default" href="https://github.com/tilde-team">
+                            <i class="fa fa-github"></i> ~github-org~</a></li>
+                        <li><a class="btn btn-default" href="https://social.tilde.team/">
+                            <i class="fa fa-retweet"></i> ~mastodon~</a></li>
+                        <li><a class="btn btn-default" href="/discord/">
+                            <i class="fa fa-comments"></i> ~discord~</a></li>
+                        <li><a class="btn btn-default" href="https://forum.tilde.team/">
+                            <i class="fa fa-comment"></i> ~forum~</a></li>
+                    </ul>
+                </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
         <div class="jumbotron">
-            <h1>~.team</h1>
+            <h1>~team</h1>
             <pre>
    __  _ __    __      __
   / /_(_) /___/ /__   / /____  ____ _____ ___
@@ -58,16 +93,16 @@
 
         <h1>other tilde.team stuff</h1>
 
-        <a class="btn btn-default" href="/discord/">
-            <i class="fa fa-comments"></i> ~discord~</a>
         <a class="btn btn-default" href="https://github.com/tilde-team">
             <i class="fa fa-github"></i> ~github-org~</a>
-        <a class="btn btn-default" href="https://bhh.sh">
-            <i class="fa fa-link"></i> ~url-shortener~</a>
         <a class="btn btn-default" href="https://social.tilde.team/">
             <i class="fa fa-retweet"></i> ~mastodon~</a>
+        <a class="btn btn-default" href="/discord/">
+            <i class="fa fa-comments"></i> ~discord~</a>
         <a class="btn btn-default" href="https://forum.tilde.team/">
             <i class="fa fa-comment"></i> ~forum~</a>
+        <a class="btn btn-default" href="https://bhh.sh">
+            <i class="fa fa-link"></i> ~url-shortener~</a>
 
         <br>
         <hr>
@@ -83,7 +118,7 @@
                         <div class="list-group-item">
                             <h3 class="list-group-item-heading"><?=$post->title?></h3>
                                 <em><?=$post->date?> - <?=$post->author?></em>
-                                <hr style="border-top: 1px solid #000;">
+                                <hr>
                                 <p class="list-group-item-text"><?=$post->content?></p>
                         </div>
                     </div>
