@@ -134,7 +134,7 @@
                 <hr>
                 <?php
                     ini_set('user_agent', 'tilde-team');
-                    foreach (json_decode(file_get_contents("https://api.github.com/orgs/tilde-team/repos")) as $repo): ?>
+                    foreach (json_decode(file_get_contents("https://api.github.com/orgs/tilde-team/repos")) ?? [] as $repo): ?>
 
                     <div class="list-group">
                         <div class="list-group-item">
