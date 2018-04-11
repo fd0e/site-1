@@ -48,8 +48,8 @@
                     $message .= "<li>please fill in your desired username</li>";
                 if (strlen($name) > 32)
                     $message .= "<li>username too long (32 character max)</li>";
-                if (preg_match("/([a-z_][a-z0-9_]{0,30})/", $name) != 1)
-                    $message .= "<li>username contains invalid characters (lowercase only)</li>";
+                if (!preg_match('/^[A-Za-z][A-Za-z0-9]{2,31}$/', $name))
+                    $message .= "<li>username contains invalid characters (lowercase only, must start with a letter)</li>";
                 if (posix_getpwnam($name))
                     $message .= "<li>sorry, the username $name is unavailable</li>";
 
