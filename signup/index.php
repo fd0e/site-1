@@ -1,26 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="tilde.team unix group">
-    <meta name="author" content="Ben Harris">
-    <title>signup~tilde.team</title>
+<?php
+require 'vendor/autoload.php';
 
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#00cc00">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-310x310.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/apple-touch-icon-precomposed.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+$pw = file_get_contents("mg.key");
 
-    <script src="/js/vue.min.js"></script>
-    <link rel="stylesheet" href="https://tilde.team/css/hacker.css">
+$transport = (new Swift_SmtpTransport('smtp.mailgun.org', 465, 'ssl'))
+    ->setUsername('postmaster@mg.tilde.team')
+    ->setPassword($pw);
+$mailer = new Swift_Mailer($transport);
 
-</head>
+$additional_head = '<script src="/js/vue.min.js"></script>';
+include __DIR__.'/../header.php';
+?>
 
-<body>
+
     <div class="container" id="app">
         <h1>
             tilde.team signup
@@ -66,29 +58,28 @@
                 }
 
                 if ($message == "") {
-                    $headers = "From: {$_REQUEST["username"]} <{$_REQUEST["email"]}>\n";
-                    $headers .= "Sender: www-data@tilde.team\n";
-                    $headers .= "To: admin@tilde.team\n";
-                    $headers .= "Reply-To: {$_REQUEST["email"]}\n";
-                    $headers .= "MIME-Version: 1.0\r\n";
-                    $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-                    $forwardmail = $_REQUEST["forward_email"] == "on" ? '<a href="https://domains.google.com/registrar#z=e&d=3471834,tilde.team&chp=z,d">yes</a>' : "no";
+                    $forwardmail = $_REQUEST["forward_email"] == "on"
+                        ? '<a href="https://domains.google.com/registrar#z=e&d=3471834,tilde.team&chp=z,d">yes</a>' : "no";
 
-                    $msgbody = "<h1>New tilde.team signup</h1>
+                    $msgbody = "<h1>tilde.team signup</h1>
                                 <hr>
-                                Desired username: <strong>{$_REQUEST["username"]}</strong><br>
-                                Contact email: <strong><a href=\"mailto:{$_REQUEST["email"]}\">{$_REQUEST["email"]}</a></strong><br>
-                                Reason: <strong>{$_REQUEST["interest"]}</strong><br>
-                                Forward mail?: <strong>$forwardmail</strong><br>
-                                SSH Key: <pre>{$_REQUEST["sshkey"]}</pre>";
+                                desired username: <strong>{$_REQUEST["username"]}</strong><br>
+                                contact email: <strong><a href=\"mailto:{$_REQUEST["email"]}\">{$_REQUEST["email"]}</a></strong><br>
+                                reason: <strong>{$_REQUEST["interest"]}</strong><br>
+                                forward mail?: <strong>$forwardmail</strong><br>
+                                ssh key: <pre>{$_REQUEST["sshkey"]}</pre>";
 
-                    if (mail('bharrismac@gmail.com', 'tilde.team signup', $msgbody, $headers)) {
-                       echo '<div class="alert alert-success" role="alert">
-                                email sent! i\'ll get back to you soon with login instructions! <a href="/">back to tilde.team home</a>
-                             </div>';
-                    } else {
-                       echo 'The email has failed! Send me a message manually at <a href="mailto:ben@tilde.team">ben@tilde.team</a>';
-                    }
+                    $message = (new Swift_Message('tilde.team signup'))
+                        ->setFrom(['sys@tilde.team' => 'tilde'])
+                        ->setTo(['admin@tilde.team'])
+                        ->setReplyTo([$_REQUEST["email"]])
+                        ->setBody($msgbody, 'text/html');
+
+                    $result = $mailer->send($message);
+
+                   echo '<div class="alert alert-success" role="alert">
+                            email sent! i\'ll get back to you soon with login instructions! <a href="/">back to tilde.team home</a>
+                         </div>';
                 } else {
                     ?>
                     <div class="alert alert-warning" role="alert">
@@ -142,7 +133,5 @@
         })
     </script>
 
-</body>
-</html>
-
+<?php include __DIR__.'/../footer.php';
 
