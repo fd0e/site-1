@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="/css/hacker.css">
     <link rel="stylesheet" href="/css/font-awesome.css">
 
+    <?=$additional_head ?? ""?>
+
 </head>
 
 <body style="padding-top: 70px;">
