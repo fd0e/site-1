@@ -36,7 +36,7 @@
 
         <a class="btn btn-default" href="https://github.com/tilde-team">
             <i class="fa fa-github"></i> ~github-org~</a>
-        <a class="btn btn-default" href="https://social.tilde.team/">
+        <a class="btn btn-default" href="https://tilde.zone/invite/9xjfCyYJ">
             <i class="fa fa-retweet"></i> ~mastodon~</a>
         <a class="btn btn-default" href="/discord/">
             <i class="fa fa-comments"></i> ~discord~</a>
