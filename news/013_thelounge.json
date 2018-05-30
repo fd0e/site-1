@@ -1,7 +1,7 @@
 {
     "published": true,
     "date": "march 2018",
-    "title": "<a href=\"https://lounge.tilde.team\">thelounge irc webclient</a>",
+    "title": "<a href=\"https://irc.tilde.team\">thelounge irc webclient</a>",
     "author": "<a href=\"/~ben/\">~ben</a>",
     "content": "i'm now hosting a <a href=\"https://thelounge.chat\">thelounge</a> instance on the tilde.team server. let me know if you want to use it and i'll add your user. i haven't figured out how to integrate the thelounge accounts with the tilde.team accounts, but i'm looking into it."
 }
