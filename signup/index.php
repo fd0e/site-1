@@ -57,6 +57,10 @@ include __DIR__.'/../header.php';
                         $message .= "<li>invalid email address. did you mean:  " . htmlspecialchars($result["email"]) . "</li>";
                 }
 
+                if ($_REQUEST["sshkey"] == "") {
+                    $message .= "<li>ssh key required: please create one and submit the public key</li>";
+                }
+
                 if ($message == "") {
                     $forwardmail = $_REQUEST["forward_email"] == "on"
                         ? '<a href="https://domains.google.com/registrar#z=e&d=3471834,tilde.team&chp=z,d">yes</a>' : "no";
@@ -113,8 +117,8 @@ include __DIR__.'/../header.php';
             </div>
 
             <div class="form-group">
-                <label>SSH public key (optional)</label>
-                <textarea class="form-control" name="sshkey" id="" cols="30" rows="10"><?=$_REQUEST["sshkey"] ?? ""?></textarea>
+                <label>SSH public key</label>
+                <textarea required class="form-control" name="sshkey" id="" cols="30" rows="10"><?=$_REQUEST["sshkey"] ?? ""?></textarea>
             </div>
 
             <button class="btn btn-primary" type="submit">submit</button>

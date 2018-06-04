@@ -6,6 +6,6 @@ category:
     - main
 ---
 
-# my-new-page
+## my-new-page
 
 wiki content here!

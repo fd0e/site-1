@@ -6,7 +6,7 @@ category:
     - main
 ---
 
-# tildeverse irc
+## tildeverse irc
 
 hi tildizens!
 

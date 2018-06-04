@@ -6,9 +6,9 @@ category:
     - main
 ---
 
-# tilde.team goals and roadmap
+## tilde.team goals and roadmap
 
-## services
+### services
 
 * mail
     - this is currently just forwarding addresses from google domains
@@ -22,7 +22,7 @@ category:
 * [github org](https://github.com/tilde-team)
 
 
-## future plans
+### future plans
 
 * ldap auth
 * sshkey only
