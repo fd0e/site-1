@@ -5,10 +5,10 @@
     "author": "Ben Harris <ben@tilde.team>",
     "repository": {
         "type": "git",
-        "url": "https://github.com/tilde-team/site"
+        "url": "https://git.tilde.team/meta/site"
     },
     "bugs": {
-        "url": "https://github.com/tilde-team/site/issues"
+        "url": "https://git.tilde.team/meta/site/issues"
     },
     "dependencies": {
         "@ibm/type": "^0.5.3"

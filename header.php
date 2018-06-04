@@ -48,15 +48,15 @@
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a class="btn btn-default" href="https://github.com/tilde-team">
-                            <i class="fa fa-github"></i> ~github-org~</a></li>
-                        <li><a class="btn btn-default" href="https://social.tilde.team/">
+                        <li><a class="btn btn-default" href="https://git.tilde.team">
+                            <i class="fa fa-code-fork"></i> ~gitea~</a></li>
+                        <li><a class="btn btn-default" href="https://tilde.zone/invite/9xjfCyYJ">
                             <i class="fa fa-retweet"></i> ~mastodon~</a></li>
                         <li><a class="btn btn-default" href="/discord/">
                             <i class="fa fa-comments"></i> ~discord~</a></li>
                         <li><a class="btn btn-default" href="https://forum.tilde.team/">
                             <i class="fa fa-comment"></i> ~forum~</a></li>
-                        <li><a class="btn btn-default" href="http://webchat.freenode.net/?channels=%23%23tilde.team">
+                        <li><a class="btn btn-default" href="https://irc.tilde.team">
                             <i class="fa fa-comments-o"></i> ~irc~</a></li>
                     </ul>
                 </li>

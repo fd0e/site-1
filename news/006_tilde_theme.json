@@ -1,7 +1,7 @@
 {
     "published": true,
     "date": "dec 2017",
-    "title": "<a href=\"https://github.com/tilde-team/hacker-bootstrap\">tilde.team bootstrap theme :)</a>",
+    "title": "<a href=\"https://git.tilde.team/meta/css\">tilde.team bootstrap theme :)</a>",
     "author": "<a href=\"/~ben/\">~ben</a>",
     "content": "the tilde.team css is a fork of <a href=\"https://github.com/Brobin/hacker-bootstrap\">Brobin/hacker-bootstrap</a>. the main changes are increased font size and a fix for the background color of &lt;pre&gt; tags. have a look! anyone can link to the compiled css <a href=\"https://tilde.team/css/hacker.css\">here</a>"
 }

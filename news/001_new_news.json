@@ -3,5 +3,5 @@
     "date": "dec 28, 2017",
     "title": "good news everyone",
     "author": "<a href=\"/~ben/\">~ben</a>",
-    "content": "there's a news feed on the homepage now!! whenever there is any news, it will be posted here. if you have any big news, make a pull request on the <a href=\"https://github.com/tilde-team/site\">github repo</a> and then <a href=\"/~ben/\">~ben</a> or another github admin can merge it"
+    "content": "there's a news feed on the homepage now!! whenever there is any news, it will be posted here. if you have any big news, make a pull request on the <a href=\"https://git.tilde.team/meta/site\">git repo</a> and then <a href=\"/~ben/\">~ben</a> or another github admin can merge it"
 }

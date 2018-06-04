@@ -18,8 +18,10 @@ category:
 * mastodon/activitypub social
     - [halcyon](https://halcyon.tilde.team) and [pinafore](https://pinafore.bhh.sh) clients
     - is it worth switching to pleroma? there is no good way to migrate, but it's significantly faster and lighter on resources
-* forum - this project needs a lot of love (https://github.com/tilde-team/forum) but it's got potential
+* forum - this project needs a lot of love (https://git.tilde.team/meta/forum) but it's got potential
 * [github org](https://github.com/tilde-team)
+* [gitea!!](https://git.tilde.team)
+    - test the PAM auth module :)
 
 
 ### future plans

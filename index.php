@@ -34,8 +34,8 @@
 
         <h3>other tilde.team stuff</h3>
 
-        <a class="btn btn-default" href="https://github.com/tilde-team">
-            <i class="fa fa-github"></i> ~github-org~</a>
+        <a class="btn btn-default" href="https://git.tilde.team/meta">
+            <i class="fa fa-code-fork"></i> ~gitea~</a>
         <a class="btn btn-default" href="https://tilde.zone/invite/9xjfCyYJ">
             <i class="fa fa-retweet"></i> ~mastodon~</a>
         <a class="btn btn-default" href="/discord/">

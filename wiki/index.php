@@ -9,7 +9,7 @@ $parser = new Mni\FrontYAML\Parser();
 
 <p>welcome to the tilde.team wiki!</p>
 
-<p>if you want to contribute, check out the <a href="https://github.com/tilde-team/site/tree/master/wiki">source!</a></p>
+<p>if you want to contribute, check out the <a href="https://git.tilde.team/meta/site/src/branch/master/wiki">source!</a></p>
 
 <hr>
 <h3>pages:</h3>
