@@ -1,0 +1,7 @@
+{
+    "require": {
+        "swiftmailer/swiftmailer": "^6.0",
+        "spatie/yaml-front-matter": "^2.0",
+        "erusev/parsedown": "^1.7"
+    }
+}
