@@ -42,8 +42,6 @@
             <i class="fa fa-comments"></i> ~discord~</a>
         <a class="btn btn-default" href="https://forum.tilde.team/">
             <i class="fa fa-comment"></i> ~forum~</a>
-        <a class="btn btn-default" href="https://bhh.sh">
-            <i class="fa fa-link"></i> ~url-shortener~</a>
         <a class="btn btn-default" href="/irc/">
             <i class="fa fa-comments-o"></i> ~irc~</a>
 
