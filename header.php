@@ -41,6 +41,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/faq/">faq</a></li>
                 <li><a href="/signup/">sign up</a></li>
+                <li><a href="/wiki/">wiki</a></li>
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">tildeverse
