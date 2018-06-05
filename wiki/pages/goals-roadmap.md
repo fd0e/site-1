@@ -15,13 +15,17 @@ category:
     - you can send from @tilde.team addresses with gmail smtp
     - future state: tilde.team mailserver? webmail? local delivery mail?
 * irc
+    - need more/better bots
+    - gitea integration (notify for all activity in meta org)
 * mastodon/activitypub social
     - [halcyon](https://halcyon.tilde.team) and [pinafore](https://pinafore.bhh.sh) clients
     - is it worth switching to pleroma? there is no good way to migrate, but it's significantly faster and lighter on resources
 * forum - this project needs a lot of love (https://git.tilde.team/meta/forum) but it's got potential
+    - mainly needs notifications, mentions, show most recent activity
 * [github org](https://github.com/tilde-team)
 * [gitea!!](https://git.tilde.team)
     - test the PAM auth module :)
+    - pust ldap forward
 
 
 ### future plans

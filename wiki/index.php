@@ -3,7 +3,10 @@ require __DIR__.'/../vendor/autoload.php';
 include __DIR__.'/../header.php';
 
 $parser = new Mni\FrontYAML\Parser();
-?>
+
+
+if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
+// render wiki index ?>
 
 <h1>tilde.team wiki</h1>
 
@@ -16,13 +19,19 @@ $parser = new Mni\FrontYAML\Parser();
 
 <?php
 foreach (glob("pages/*.md") as $page) {
-    $parsed = $parser->parse(file_get_contents($page));
-    $yaml = $parsed->getYAML();
-    if (!$yaml["published"]) continue;
-    ?>
+    $yaml = $parser->parse(file_get_contents($page))->getYAML();
+    if (!$yaml["published"]) continue; ?>
+    <a href="/wiki/?page=<?=basename($page, ".md")?>"><?=$yaml["title"]?></a><br>
 
-    <a href="/wiki/view.php?page=<?=basename($page, ".md")?>"><?=$yaml["title"]?></a><br>
 <?php }
 
+} else {
+    // show a single page ?>
+    <a href="/wiki/"><h1>&lt; ~wiki</h1></a>
+    <hr>
+    <?=$parser->parse(file_get_contents("pages/{$_GET['page']}.md"))->getContent()?>
+    <hr>
+    <a href="https://git.tilde.team/meta/site/src/branch/master/wiki/pages/<?=$_GET["page"]?>.md"><i class="fa fa-edit"></i> source</a>
+<?php }
 
 include __DIR__.'/../footer.php';
