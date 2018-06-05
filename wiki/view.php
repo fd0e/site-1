@@ -7,7 +7,7 @@ require __DIR__.'/../vendor/autoload.php';
 include __DIR__.'/../header.php';
 
 ?>
-<a href="/wiki/"><h1>tilde.team wiki</h1></a>
+<a href="/wiki/"><h1>&lt; tilde.team wiki</h1></a>
 <hr>
 
 <?php

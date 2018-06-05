@@ -44,6 +44,8 @@
             <i class="fa fa-comment"></i> ~forum~</a>
         <a class="btn btn-default" href="/irc/">
             <i class="fa fa-comments-o"></i> ~irc~</a>
+        <a class="btn btn-default" href="/wiki/">
+            <i class="fa fa-book"></i> ~wiki~</a>
 
         <br>
         <hr>
