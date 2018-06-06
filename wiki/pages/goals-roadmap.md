@@ -62,11 +62,7 @@ environments.
 * mastodon/activitypub social
     - [halcyon](https://halcyon.tilde.team) and [pinafore](https://pinafore.bhh.sh) clients
     - is it worth switching to pleroma? there is no good way to migrate, but it's significantly faster and lighter on resources
-* forum - this project needs a lot of love (https://github.com/tilde-team/forum) but it's got potential
-* git hosting
-    - move off github -> gitlab (is this even necessary?)
-    - host our own gitlab/gitea/gogs instance
-* [github org](https://github.com/tilde-team)
+* forum - this project needs a lot of love (https://git.tilde.team/meta/forum) but it's got potential
 * [gitea](https://git.tilde.team)
 
 
