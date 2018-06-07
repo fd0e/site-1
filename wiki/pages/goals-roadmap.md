@@ -64,13 +64,13 @@ environments.
     - is it worth switching to pleroma? there is no good way to migrate, but it's significantly faster and lighter on resources
 * forum - this project needs a lot of love (https://git.tilde.team/meta/forum) but it's got potential
 * [gitea](https://git.tilde.team)
+* [cryptpad](https://pad.tilde.team)
 
 
 ### future plans
 
 * ldap auth
 * some kind of pastebin
-* etherpad/hackmd/cryptpad collaborative doc
 * nextcloud?
 * onlyoffice
 * mumble/teamspeak
