@@ -1,10 +1,9 @@
 ---
 author: ~ben
 published: false
-title: advanced ssh
+title: manifesto
 category: 
     - main
 ---
 
-## advanced ssh
-
+# tilde.team manifesto

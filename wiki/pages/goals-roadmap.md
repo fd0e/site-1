@@ -1,12 +1,12 @@
 ---
 author: ~ben
 published: true
-title: goals-roadmap
+title: goals and roadmap
 category: 
     - main
 ---
 
-## tilde.team goals and roadmap
+# tilde.team goals and roadmap
 
 [living draft of this document](https://pad.tilde.team/code/#/2/code/edit/RFBUqXec+9+MlZzx4mnhU3ps/)
 
@@ -50,7 +50,7 @@ environments.
 * this would allow people to find co-developers, or to allow non-devs to give devs good ideas.
 
 
-### services
+## services
 
 * mail
     - this is currently just forwarding addresses from google domains
@@ -67,7 +67,7 @@ environments.
 * [cryptpad](https://pad.tilde.team)
 
 
-### future plans
+## future plans
 
 * ldap auth
 * some kind of pastebin
@@ -80,7 +80,7 @@ environments.
 * ~ben shouldn't be the single point of failure. need a way to pass command to another admin if i go MIA.
 
 
-### to do
+## to do
 
 * come up with a community charter
 * terms of use

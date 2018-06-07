@@ -27,11 +27,13 @@ foreach (glob("pages/*.md") as $page) {
 
 } else {
     // show a single page ?>
-    <a href="/wiki/"><h1>&lt; ~wiki</h1></a>
+    <a href="/wiki/">&lt; ~wiki</a>
     <hr>
-    <?=$parser->parse(file_get_contents("pages/{$_GET['page']}.md"))->getContent()?>
+        <?=$parser->parse(file_get_contents("pages/{$_GET['page']}.md"))->getContent()?>
     <hr>
-    <a href="https://git.tilde.team/meta/site/src/branch/master/wiki/pages/<?=$_GET["page"]?>.md"><i class="fa fa-edit"></i> source</a>
+    <a href="https://git.tilde.team/meta/site/src/branch/master/wiki/pages/<?=$_GET["page"]?>.md">
+        <i class="fa fa-edit"></i> source
+    </a>
 <?php }
 
 include __DIR__.'/../footer.php';
