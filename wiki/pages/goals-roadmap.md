@@ -8,7 +8,7 @@ category:
 
 ## tilde.team goals and roadmap
 
-[living draft of this document](https://pad.bhh.sh/jXjvg16TSOSuQn3mDOVDBg?both)
+[living draft of this document](https://pad.tilde.team/code/#/2/code/edit/RFBUqXec+9+MlZzx4mnhU3ps/)
 
 these ideas are partly about building one system (in this case, tilde.team) but also about supporting a 
 broader ecosystem of inter-connected systems.
