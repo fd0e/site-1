@@ -1,6 +1,6 @@
 ---
 author: ~ben
-published: false
+published: true
 title: code of conduct
 category: 
     - main

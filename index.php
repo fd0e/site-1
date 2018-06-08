@@ -34,18 +34,7 @@
 
         <h3>other tilde.team stuff</h3>
 
-        <a class="btn btn-default" href="https://git.tilde.team/meta">
-            <i class="fa fa-code-fork"></i> ~gitea~</a>
-        <a class="btn btn-default" href="https://tilde.zone/invite/9xjfCyYJ">
-            <i class="fa fa-retweet"></i> ~mastodon~</a>
-        <a class="btn btn-default" href="/discord/">
-            <i class="fa fa-comments"></i> ~discord~</a>
-        <a class="btn btn-default" href="https://forum.tilde.team/">
-            <i class="fa fa-comment"></i> ~forum~</a>
-        <a class="btn btn-default" href="/irc/">
-            <i class="fa fa-comments-o"></i> ~irc~</a>
-        <a class="btn btn-default" href="/wiki/">
-            <i class="fa fa-book"></i> ~wiki~</a>
+        <?php include 'services.php'; ?>
 
         <br>
         <hr>

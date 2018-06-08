@@ -119,7 +119,12 @@ include __DIR__.'/../header.php';
             <div class="form-group">
                 <label>SSH public key</label>
                 <textarea required class="form-control" name="sshkey" id="" cols="30" rows="10"><?=$_REQUEST["sshkey"] ?? ""?></textarea>
+                <p>if you don't have a key, don't worry! <a href="/wiki/?page=ssh">check out our guide to ssh keys</a> and make sure that you only put your pubkey here</p>
             </div>
+
+            <p>
+                <em>signing up implies agreement with our <a href="/wiki/?page=code-of-conduct">code of conduct</a>. please give it a read.</em>
+            </p>
 
             <button class="btn btn-primary" type="submit">submit</button>
 
