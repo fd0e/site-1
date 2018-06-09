@@ -1,5 +1,15 @@
 <?php
 require __DIR__.'/../vendor/autoload.php';
+$additional_head = '
+<style>
+a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+</style>
+';
 include __DIR__.'/../header.php';
 
 $parser = new Mni\FrontYAML\Parser();
