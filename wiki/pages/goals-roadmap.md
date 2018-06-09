@@ -2,6 +2,7 @@
 author: ~ben
 published: true
 title: goals and roadmap
+description: tilde.team roadmap and goals list
 category: 
     - main
 ---
