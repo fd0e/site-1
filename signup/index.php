@@ -16,7 +16,7 @@ include __DIR__.'/../header.php';
 
         <hr>
 
-        <form method="post" action="signup-handler.php">
+        <form method="post">
             <?php include 'signup-handler.php'; ?>
 
             <div class="form-group">
