@@ -2,6 +2,7 @@
 author: ~ben
 published: true
 title: code of conduct
+description: tilde.team code of conduct
 category: 
     - main
 ---
