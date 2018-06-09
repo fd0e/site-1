@@ -2,6 +2,7 @@
 author: ~ben
 published: true
 title: ssh
+description: ssh tutorial and background info
 category: 
     - main
 ---

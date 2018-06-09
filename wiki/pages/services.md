@@ -2,6 +2,7 @@
 author: ~ben
 published: true
 title: services
+description: tilde.team services list
 category: 
     - main
 ---
@@ -40,6 +41,5 @@ i'll keep this wiki page updated with the services that are running on our littl
     * [ircd](https://tilde.team/wiki/?page=irc) (irc.tilde.team) 6667 and 6697 with ssl
     * [thelounge webclient](https://irc.tilde.team)
     * bridged to the [tilde.team discord server](https://tilde.team/discord/)
-
 * [mastodon](https://tilde.zone)
 
