@@ -25,9 +25,6 @@
         <a href="/signup/" class="btn btn-primary btn-lg">
             <i class="fa fa-user-plus"></i> signup</a>
 
-        <a href="/faq/" class="btn btn-warning btn-lg">
-            <i class="fa fa-info"></i> faq</a>
-
         <br>
         <br>
         <hr>

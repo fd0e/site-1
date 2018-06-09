@@ -1,9 +1,6 @@
 <?php
 require __DIR__.'/../vendor/autoload.php';
 
-$title = isset($_GET["page"])
-    ? "{$_GET["page"]} | tilde.team~wiki"
-    : "tilde.team~wiki";
 $additional_head = '
 <style>
 a.anchor {
@@ -37,7 +34,7 @@ if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
     foreach (glob("pages/*.md") as $page) {
         $yaml = $parser->parse(file_get_contents($page))->getYAML();
         if (!$yaml["published"]) continue; ?>
-        <a href="/wiki/?page=<?=basename($page, ".md")?>"><?=$yaml["title"]?></a><br>
+        <a href="?page=<?=basename($page, ".md")?>"><?=$yaml["title"]?></a><br>
 
     <?php }
 
@@ -47,7 +44,7 @@ if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
     include __DIR__.'/../header.php';
     // show a single page ?>
 
-    <a href="/wiki/">&lt; ~wiki</a>
+    <a href=".">&lt; ~wiki</a>
     <hr>
         <?=$pg->getContent()?>
     <hr>

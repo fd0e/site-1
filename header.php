@@ -39,7 +39,6 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/faq/">faq</a></li>
                 <li><a href="/signup/">sign up</a></li>
                 <li><a href="/wiki/">wiki</a></li>
 
