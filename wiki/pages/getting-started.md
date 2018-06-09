@@ -2,6 +2,7 @@
 author: ~ben
 published: true
 title: getting started
+description: tilde.team getting started guide
 category: 
     - main
 ---
