@@ -47,18 +47,21 @@ if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
 
 } else {
     $pg = $parser->parse(file_get_contents("pages/{$_GET["page"]}.md"));
-    $title = $pg->getYAML()['title'] . " | tilde.team~wiki";
+    $yml = $pg->getYAML();
+    $title = $yml['title'] . " | tilde.team~wiki";
+    $description = $yml['description'] ?? "tilde.team wiki article {$yml['title']}";
+    $additional_head .= "
+    <meta property='og:title' content='$title'>
+    <meta property='og:type' content='website'>
+    <meta property='og:image' content='https://tilde.team/apple-icon.png'>
+    <meta property='og:url' content='https://tilde.team{$_SERVER['REQUEST_URI']}'>
+    <meta property='og:description' content='$description'>
+    <meta property='og:site_name' content='tilde.team wiki'>
+    ";
     include __DIR__.'/../header.php';
     // show a single page ?>
 
     <a href=".">&lt; ~wiki</a>
-
-    <meta property='og:title' content='<?=$title?>'>
-    <meta property='og:type' content='website'>
-    <meta property='og:image' content='https://git.tilde.team/avatars/26f6db9866154eafaa167a9471c313ea'>
-    <meta property='og:url' content='https://tilde.team<?=$_SERVER['REQUEST_URI']?>'>
-    <meta property='og:description' content='<?=$pg->getYAML()['description'] ?? "tilde.team wiki article {$pg->getYAML()['title']}"?>'>
-    <meta property='og:site_name' content='tilde.team wiki'>
 
     <hr>
         <?=$pg->getContent()?>
