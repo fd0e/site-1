@@ -1,5 +1,9 @@
 <?php
 require __DIR__.'/../vendor/autoload.php';
+
+$title = isset($_GET["page"])
+    ? "{$_GET["page"]} | tilde.team~wiki"
+    : "tilde.team~wiki";
 $additional_head = '
 <style>
 a.anchor {
@@ -11,6 +15,7 @@ a.anchor {
 </style>
 ';
 include __DIR__.'/../header.php';
+
 
 $parser = new Mni\FrontYAML\Parser();
 

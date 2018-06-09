@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="tilde.team unix group">
     <meta name="author" content="Ben Harris">
-    <title>tilde.team</title>
+    <title><?=$title ?? "tilde.team"?></title>
 
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#00cc00">
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="/css/font-awesome.css">
 
     <?=$additional_head ?? ""?>
-
+    <?php unset($title); unset($additional_head); ?>
 </head>
 
 <body style="padding-top: 70px;">
