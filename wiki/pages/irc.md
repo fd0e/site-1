@@ -2,6 +2,7 @@
 author: ~ben
 published: true
 title: irc
+description: irc information
 category: 
     - main
 ---
