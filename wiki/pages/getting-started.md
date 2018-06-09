@@ -1,7 +1,7 @@
 ---
 author: ~ben
 published: true
-title: getting-started
+title: getting started
 category: 
     - main
 ---
