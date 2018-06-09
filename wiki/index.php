@@ -21,6 +21,11 @@ if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
     include __DIR__.'/../header.php';
     // render wiki index ?>
 
+    <meta property='og:title' content='<?=$title?>'>
+    <meta property='og:type' content='website'>
+    <meta property='og:image' content='https://git.tilde.team/avatars/26f6db9866154eafaa167a9471c313ea'>
+    <meta property='og:url' content='https://tilde.team/<?=$_SERVER['REQUEST_URI']?>'>
+
     <h1>tilde.team wiki</h1>
 
     <p>welcome to the tilde.team wiki!</p>
@@ -45,6 +50,12 @@ if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
     // show a single page ?>
 
     <a href=".">&lt; ~wiki</a>
+
+    <meta property='og:title' content='<?=$title?>'>
+    <meta property='og:type' content='website'>
+    <meta property='og:image' content='https://git.tilde.team/avatars/26f6db9866154eafaa167a9471c313ea'>
+    <meta property='og:url' content='https://tilde.team<?=$_SERVER['REQUEST_URI']?>'>
+
     <hr>
         <?=$pg->getContent()?>
     <hr>
