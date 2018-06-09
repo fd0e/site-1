@@ -18,15 +18,16 @@ $parser = new Mni\FrontYAML\Parser();
 
 if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
     $title = "tilde.team~wiki";
-    include __DIR__.'/../header.php';
-    // render wiki index ?>
-
-    <meta property='og:title' content='<?=$title?>'>
+    $additional_head .= "
+    <meta property='og:title' content='$title'>
     <meta property='og:type' content='website'>
-    <meta property='og:image' content='https://git.tilde.team/avatars/26f6db9866154eafaa167a9471c313ea'>
-    <meta property='og:url' content='https://tilde.team/<?=$_SERVER['REQUEST_URI']?>'>
+    <meta property='og:image' content='https://tilde.team/apple-icon.png'>
+    <meta property='og:url' content='https://tilde.team/{$_SERVER['REQUEST_URI']}'>
     <meta property='og:description' content='tilde.team wiki'>
     <meta property='og:site_name' content='tilde.team wiki'>
+    ";
+    include __DIR__.'/../header.php';
+    // render wiki index ?>
 
     <h1>tilde.team wiki</h1>
 
