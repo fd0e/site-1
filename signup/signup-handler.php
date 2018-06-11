@@ -1,11 +1,6 @@
 <?php
 require __DIR__.'/../vendor/autoload.php';
 
-$transport = (new Swift_SmtpTransport('smtp.mailgun.org', 465, 'ssl'))
-    ->setUsername('postmaster@mg.tilde.team')
-    ->setPassword(file_get_contents("mg.key"));
-$mailer = new Swift_Mailer($transport);
-
 if ($_SERVER["SERVER_NAME"] != "localhost")
     require_once "/home/ben/ultimate-email/support/smtp.php";
 
@@ -47,17 +42,16 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
                     reason: <strong>{$_REQUEST["interest"]}</strong><br>
                     ssh key: <pre>{$_REQUEST["sshkey"]}</pre>";
 
-        $message = (new Swift_Message('tilde.team signup'))
-            ->setFrom(['sys@tilde.team' => 'tilde'])
-            ->setTo(['admin@tilde.team'])
-            ->setReplyTo([$_REQUEST["email"]])
-            ->setBody($msgbody, 'text/html');
+        if (mail('ben', 'new tilde.team signup', $msgbody, "Reply-To: {$_REQUEST["email"]}")) {
+            echo '<div class="alert alert-success" role="alert">
+                    email sent! i\'ll get back to you soon with login instructions! <a href="/">back to tilde.team home</a>
+                  </div>';
+        } else {
+            echo '<div class="alert alert-danger" role="alert">
+                    something went wrong... please send an email to <a href="mailto:sudoers@tilde.team">sudoers@tilde.team</a> with details of what happened
+                  </div>';
+        }
 
-        $result = $mailer->send($message);
-
-       echo '<div class="alert alert-success" role="alert">
-                email sent! i\'ll get back to you soon with login instructions! <a href="/">back to tilde.team home</a>
-             </div>';
     } else {
         ?>
         <div class="alert alert-warning" role="alert">
