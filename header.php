@@ -9,7 +9,6 @@
     <meta name="author" content="Ben Harris">
     <title><?=$title ?? "tilde.team"?></title>
 
-    <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#00cc00">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-310x310.png">
