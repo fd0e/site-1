@@ -40,15 +40,11 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
 
 
     if ($message == "") { // no validation errors
-        $forwardmail = $_REQUEST["forward_email"] == "on"
-            ? '<a href="https://domains.google.com/registrar#z=e&d=3471834,tilde.team&chp=z,d">yes</a>' : "no";
-
         $msgbody = "<h1>tilde.team signup</h1>
                     <hr>
                     desired username: <strong>{$_REQUEST["username"]}</strong><br>
                     contact email: <strong><a href=\"mailto:{$_REQUEST["email"]}\">{$_REQUEST["email"]}</a></strong><br>
                     reason: <strong>{$_REQUEST["interest"]}</strong><br>
-                    forward mail?: <strong>$forwardmail</strong><br>
                     ssh key: <pre>{$_REQUEST["sshkey"]}</pre>";
 
         $message = (new Swift_Message('tilde.team signup'))
