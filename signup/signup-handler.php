@@ -35,13 +35,13 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
 
 
     if ($message == "") { // no validation errors
-        $msgbody = "desired username: {$_REQUEST["username"]}</strong>
+        $msgbody = "desired username: {$_REQUEST["username"]}
                     contact email: {$_REQUEST["email"]}
                     reason: {$_REQUEST["interest"]}
                     ssh key:
                     {$_REQUEST["sshkey"]}";
 
-        if (mail('ben', 'new tilde.team signup', $msgbody, "Reply-To: {$_REQUEST["email"]}")) {
+        if (mail('sudoers', 'new tilde.team signup', $msgbody, "Reply-To: {$_REQUEST["email"]}")) {
             echo '<div class="alert alert-success" role="alert">
                     email sent! i\'ll get back to you soon with login instructions! <a href="/">back to tilde.team home</a>
                   </div>';
