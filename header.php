@@ -17,7 +17,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 
     <link rel="stylesheet" href="/css/hacker.css">
-    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/fork-awesome.css">
 
     <?=$additional_head ?? ""?>
     <?php unset($title); unset($additional_head); ?>
