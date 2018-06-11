@@ -25,6 +25,8 @@ use the default password `tilde`
 
 1. profit??
 
+account creation is something that i would like to look into. maybe this can be an admin portal (similar to ~town) that would notify admins when a new signup arrives and prompt them to go to the web interface to approve/deny/respond to the account request.
+
 
 ---
 ## backups
@@ -38,7 +40,7 @@ sudo tarsnap --list-archives
 
 to restore a backup:
 ```bash
-tarsnap -x -f mybackup-2015-08-09_19-37-20
+tarsnap -x -f name-of-backup
 ```
 
 we keep backups of:
