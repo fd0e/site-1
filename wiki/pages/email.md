@@ -24,4 +24,6 @@ you have a couple options:
     - imap: mail.tilde.team port 143 (starttls)
     - smtp: mail.tilde.team port 587 (starttls)
 
+mail sent to your username@tilde.zone and username@tildeteam.org will also arrive in your inbox. feel free to add those addresses as aliases or alternates.
+
 ask [~ben](/~ben/) if you have any questions
