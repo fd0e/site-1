@@ -18,6 +18,8 @@ you have a couple options:
 
 * alpine - should work out of the box
 
+* [webmail](https://mail.tilde.team)
+
 * imap/smtp
     - email address: username@tilde.team
     - username: username
