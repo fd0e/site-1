@@ -12,17 +12,17 @@ category:
 i'll keep this wiki page updated with the services that are running on our little vps box :)
 
 
-## our deployed projects
+### our deployed projects
 
 * [forum](https://forum.tilde.team) ([source](https://git.tilde.team/meta/forum))
 
 
-## code related stuff
+### code related stuff
 
 * [gitea](https://git.tilde.team/)
 
 
-## general utilities
+### general utilities
 
 * [cryptpad](https://pad.tilde.team)
     - [cryptdrive](https://pad.tilde.team/drive/)
@@ -35,11 +35,13 @@ i'll keep this wiki page updated with the services that are running on our littl
     - [todo lists](https://pad.tilde.team/todo/)
 
 
-## social/communications
+### social/communications
 
 * irc
-    * [ircd](https://tilde.team/wiki/?page=irc) (irc.tilde.team) 6667 and 6697 with ssl
-    * [thelounge webclient](https://irc.tilde.team)
-    * bridged to the [tilde.team discord server](https://tilde.team/discord/)
+    - [ircd](https://tilde.team/wiki/?page=irc) (irc.tilde.team) 6667 and 6697 with ssl
+    - [thelounge webclient](https://irc.tilde.team)
+    - bridged to the [tilde.team discord server](https://tilde.team/discord/)
 * [mastodon](https://tilde.zone)
-
+    - [pinafore front-end](https://pinafore.tilde.team)
+    - [halcyon front-end](https://halcyon.tilde.team)
+* [email](?page=email)
