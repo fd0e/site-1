@@ -2,6 +2,7 @@
 author: ~ben
 published: true
 title: email
+description: email settings for tilde.team
 category: 
     - main
 ---
