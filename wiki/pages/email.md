@@ -27,4 +27,6 @@ you have a couple options:
 
 mail sent to your username@tilde.zone and username@tildeteam.org will also arrive in your inbox. feel free to add those addresses as aliases or alternates.
 
+if you would like mail sent to username@tilde.team to be forwarded somewhere else, put that email address in ~/.forward.
+
 ask [~ben](/~ben/) if you have any questions

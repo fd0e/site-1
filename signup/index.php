@@ -1,5 +1,4 @@
 <?php
-$additional_head = '<script src="/js/vue.min.js"></script>';
 include __DIR__.'/../header.php';
 ?>
 
@@ -21,18 +20,12 @@ include __DIR__.'/../header.php';
 
             <div class="form-group">
                 <label>your desired username (numbers and lowercase letters only, no spaces)</label>
-                <input v-model="username" class="form-control" name="username" value="<?=$_REQUEST["username"] ?? ""?>" type="text" required>
+                <input class="form-control" name="username" value="<?=$_REQUEST["username"] ?? ""?>" type="text" required>
             </div>
 
             <div class="form-group">
                 <label>email to contact you with account info</label>
-                <input v-model="email" class="form-control" name="email" value="<?=$_REQUEST["email"] ?? ""?>" type="text" required>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" <?=isset($_REQUEST["forward_email"]) && $_REQUEST["forward_email"] == "on" ? 'checked="checked"' : ""?> name="forward_email">
-                        forward mail sent to {{ username || 'username' }}@tilde.team to {{ email || 'this address' }}?
-                    </label>
-                </div>
+                <input class="form-control" name="email" value="<?=$_REQUEST["email"] ?? ""?>" type="text" required>
             </div>
 
             <div class="form-group">
@@ -55,16 +48,6 @@ include __DIR__.'/../header.php';
         </form>
         <br>
     </div>
-
-    <script>
-        var vm = new Vue({
-            el: '#app',
-            data: {
-                username: '',
-                email: ''
-            }
-        })
-    </script>
 
 <?php include __DIR__.'/../footer.php';
 
