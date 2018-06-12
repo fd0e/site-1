@@ -35,11 +35,13 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
 
 
     if ($message == "") { // no validation errors
-        $msgbody = "desired username: {$_REQUEST["username"]}
-                    contact email: {$_REQUEST["email"]}
-                    reason: {$_REQUEST["interest"]}
-                    ssh key:
-                    {$_REQUEST["sshkey"]}";
+        $msgbody = "
+desired username: {$_REQUEST["username"]}
+contact email: {$_REQUEST["email"]}
+reason: {$_REQUEST["interest"]}
+ssh key:
+{$_REQUEST["sshkey"]}
+";
 
         if (mail('sudoers', 'new tilde.team signup', $msgbody, "Reply-To: {$_REQUEST["email"]}")) {
             echo '<div class="alert alert-success" role="alert">
