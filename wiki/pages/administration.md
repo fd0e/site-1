@@ -19,13 +19,12 @@ sudo adduser newusername
 ```
 use the default password `tilde`
 
-1. respond to their email with their account information
+1. su newusername and then copy the ssh key into ~/.ssh/known_hosts
 
-1. click the link in the signup email from the server to open the domain control panel and add their forwarding address if they've opted in
+1. respond to their email with their account information (template coming soon), including a reminder to set up their .forward file if desired, and encourge them to hop onto irc/#meta to meet the community
 
-1. profit??
 
-account creation is something that i would like to look into. maybe this can be an admin portal (similar to ~town) that would notify admins when a new signup arrives and prompt them to go to the web interface to approve/deny/respond to the account request.
+automated account creation is something that i would like to look into. maybe this can be an admin portal (similar to ~town) that would notify admins when a new signup arrives and prompt them to go to the web interface to approve/deny/respond to the account request.
 
 
 ---
