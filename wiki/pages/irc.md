@@ -11,7 +11,11 @@ category:
 
 hi tildizens!
 
-the tilde.team irc network is available at irc.tilde.team:6697
+the tilde.team irc network is available at irc.tilde.team:+6697 (with ssl)
+
+if you're logged in with ssh, run `chat` to connect weechat directly.
+
+local connections can use 6667 without ssl
 
 there is an instance of [thelounge](https://thelounge.chat) webchat at [irc.tilde.team](https://irc.tilde.team) if you don't already have your own client.
 
