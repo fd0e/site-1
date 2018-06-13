@@ -12,9 +12,7 @@ category:
 
 ---
 
-> tilde.team will be disabling ssh password authentication starting august 1, 2018. 
-
-> all users will be required to create an ssh keypair before then, or will be required to proceed with manual account recovery with [~ben](/~ben/)
+> all users are now required to use an ssh keypair for login, or will be required to proceed with manual account recovery with [~ben](/~ben/)
 
 
 ** if you just want to get right to a tutorial you can [skip over this background info](#tutorial)**

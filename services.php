@@ -6,6 +6,7 @@ $services = [
     'wiki' => ['fa' => 'book', 'url' => '/wiki/'],
     'mastodon' => ['fa' => 'retweet', 'url' => 'https://tilde.zone'],
     'chat' => ['fa' => 'comments-o', 'url' => '/wiki/?page=irc'],
+    'webmail' => ['fa' => 'envelope', 'url' => 'https://mail.tilde.team'],
     'cryptpad' => ['fa' => 'sticky-note', 'url' => 'https://pad.tilde.team'],
 ];
 
