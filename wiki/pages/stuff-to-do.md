@@ -17,5 +17,7 @@ category:
     - source here: [gitea mirror](https://git.tilde.team/meta/bbj) and [github fork](https://github.com/tilde-team/bbj)
 * `talk` - old school chat utility (`man talk` for more info)
 * `who` - see who else is connected right now
+* `webirc` - register for access to our [thelounge webchat client](https://irc.tilde.team)
+* `pb` - [pastebin](https://paste.tilde.team)
 
 you can type `motd` to see this while you're logged in :)
