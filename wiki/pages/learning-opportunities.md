@@ -1,13 +1,13 @@
 ---
 author: ~cmccabe
 published: false
-title: learning resources
+title: learning opportunities
 description: a list of code challenges, internships, and other resources to support learning by tilde.team members
 category: 
     - main
 ---
 
-# Learning Resources
+# Learning Opportunities
 
 ## 1. Coding Challenge Websites
 
