@@ -22,7 +22,7 @@ stuck for ideas? or looking for a bigger challenge? tilde.team also maintains a 
 
 tilde.team's IRC server is the social hub around which a lot of learning occurs. [log on](https://tilde.team/wiki/?page=irc) and get to know some people.  
 
-we have numerous compilers installed in the shell, including g++, python, ruby, perl and many others.  if you need something that is not currently installed, just ask ~ben or any admin on IRC.
+we have numerous compilers and interpreters installed in the shell, including g++, python, ruby, perl and many others.  if you need something that is not currently installed, just ask ~ben or any admin on IRC.
 
 in addition to the specific programming utilities, remember that *NIX itself is a platform designed for communal programming. if you are working with others, you have several tools at your disposal. you can, of course, share files with each other. and you can communicate through private messages on IRC, through email, or using the shell-based 'talk' or 'write' utilities.
 
