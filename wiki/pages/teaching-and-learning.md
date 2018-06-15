@@ -30,6 +30,10 @@ in addition to the specific programming utilities, remember that *NIX itself is 
 
 good code is efficient code, and part of learning to be a good programmer is learning how to develop elegant solutions that use the minimum system resources necessary.  this is hard! but it is even more important on a multi-user system like tilde.team.
 
+some resource limits are established through /etc/security/limits.conf  --you can read this file yourself to see what they are.
+
+beyond those limits, we simply ask that you monitor your code and be considerate of others on the system.
+
 as we develop more learning resources on the tilde.team wiki, we will provide some guidance about how to profile your code.  of course, a quick web search for "code profiling [your language]" will give you a lot of help as well.
 
 ## 4. learning how to build a learning environment
