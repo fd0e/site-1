@@ -11,7 +11,11 @@ category:
 
 hi tildizens!
 
-the tilde.team irc network is available at irc.tilde.team:+6697 (with ssl)
+the tilde.chat irc network is available at tilde.chat:+6697 (with ssl)
+
+this is the beginning of the [tilde.chat](https://tilde.chat) irc federation! more info on that site.
+
+`#team`, `#town`, and `#your` are reserved channels for the local ircd nodes. you can only join those from the respective hosts.
 
 if you're logged in with ssh, run `chat` to connect weechat directly.
 
