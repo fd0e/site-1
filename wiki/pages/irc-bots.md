@@ -29,9 +29,9 @@ if your bot's code is not stable, keep it in the #bots channel and do testing th
 
 ## add your bot to the list below
 
--- template --
-bot name:
-botmaster:
-short description:
-list of functions:
+-- template --  
+bot name:  
+botmaster:  
+short description:  
+list of functions:  
 
