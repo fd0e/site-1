@@ -22,7 +22,7 @@ if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
     <meta property='og:title' content='$title'>
     <meta property='og:type' content='website'>
     <meta property='og:image' content='https://tilde.team/apple-icon.png'>
-    <meta property='og:url' content='https://tilde.team/{$_SERVER['REQUEST_URI']}'>
+    <meta property='og:url' content='https://tilde.team{$_SERVER['REQUEST_URI']}'>
     <meta property='og:description' content='tilde.team wiki'>
     <meta property='og:site_name' content='tilde.team wiki'>
     ";

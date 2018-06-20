@@ -4,6 +4,8 @@ require __DIR__.'/../vendor/autoload.php';
 if ($_SERVER["SERVER_NAME"] != "localhost")
     require_once "/home/ben/ultimate-email/support/smtp.php";
 
+$reserved_names = ['git', 'irc', 'mail', 'pad', 'sudo', 'root', 'admin', 'postmaster', 'paste', 'quotes'];
+
 $message = "";
 if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
     // Check the name.
@@ -14,7 +16,7 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
         $message .= "<li>username too long (32 character max)</li>";
     if (!preg_match('/^[A-Za-z][A-Za-z0-9]{2,31}$/', $name))
         $message .= "<li>username contains invalid characters (lowercase only, must start with a letter)</li>";
-    if (posix_getpwnam($name))
+    if (posix_getpwnam($name) || in_array($name, $reserved_names))
         $message .= "<li>sorry, the username $name is unavailable</li>";
 
     // Check the e-mail address.
