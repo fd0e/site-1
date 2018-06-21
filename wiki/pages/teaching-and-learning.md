@@ -1,6 +1,6 @@
 ---
 author: ~cmccabe
-published: false
+published: true
 title: teaching and learning on tilde.team
 description: 
 category: 
