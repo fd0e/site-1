@@ -51,16 +51,6 @@ environments.
 * this would allow people to find co-developers, or to allow non-devs to give devs good ideas.
 
 
-## services
-
-* mail
-* irc
-* [mastodon](https://tilde.zone)
-* forum - this project needs a lot of love (https://git.tilde.team/meta/forum) but it's got potential
-* [gitea](https://git.tilde.team)
-* [cryptpad](https://pad.tilde.team)
-
-
 ## future plans
 
 * ldap auth

@@ -19,7 +19,7 @@ i'll keep this wiki page updated with the services that are running on our littl
 
 ### code related stuff
 
-* [gitea](https://git.tilde.team/)
+* [gitea](https://git.tilde.team/) tilde team git hosting
 
 
 ### general utilities
@@ -33,16 +33,13 @@ i'll keep this wiki page updated with the services that are running on our littl
     - [whiteboard](https://pad.tilde.team/whiteboard/)
     - [file drop](https://pad.tilde.team/file/)
     - [todo lists](https://pad.tilde.team/todo/)
-* [paste pb](https://paste.tilde.team)
+* [paste bin](https://paste.tilde.team)
 
 
 ### social/communications
 
-* irc
-    - [ircd](https://tilde.team/wiki/?page=irc) (irc.tilde.team) 6667 and 6697 with ssl
-    - [thelounge webclient](https://irc.tilde.team)
-    - bridged to the [tilde.team discord server](https://tilde.team/discord/)
-* [mastodon](https://tilde.zone)
+* [irc](https://tilde.chat) tilde.chat irc network for the tildeverse
+* [mastodon](https://tilde.zone) federated social network
     - [pinafore front-end](https://pinafore.tilde.team)
     - [halcyon front-end](https://halcyon.tilde.team)
-* [email](?page=email)
+* [email](?page=email) (webmail, smtp/imap, mutt, and alpine)
