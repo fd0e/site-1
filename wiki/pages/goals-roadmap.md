@@ -54,15 +54,8 @@ environments.
 ## services
 
 * mail
-    - this is currently just forwarding addresses from google domains
-    - you can send from @tilde.team addresses with gmail smtp
-    - future state: tilde.team mailserver? webmail? local delivery mail?
-    - i'd like to keep publicly deliverable mail as a thing
-    - google domains limits to 100 forwarding addresses
 * irc
-* mastodon/activitypub social
-    - [halcyon](https://halcyon.tilde.team) and [pinafore](https://pinafore.bhh.sh) clients
-    - is it worth switching to pleroma? there is no good way to migrate, but it's significantly faster and lighter on resources
+* [mastodon](https://tilde.zone)
 * forum - this project needs a lot of love (https://git.tilde.team/meta/forum) but it's got potential
 * [gitea](https://git.tilde.team)
 * [cryptpad](https://pad.tilde.team)
@@ -71,13 +64,9 @@ environments.
 ## future plans
 
 * ldap auth
-* some kind of pastebin
 * nextcloud?
 * onlyoffice
 * mumble/teamspeak
-* sshkey only
-    * disable password auth
-    * this will require documentation and communication of the plan
 * ~ben shouldn't be the single point of failure. need a way to pass command to another admin if i go MIA.
 
 
