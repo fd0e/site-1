@@ -14,9 +14,8 @@
             <p>a digital community for socializing, learning, and making cool stuff</p>
         </div>
 
-        <p>tilde.team is one tiny standard unix computer in the cloud that anyone can use and learn to use in the shared pursuit
-            of cool sites and unix tools.</p>
-        <p>i created this site after hearing about paul ford's <a href="http://tilde.club/">tilde.club</a>. when i was unable to join due to the waitlist, i decided to create my own tilde.</p>
+        <p>tilde.team is a shared system that provides a radically inclusive, non-commercial space for teaching, learning, practicing and enjoying the social medium of unix.</p>
+        <p>i created this tilde after hearing about paul ford's <a href="http://tilde.club/">tilde.club</a>. when i was unable to join due to the waitlist, i decided to create my own tilde.</p>
         <p>thanks for stopping by!</p>
         <p><a href="/~ben/">~ben</a></p>
 
@@ -56,10 +55,7 @@
                 <h1>~current projects~</h1>
                 <h4>on our <a href="https://git.tilde.team/meta">gitea</a></h4>
                 <hr>
-                <?php
-                    ini_set('user_agent', 'tilde-team');
-                    foreach (json_decode(file_get_contents("https://git.tilde.team/api/v1/orgs/meta/repos")) ?? [] as $repo): ?>
-
+                <?php foreach (json_decode(file_get_contents("https://git.tilde.team/api/v1/orgs/meta/repos")) ?? [] as $repo): ?>
                     <div class="list-group">
                         <div class="list-group-item">
                             <a href="<?=$repo->html_url?>">
@@ -82,7 +78,7 @@
                 <?php
                 foreach (glob("/home/*") as $user):
                     if (!is_dir("$user/public_html")) continue;
-                    $user = basename($user); // now we have the username  ?>
+                    $user = basename($user); ?>
                     <div class="list-group">
                         <a href="https://tilde.team/~<?=$user?>/" class="list-group-item">
                             <h5 class="list-group-item-heading">~<?=$user?></h5>

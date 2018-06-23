@@ -1,6 +1,6 @@
 ---
 author: ~ben
-published: true
+published: false
 title: goals and roadmap
 description: tilde.team roadmap and goals list
 category: 
