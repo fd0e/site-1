@@ -1,6 +1,6 @@
 ---
 author: ~cmccabe
-published: false
+published: true
 title: irc-bots
 description: information about irc bots on tilde.team
 category: 
