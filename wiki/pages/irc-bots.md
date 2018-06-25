@@ -18,7 +18,6 @@ bots should be well behaved and efficient with system resources. if you see a bo
 ## rules and etiquette for tilde.team irc bots
 
 your bot must respond to !botlist with the following information:
-- bot name
 - your system username (as creator/botmaster) - so we can contact you if the bot misbehaves
 - one line description of the bot's functionality
 - list of the bots public commands
