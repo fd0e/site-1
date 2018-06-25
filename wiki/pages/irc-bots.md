@@ -26,6 +26,10 @@ be conservative about automatically re-connecting to the server or channel.
 
 if your bot's code is not stable, keep it in the #bots channel and do testing there.
 
+## tilde.team bot starter kit
+
+khuxkm is hard at work developing a starter kit framework in python that you can use to build your own irc bot.  once it is available, you'll be able to find more information about it here.  you will also find a link to the tilde.team gitea repo for access to the source code.
+
 ## add your bot to the list below
 
 -- template --  
