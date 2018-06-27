@@ -14,7 +14,7 @@ category:
 
 here are some of our most important values:
 
-1. tilde.team is an alternative social environment for the techncially-inclined; specifically, a non-commercial alternative to the mainstream, corporate-owned media and social media. we aim to put the users in control of the tools of communication that are currently being neutered by corporate commodification of the www. 
+1. tilde.team is an alternative social environment for the technically-inclined; specifically, a non-commercial alternative to the mainstream, corporate-owned media and social media. we aim to put the users in control of the tools of communication that are currently being neutered by corporate commodification of the www. 
 
 1. provide tools, resources and encouragement for users to develop ideas and best practices for the next generation of public access unix systems.  the "next generation" is always ahead of the present, so this implies that the system is in a constant state of development and self-improvement, with a continually rolling set of goals, and regular testing and evaluation of experimental projects. --all of which is powered by user involvement in a brainstorming/experimenting/teaching/learning/doing model.
 
