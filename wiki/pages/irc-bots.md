@@ -7,7 +7,7 @@ category:
     - main
 ---
 
-## tilde.team irc bots
+# tilde.team irc bots
 
 tilde.team is a place for socializing, learning, and making cool stuff. one fun activity for this is the creation of [irc](https://tilde.team/wiki/?page=irc) bots.
 

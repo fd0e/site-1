@@ -2,7 +2,7 @@
 author: ~ben
 published: false
 title: administration
-description: advanced ssh tutorial
+description: ~team admin guide
 category: 
     - main
 ---

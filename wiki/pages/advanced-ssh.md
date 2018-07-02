@@ -7,5 +7,5 @@ category:
     - main
 ---
 
-## advanced ssh
+# advanced ssh
 

@@ -7,7 +7,7 @@ category:
     - main
 ---
 
-## getting started
+# getting started
 
 Welcome
 New to the command line and all this webby cowfoolery? You're in luck! Here's a basic HELLO WORLD tutorial.

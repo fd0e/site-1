@@ -7,7 +7,7 @@ category:
     - main
 ---
 
-## tildeverse irc
+# [tildeverse irc](https://tilde.chat)
 
 hi tildizens!
 
