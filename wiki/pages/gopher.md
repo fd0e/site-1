@@ -42,3 +42,5 @@ you can install it on your local machine too :)
 otherwise, you can use our [http proxy](https://gopher.tilde.team) to browse the gophernet.
 
 hope to see you on there soon!
+
+(addendum by ~khuxkm: remember to leave the number off when using the proxy (i.e; [https://gopher.tilde.team/tilde.team/~username](https://gopher.tilde.team/tilde.team/~username)))
