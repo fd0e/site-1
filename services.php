@@ -9,6 +9,7 @@ $services = [
     'webmail' => ['fa' => 'envelope', 'url' => 'https://mail.tilde.team'],
     'cryptpad' => ['fa' => 'sticky-note', 'url' => 'https://pad.tilde.team'],
     'pastebin' => ['fa' => 'paste', 'url' => 'https://paste.tilde.team/'],
+    'gopher' => ['fa' => 'floppy-o', 'url' => 'https://gopher.tilde.team'],
 ];
 
 $nav = isset($navbar);
