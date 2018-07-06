@@ -19,12 +19,50 @@ sudo adduser newusername
 ```
 use the default password `tilde`
 
-1. su newusername and then copy the ssh key into ~/.ssh/known_hosts
+1. su newusername and then copy the ssh key into ~/.ssh/authorized_keys
 
-1. respond to their email with their account information (template coming soon), including a reminder to set up their .forward file if desired, and encourge them to hop onto irc/#meta to meet the community
+1. reply all to their email (so that sudoers will know that the account creation is done) with their account information and encourage them to hop onto irc/#meta to meet the community
 
+welcome mail template:
+```
+hey ~[[username]],
 
-automated account creation is something that i would like to look into. maybe this can be an admin portal (similar to ~town) that would notify admins when a new signup arrives and prompt them to go to the web interface to approve/deny/respond to the account request.
+welcome to tilde.team!
+
+your new account has been established. you can ssh into tilde.team with 
+the ssh key you supplied on registration.
+
+if you need to change your shell, the default password is tilde. feel 
+free to change it.
+
+to get started, type motd at the command prompt to see a few ways to 
+get started. have fun!
+
+the greatest value of tilde.team is not the services provided by the 
+server, but rather the interesting and welcoming community built by its 
+users. this is possible because of people like you who choose to make 
+this a great place. the best way you can help tilde.team is by working 
+to support a great system culture. chat on irc; build cool programs and 
+share them with others; focus on learning, and help others learn; be a 
+good example for others; have fun!
+
+also, your ~/public_html directory is served at 
+https://tilde.team/~[[username]] 
+(you can also use https://[[username]].tilde.team)
+
+check out our wiki at https://tilde.team/wiki for more information (and 
+maybe help us write a new wiki article:)
+
+our irc is at tilde.chat. see the wiki article 
+(https://tilde.team/wiki/?page=irc) for information on how to connect. 
+we also have a webclient at https://irc.tilde.team that you can 
+register for by running the webirc command from a shell session.
+
+we look forward to seeing you around! welcome to the ~team!
+
+~tilde.team admins
+```
+
 
 
 ---
