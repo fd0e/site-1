@@ -17,9 +17,7 @@ unset($navbar);
 
 foreach ($services as $name => $service) { ?>
     <?php if ($nav) echo '<li>'; ?>
-    <a href="<?=$service['url']?>"
-        <?php if (!$nav) echo 'class="btn btn-default"'; ?>>
-        <i class="fa fa-<?=$service['fa']?>"></i> ~<?=$name?>~</a>
+    <a href="<?=$service['url']?>" <?php if (!$nav) echo 'class="btn btn-default"'; ?>><i class="fa fa-<?=$service['fa']?>"></i> ~<?=$name?>~</a>
     <?php if ($nav) echo '</li>'; ?>
 <?php }
 
