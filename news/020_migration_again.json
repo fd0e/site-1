@@ -1,6 +1,6 @@
 {
     "published": true,
-    "date": "jun 2018",
+    "date": "jul 10, 2018",
     "title": "the great tilde.team migration 2: electric boogaloo",
     "author": "<a href=\"/~khuxkm/\">~khuxkm</a>",
     "content": "tilde.team is now on an even beeeeefier vps! 4cores, 64gb ram, and 480gb ssd space! just like last time, everything is where you left it, but you <strong>will</strong> get a scary notice about a man-in-the-middle attack when you connect over ssh. (this is just because the IP address changed). the new IP is 209.18.47.61 and the ECDSA fingerprint is: <pre>ben put the ECDSA fingerprint here I can't find it</pre> for your verification purposes."
