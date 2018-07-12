@@ -32,6 +32,7 @@ you have a couple options:
 because [~ben](https://tilde.team/~ben/) likes to buy domain names, you can use the following domains as aliases for your inbox:
 * tilde.zone
 * tilde.chat
+* tilde.site
 * tildeteam.org
 * tildenet.org
 * tildeverse.org
