@@ -65,7 +65,7 @@ if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
     <a href=".">&lt; ~wiki</a>
 
     <hr>
-        <?=$pg->getContent()?>
+        <?=str_replace("<table", '<table class="table table-striped"', $pg->getContent())?>
     <hr>
     <a href="https://git.tilde.team/meta/site/src/branch/master/wiki/pages/<?=$_GET["page"]?>.md">
         <i class="fa fa-edit"></i> source
