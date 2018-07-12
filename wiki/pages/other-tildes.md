@@ -7,6 +7,9 @@ category:
     - main
 ---
 
+# other tildes
+
+if you're starting a tilde and want to be added to this list, [open a PR :)](https://git.tilde.team/meta/site)
 
 | tilde name | description | where to join |
 |---|---|---|
