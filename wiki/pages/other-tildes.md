@@ -13,6 +13,7 @@ if you're starting a tilde and want to be added to this list, [open a PR :)](htt
 
 | tilde name | description | where to join |
 |---|---|---|
+| [tildespark](https://tildespark.ddns.net) | Tilde Spark is a constantly evolving intentional community devoted to free software, open hardware and meeting new people! | [signup info here](https://tildespark.ddns.net/ikiwiki/tildespark/howtojoin/) |
 | [tilde.fun](https://tilde.fun) | This is a Linux machine on the internet where you can get a shell account. | `ssh tilde@tilde.fun` |
 | [yourtilde.com](https://yourtilde.com) | If you're looking for a new ~, to learn and play, come check us out. | [signup form](https://tilde.team/signup/) |
 | [ctrl-c.club](http://ctrl-c.club) | A place for the curious to poke around and play. SSH access, web pages, games, and programming languages on tap. | [signup form](http://goo.gl/forms/oviL1wYSrV) |
