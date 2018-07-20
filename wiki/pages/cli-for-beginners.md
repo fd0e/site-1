@@ -1,3 +1,12 @@
+---
+author: ~cmccabe
+published: true
+title: command line for absolute beginners
+description: guide for those looking for a foothold in learning and using gnu+linux
+category: 
+    - main
+---
+
 ### Command Line Shell, for *Absolute* Beginners
 
 So, you want to join a public-access shell community like tilde.team, but you don't yet have experience using GNU+Linux or other UNIX-like operating systems?  This tutorial is designed to give you enough guidance that you can get started and move on to successfully directing your future learning.  Once you get a basic level of self-sufficiency, tilde.team is a great place to practice and learn more.
