@@ -7,10 +7,10 @@ category:
     - main
 ---
 
-# tildeblogs with [bashblog](https://github.com/cfenollosa/bashblog)
+# tildeblogs with [bashblog](https://git.tilde.team/meta/bashblog)
 ---
 
-tildeblogs can be built with [bashblog](https://github.com/cfenollosa/bashblog)
+tildeblogs can be built with [bashblog](https://git.tilde.team/meta/bashblog)
 
 change to your ~/public_html/blog directory: `cd ~/public_html/blog` (or somewhere else in ~/public_html, however you like)
 
@@ -33,9 +33,9 @@ bashblog is available system-wide as `bb`
 
 edit the `.config` file to change the name and url and other settings for your blog
 
-for an example of customization, see [~ben's blog](https://tilde.team/~ben/blog/) ([source](https://git.tilde.team/ben/tilde/src/branch/master/blog/.config)).
+for an example of customization, see [~ben's blog](https://tilde.team/~ben/blog/) ([config source](https://git.tilde.team/ben/tilde/src/branch/master/blog/.config)).
 
-for more details: see [the bashblog repo](https://github.com/cfenollosa/bashblog)
+for more details: see [the bashblog repo](https://git.tilde.team/meta/bashblog)
 
 ---
 
