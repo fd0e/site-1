@@ -7,33 +7,33 @@ category:
     - main
 ---
 
-### Command Line Shell, for *Absolute* Beginners
+# Command Line Shell, for *Absolute* Beginners
 
 So, you want to join a public-access shell community like tilde.team, but you don't yet have experience using GNU+Linux or other UNIX-like operating systems?  This tutorial is designed to give you enough guidance that you can get started and move on to successfully directing your future learning.  Once you get a basic level of self-sufficiency, tilde.team is a great place to practice and learn more.
 
-#### GNU+Linux is a text-based operating system.  And it takes work and thought to start using.
+## GNU+Linux is a text-based operating system.  And it takes work and thought to start using.
 
 You'll find a lot of people online arguing that GNU+Linux is _not_ a text-based operating system, and that it in fact has a GUI interface just like Windows.  It is true that you can use GNU+Linux through a graphical user interface (GUI) like Gnome, or that you can use services from GNU+Linux servers like tilde.team through a web interface.  But the people who are so keen on GUIs are saying this to make GNU+Linux sound like an easy transition for Windows or Mac users.  However: (1) to really leverage the power of GNU+Linux, you need to learn to interact with it as a text-based system, and (2) while it is different, it's not really that hard. It will take effort to learn the differences, but that effort will pay huge dividends.
 
-#### How do I connect to a shell server?
+## How do I connect to a shell server?
 
 The most common way to connect remote GNU+Linux system is with an SSH client.  SSH stands for secure-shell.  SSH allows you to make a private connection between your computer and a shell server like [tilde.team](https://tilde.team), and it ensures that nobody else along the wire can listen in on your connection.  Check out [our SSH page](https://tilde.team/wiki/?page=ssh) for information on connecting to tilde.team over SSH.
 
 If you are having trouble with making your first SSH connection to tilde.team, or anything else while you're learning from this tutorial, drop by the [tilde.team web chat](https://web.tilde.chat/) or email an admin for help ([sudoers@tilde.team](mailto:sudoers@tilde.team)).
 
-#### What is a shell?
+## What is a shell?
 
 An operating system (OS) is the nuts and bolts that makes all the parts of your computer work together for you.  At its core, the OS is not friendly for day to day computer usage.  A shell is a user friendly "wrapper" around the operating system that allows you to use it easily.  A shell can be graphical, like the Windows or Android GUIs.  Or a shell can be text-based.  A text based shell, also called a command line interface (or CLI), is a tool you can use to control the operating system by sending it text commands.
 
 What kind of things can you make the OS do?  Things like opening files, listing the files in a directory, displaying the current system load, or telling you what other users are currently doing.
 
-#### What is a command?
+## What is a command?
 
 Commands are simple words, often abbreviated, that make the system do things when typed into the shell.  Some simple examples are 'ls' which lists the files in a directory, or 'cd' which changes your location to a new directory (cd = change directory), or 'exit' which logs you out of your current shell session.  There are thousands of useful commands, but you only need to know a few to get started and be self-sustaining.
 
 This tutorial will teach you the few commands that should allow you to take care of yourself and start down the real, longer-term path of self-directed learning.  Once you're logged into tilde.team (or any GNU+Linux shell server), you can practice the following commands as you learn them.
 
-#### What are the first commands a new user should learn?
+## What are the first commands a new user should learn?
 
 When you're first starting to use a shell in a UNIX-like environment, you will want to be able to do the following things:
 1. logging in and logging out
@@ -48,7 +48,7 @@ When you're first starting to use a shell in a UNIX-like environment, you will w
 
 When you're logged into a shell, you should see a command prompt and a blinking cursor.  At this point, simply type a command and hit Enter to run it.  You can try this as you work through learning the commands below.
 
-##### Logging In, with `ssh`
+### Logging In, with `ssh`
 
 Recall from the How-Do-I-Connect section above that you can use a SSH client to log into tilde.team.  Once you're logged in, you can use the command line SSH client to log into any other shell server; in the example below, let's say you want to log into tilde.town from tilde.team.  
 
@@ -57,27 +57,27 @@ Skipping some specifics for now, you can log into tilde.town from a tilde.team s
 
 Some shell servers allow you to log in with nothing more than a username and password.  But increasingly, many servers (like both tilde.team and tilde.town) require you to use ssh keys.  To learn more about ssh keys, again, see our SSH page: https://tilde.team/wiki/?page=ssh
 
-##### Logging Out, with `logout` or `exit`
+### Logging Out, with `logout` or `exit`
 `logout` is a simple command you can use to log out of a shell.  You could also use `exit`.
 
-##### Listing Files, with `ls`
+### Listing Files, with `ls`
 To list the files in a directory, simply type `ls`.  This will print a list of the files in your current directory.
 > `ls`
 
-##### Changing Directories, with `cd`
+### Changing Directories, with `cd`
 You may move from one directory to another with `cd`.  Wherever you are in the file system, you can type `cd` by itself to return to your home directory:
 > `cd`
 
 Change to the directory with your html files as follows:
 > `cd public_html`
 
-##### Read the Contents of a File, with `less`
+### Read the Contents of a File, with `less`
 If you're still in your public_html directory, you should see a file called 'index.php' when you use the `ls` command.  Let's peek inside 'index.php' as follows:
 > `less index.php`
 
 `less` has opened the 'index.php' file for you to read.  You cannot edit it; only read it.  Type `q` (quit) to stop viewing the file contents and return to the shell.
 
-##### Edit and Save Changes to a File, with `nano`
+### Edit and Save Changes to a File, with `nano`
 
 `nano` is one of many text editors availble for GNU+Linux.  There are many more powerful editors, but we'll start with this one because it is simple.  Let's open your 'index.php' file and make some changes.
 
@@ -93,7 +93,7 @@ Now, save and quit by hitting the key combination Ctrl+x, and then typing 'y' in
 Now you can pull up a browser to see the change at your tilde.team URL:  
 'https://tilde.team/~yourUserName'
 
-##### Create a New File with `nano`
+### Create a New File with `nano`
 
 Let's create a new file in your public_html directory, called 'testing.html'.
 > `nano testing.html`
@@ -106,7 +106,7 @@ Type `ls` to view the contents of your directory an confirm that you did indeed 
 
 Later in this tutorial, we will come back to this file and make it viewable in your web space.
 
-##### Create a New Directory, with `mkdir`
+### Create a New Directory, with `mkdir`
 
 First, hop back to your home directory with the `cd` command (remember that `cd` from anywhere in the file system will take you back to your home directory).
 
@@ -115,7 +115,7 @@ Now create a new directory called 'downloads' in your home directory:
 
 Use `ls` to see that it was created, and even move into the new directory with `cd downloads`.
 
-##### Moving Files Between Directories, with `mv` or `cp`
+### Moving Files Between Directories, with `mv` or `cp`
 
 First, `cd` back to your home directory, and use `nano` to create two new files called 'fileone.txt' and 'filetwo.txt'.
 
@@ -131,7 +131,7 @@ Next, copy 'filetwo.txt' into 'downloads' as follows:
 
 Now if you `ls` the contents of your home directory, 'filetwo.txt' will still be there.  This is because `cp` made a copy of 'filetwo.txt' and put the copy in 'downloads'.  It did not touch the original file in your home directory.  Verify this with `ls` in your home directory and in 'downloads'.
 
-###### Delete Files and Directories, with `rm` and `rmdir`
+### Delete Files and Directories, with `rm` and `rmdir`
 
 As long as you're in one of your own directories (e.g. your home, or 'downloads' or 'public_html'), you can create a new files.  Create a new file called 'testtrash.txt':
 
@@ -154,7 +154,7 @@ If you want to delete directories that still have contents in them, use the foll
 
 Be very, very careful with this command.  Many a user, new and seasoned, has been stung by hastily deleting directories like this.  This is also the source of the classic sysadmin joke/horror story about `rm -rf /` which deletes the entire file system.
 
-##### Downloading Files, with `wget`
+### Downloading Files, with `wget`
 
 Now `cd` into your 'downloads' directory because we're going to use it for actual downloads.
 
@@ -169,7 +169,7 @@ If you know the URL of other files you'd like to download, you can grab those to
 
 A brief note on security here, if you do pull any scripts from the Internet using `wget`, it's important that you do not execute those scripts until you've read over what it does. Otherwise, you run the risk of compromising your account or allowing other malicious actions to take place.
 
-##### Learn More About Commands, with `man` (and `help`)
+### Learn More About Commands, with `man` (and `help`)
 
 At this point, you've learned most of the commands you need for basic self-sufficiency in a GNU+Linux shell environment.  With just a few more, you can go a long way.  When you want to learn more about a command, you can look at its "man page" with the `man` command.  "Man pages" are the instruction manuals for most commands and programs in GNU+Linux.
 
@@ -179,7 +179,7 @@ The `man` command will be one of your most valuable tools for as long as you're 
 
 \* Note: technically speaking `cd` is a shell built-in, not a command.  Make a mental note of that and you can learn more about the distinction later.  For now, note that you can use `help cd` to learn more about the `cd` command.
 
-#### Commands have options and arguments.
+## Commands have options and arguments.
 
 When you look at the man page for a command like `ls`, you'll see in the DESCRIPTION section a number of **options** that you can use to modify how the command works.  They look like `-a` or `-h` or `-l`.  Try adding the `-a` option to `ls` and note the difference:
 > `ls -a`
@@ -190,7 +190,7 @@ Commands also have **arguments**, or information passed into a command for some 
 
 Commands will often combine options and arguments, sometimes in specific sequences.  You can learn about these when read a command's man page.
 
-#### The Filesystem Hierarchy
+## The Filesystem Hierarchy
 
 You already know that you get dropped into your "home" directory when you first log in.  Your home directory is just one of many, many other directories on the system.  All of these directories are organized under one master directory called the "root directory".  The root directory is often referred to with a single forward slash, like this: /  
 
@@ -207,7 +207,7 @@ This would display the contents of the "etc" directory, which itself lives in th
 
 You now know enough to look around the file system.  Note that most GNU+Linux systems (like tilde.team) adhere somewhat to an organization scheme called the Filesystem Hierarchy Standard ([Wikipedia link](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)).  This is another subject for you to read up on later.
 
-#### How can I keep my things private, or share them with others?
+## How can I keep my things private, or share them with others?
 
 As you explore the filesystem, you might bump into some directories that won't let you in.  For example, if you try to `cd` into the home directory for the root user (not the same as the root directory), you'll see this error: "/root: Permission denied".  This is because GNU+Linux systems maintain a "mode" for each file that limits which users can read, write or execute it.
 
@@ -245,7 +245,7 @@ Now if you bring up the following URL (with your username) in a browser, you sho
 
 https://tilde.team/~username/testing.html
 
-#### The End (of The Beginning)
+## The End (of The Beginning)
 
 There you have it -- you know about logging in, using basic shell commands, and the file system, and you're now self-sustaining (and a little more).
 
