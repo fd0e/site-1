@@ -23,6 +23,8 @@ use the default password `tilde`
 
 1. reply all to their email (so that sudoers will know that the account creation is done) with their account information and encourage them to hop onto irc/#meta to meet the community
 
+generate a random password and drop it in the placeholder below. (and don't forget to replace their username too)
+
 welcome mail template:
 ```
 hey ~[[username]],
@@ -32,8 +34,8 @@ welcome to tilde.team!
 your new account has been established. you can ssh into tilde.team with 
 the ssh key you supplied on registration.
 
-if you need to change your shell, the default password is tilde. feel 
-free to change it.
+your password is "[[password]]". please change it when you log in for
+the first time.
 
 to get started, type motd at the command prompt to see a few ways to 
 get started. have fun!
@@ -47,14 +49,15 @@ share them with others; focus on learning, and help others learn; be a
 good example for others; have fun!
 
 also, your ~/public_html directory is served at 
-https://tilde.team/~[[username]] 
+https://tilde.team/~[[username]]/
 (you can also use https://[[username]].tilde.team)
 
 check out our wiki at https://tilde.team/wiki for more information (and 
 maybe help us write a new wiki article:)
 
-our irc is at tilde.chat. see the wiki article 
-(https://tilde.team/wiki/?page=irc) for information on how to connect. 
+our irc is at https://tilde.chat, an irc network connecting several
+tilde servers. see our wiki article (https://tilde.team/wiki/?page=irc) 
+or the tilde.chat site for information on how to connect. 
 we also have a webclient at https://irc.tilde.team that you can 
 register for by running the webirc command from a shell session.
 
