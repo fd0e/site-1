@@ -33,7 +33,7 @@ if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
 
     <p>welcome to the tilde.team wiki!</p>
 
-    <p>if you want to contribute, check out the <a href="https://git.tilde.team/meta/site/src/branch/master/wiki">source!</a></p>
+    <p>if you want to contribute, check out the <a href="https://git.tildeverse.org/team/site/src/branch/master/wiki">source!</a></p>
 
     <hr>
     <h3>pages:</h3>
@@ -67,7 +67,7 @@ if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
     <hr>
         <?=str_replace("<table", '<table class="table table-striped"', $pg->getContent())?>
     <hr>
-    <a href="https://git.tilde.team/meta/site/src/branch/master/wiki/pages/<?=$_GET["page"]?>.md">
+    <a href="https://git.tildeverse.org/team/site/src/branch/master/wiki/pages/<?=$_GET["page"]?>.md">
         <i class="fa fa-edit"></i> source
     </a>
 <?php }

@@ -53,9 +53,9 @@
                 <?php endforeach; ?>
 
                 <h1>~current projects~</h1>
-                <h4>on our <a href="https://git.tilde.team/meta">gitea</a></h4>
+                <h4>on our <a href="https://git.tildeverse.org/team">gitea</a></h4>
                 <hr>
-                <?php foreach (json_decode(file_get_contents("https://git.tilde.team/api/v1/orgs/meta/repos")) ?? [] as $repo): ?>
+                <?php foreach (json_decode(file_get_contents("https://git.tilde.team/api/v1/orgs/team/repos")) ?? [] as $repo): ?>
                     <div class="list-group">
                         <div class="list-group-item">
                             <a href="<?=$repo->html_url?>">
