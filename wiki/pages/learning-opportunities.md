@@ -13,14 +13,15 @@ category:
 
 There are many coding challenge websites on the Internet today.  below are a few of them.  the tilde.team shell is a great place to work on solutions to the challenges.  please just be mindful of efficient coding practices while working on these.
 
-Exercism - http://exercism.io/  
-Project Euler - https://projecteuler.net/  
+* Exercism - http://exercism.io/  
+* Project Euler - https://projecteuler.net/  
+* Advent Of Code - https://adventofcode.com/
 
 ## 2. internships and other developmental opportunities
 
-Fall 2018 Internship with the Free Software Foundation (FSF)  
-https://www.fsf.org/blogs/sysadmin/the-fsf-tech-team-needs-a-fall-2018-intern-apply-by-july-22nd-2018  
-Application deadline: July 22, 2018
+* Formlabs 
+** https://formlabs.com/company/careers/job/82446/apply/
+** https://formlabs.com/company/careers/job/656906/apply/
 
 ## 3. this page is built based on your input
 
