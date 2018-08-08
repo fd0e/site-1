@@ -4,9 +4,9 @@ hi there, welcome to our wiki!
 
 to contribute to the wiki:
 
-* clone the repo to your local machine (or your personal folder on the tilde.team box)
+* clone the repo to your local machine (or your public_html folder on the tilde.team box for live testing)
 ```sh
-git clone git@tilde.team:meta/site
+git clone git@tilde.team:team/site
 ```
 
 * create a new branch for your page
@@ -28,6 +28,6 @@ git commit -m "added my-new-page"
 git push origin my-new-page # this should match the branch name you created earlier
 ```
 
-* create a pull request on the [site](https://git.tilde.team/meta/site) repo
+* create a pull request on the [site](https://git.tilde.team/team/site) repo
 
 thanks!~

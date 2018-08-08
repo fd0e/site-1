@@ -33,7 +33,9 @@ if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
 
     <p>welcome to the tilde.team wiki!</p>
 
-    <p>if you want to contribute, check out the <a href="https://git.tildeverse.org/team/site/src/branch/master/wiki">source!</a></p>
+    <p>if you want to contribute, check out the 
+        <a href="https://git.tildeverse.org/team/site/src/branch/master/wiki">source</a> and open a PR!
+    </p>
 
     <hr>
     <h3>pages:</h3>
@@ -43,7 +45,6 @@ if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
         $yaml = $parser->parse(file_get_contents($page))->getYAML();
         if (!$yaml["published"]) continue; ?>
         <a href="?page=<?=basename($page, ".md")?>"><?=$yaml["title"]?></a><br>
-
     <?php }
 
 } else {
