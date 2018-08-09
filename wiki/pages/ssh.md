@@ -12,7 +12,7 @@ category:
 
 ---
 
-> all users are now required to use an ssh keypair for login, or will be required to proceed with manual account recovery with [~ben](/~ben/)
+> all users are now required to use an ssh keypair for login, or will be required to proceed with manual account recovery with [~ben](/~ben/) or another admin. drop a line to [sudoers@tilde.team](mailto:sudoers@tilde.team) or hop on [irc](https://web.tilde.chat/?join=sudoers) for assistance.
 
 
 ** if you just want to get right to a tutorial you can [skip over this background info](#tutorial)**
@@ -33,14 +33,12 @@ for a long time, people used a tool called [`telnet`](https://en.wikipedia.org/w
 
 ---
 ## how to make an ssh key
-<a class="anchor" name="tutorial"></a>
 
 pick your fighter: [[mac](#mac)] | [[windows](#windows)] | [[linux](#linux)]
 
 
 ---
 ### mac
-<a class="anchor" name="mac"></a>
 
 #### generating your keypair
 
@@ -79,7 +77,6 @@ where username is your username (~ben would use `ssh ben@tilde.team`)
 
 ---
 ### windows
-<a class="anchor" name="windows"></a>
 
 there are a couple options for using ssh on windows these days. i like to use [git bash](https://git-scm.com).
 
@@ -129,9 +126,8 @@ where username is your username (~ben would use `ssh ben@tilde.team`)
 
 ---
 ### linux
-<a class="anchor" name="linux"></a>
 
-there are a lot of linux distros, but `ssh` and `ssh-keygen` should be available in almost all cases.
+there are a lot of linux distros, but `ssh` and `ssh-keygen` should be available in almost all cases. if they're not, look up how to install ssh for your distro.
 
 #### generating your keypair
 
@@ -149,7 +145,7 @@ ssh-keygen -t rsa -b 2048
 
 1. `cat ~/.ssh/id_rsa.pub`
 
-1. copy the output of the last command and paste it in the sshkey field on the signup form (or email it to [~ben](mailto:ben@tilde.team) if you already have an account)
+1. copy the output of the last command and paste it in the sshkey field on the signup form (or email it to [sudoers@tilde.team](mailto:sudoers@tilde.team) if you already have an account)
 
 
 #### using your keypair

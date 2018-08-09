@@ -21,11 +21,11 @@ you have a couple options:
 * [webmail](https://mail.tilde.team)
 
 * imap/smtp
-    - email address: username@tilde.team
+    - email address: username@tilde.team (or any of the aliased domains)
     - username: username
     - password: your shell password
-    - imap: mail.tilde.team port 143 (starttls)
-    - smtp: mail.tilde.team port 587 (starttls)
+    - imap: imap.tilde.team port 143 (starttls)
+    - smtp: smtp.tilde.team port 587 (starttls)
 
 ---
 
@@ -37,7 +37,9 @@ because [~ben](https://tilde.team/~ben/) likes to buy domain names, you can use 
 * tildenet.org
 * tildeverse.org
 
-mail sent to your_username@ any of those domains will end up in your inbox. most clients will allow you to add additional identities/aliases. feel free to use as many as you'd like :)
+mail sent to your_username@ any of those domains will end up in your inbox. most clients will allow you to add additional identities/aliases. 
+additionally, any address with a `-` or `+` and arbitrary text behind it will be forwarded to you email: ie. your_username+somethingcool@tildeverse.org or your_username-notcool@tilde.site.
+feel free to use as many as you'd like :)
 
 if you would like your tildemail to be forwarded somewhere else, put that email address in ~/.forward
 

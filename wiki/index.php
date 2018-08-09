@@ -3,17 +3,29 @@ require __DIR__.'/../vendor/autoload.php';
 
 $additional_head = '
 <style>
-a.anchor {
-    display: block;
-    position: relative;
-    top: -250px;
-    visibility: hidden;
+:target:before {
+    content:"";
+    display:block;
+    height:90px; /* fixed header height*/
+    margin:-90px 0 0; /* negative fixed header height */
 }
 </style>
 ';
 
+class MDParser implements Mni\FrontYAML\Markdown\MarkdownParser {
+    public function __construct() {
+        $this->mdparser = new Michelf\Markdown();
+        $this->mdparser->header_id_func = function ($header) {
+            return preg_replace('/[^a-z0-9]/', '-', strtolower($header));
+        };
+    }
 
-$parser = new Mni\FrontYAML\Parser();
+    public function parse($markdown) {
+        return $this->mdparser->transform($markdown);
+    }
+}
+
+$parser = new Mni\FrontYAML\Parser(null, new MDParser());
 
 
 if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
@@ -33,7 +45,7 @@ if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
 
     <p>welcome to the tilde.team wiki!</p>
 
-    <p>if you want to contribute, check out the 
+    <p>if you want to contribute, check out the
         <a href="https://git.tildeverse.org/team/site/src/branch/master/wiki">source</a> and open a PR!
     </p>
 

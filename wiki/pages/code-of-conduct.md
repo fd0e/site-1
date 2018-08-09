@@ -88,11 +88,23 @@ we expect all tilde.team members to abide by this code of conduct while:
 
 ## 9. contact info
 
-tilde.team admin:
+tilde.team admins:
+
+you can also send a mail to [sudoers@tilde.team](mailto:sudoers@tilde.team) to make sure we all get it.
 
 * [ben](https://tilde.team/~ben/): 
   - [ben@tilde.team](mailto:ben@tilde.team)
   - on irc `/query ben hello`
+* [khuxkm](https://tilde.team/~khuxkm/):
+  - [khuxkm@tilde.team](mailto:khuxkm@tilde.team)
+  - on irc `/query khuxkm hello`
+* [cmccabe](https://tilde.team/~cmccabe/):
+  - [cmccabe@tilde.team](mailto:cmccabe@tilde.team)
+  - on irc `/query cmccabe hello`
+* [virtual](https://tilde.team/~virtual/):
+  - [virtual@tilde.team](mailto:virtual@tilde.team)
+  - on irc `/query virtual hello`
+
 
 ## 10. license and attribution
 

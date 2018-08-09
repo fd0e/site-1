@@ -7,14 +7,13 @@ category:
     - main
 ---
 
-# tildeblogs with [bashblog](https://git.tilde.team/meta/bashblog)
----
-
-tildeblogs can be built with [bashblog](https://git.tilde.team/meta/bashblog)
-
-change to your ~/public_html/blog directory: `cd ~/public_html/blog` (or somewhere else in ~/public_html, however you like)
+# tildeblogs with [bashblog](https://git.tildeverse.org/team/bashblog)
 
 bashblog is available system-wide as `bb`
+
+tildeblogs can be built with [bashblog](https://git.tildeverse.org/team/bashblog)
+
+change to your ~/public_html/blog directory: `cd ~/public_html/blog` (bashblog will do this for you if you forget)
 
 
 ---
@@ -22,7 +21,7 @@ bashblog is available system-wide as `bb`
 
 1. `bb post`
 
-1. write a post (it will open your preferred $EDITOR for you)
+1. write a post (it will open your preferred $EDITOR for you, so make sure it's set)
 
 1. save, close, and then select from the bashblog menu choices
 
@@ -35,7 +34,9 @@ edit the `.config` file to change the name and url and other settings for your b
 
 for an example of customization, see [~ben's blog](https://tilde.team/~ben/blog/) ([config source](https://git.tilde.team/ben/tilde/src/branch/master/blog/.config)).
 
-for more details: see [the bashblog repo](https://git.tilde.team/meta/bashblog)
+for more details: see [the bashblog repo](https://git.tildeverse.org/team/bashblog)
+
+if you have any improvements/bugfixes, feel free to open a PR!
 
 ---
 

@@ -9,6 +9,10 @@ category:
 
 # getting started
 
+this guide is not very thorough or complete. if you want something nicer, try [our cli for beginners article](?page=cli-for-beginners).
+
+---
+
 Welcome
 New to the command line and all this webby cowfoolery? You're in luck! Here's a basic HELLO WORLD tutorial.
 

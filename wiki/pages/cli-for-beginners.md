@@ -295,4 +295,3 @@ Not suprisingly, you'll find a lot of other intro material online or in your loc
 
 Terminus - an interactive game-like introduction to shell commands
 http://www.mprat.org/Terminus/
-
