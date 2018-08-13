@@ -1,0 +1,30 @@
+/* TEAM */
+Admin: Ben Harris
+Site: https://tilde.team/~ben/ ben@tilde.team
+Location: Traverse City, MI
+
+Admin: cmccabe
+Site: https://tilde.team/~cmccabe/ cmccabe@tilde.team
+Location: tildeverse, the internet
+
+Admin: khuxkm
+Site: https://tilde.team/~khuxkm/ khuxkm@tilde.team
+Location: tildeverse, the internet
+
+Admin: virtual
+Site: https://tilde.team/~virtual/ virtual@tilde.team
+Location tildeverse, the internet
+
+Users: tilde.team teammates
+Sites: https://tilde.team/~<username>/ (see https://tilde.team for a list)
+Location: tildeverse, the internet
+
+
+/* THANKS */
+Name: Paul Ford, for inspiring tilde.team through tilde.club
+
+/* SITE */
+Last update: 2018/08/13
+Components: Bootstrap 3
+Software: PHP
+
