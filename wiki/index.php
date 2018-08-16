@@ -17,7 +17,7 @@ $additional_head = "
 
 class MDParser implements Mni\FrontYAML\Markdown\MarkdownParser {
     public function __construct() {
-        $this->mdparser = new Michelf\Markdown();
+        $this->mdparser = new Michelf\MarkdownExtra();
         $this->mdparser->header_id_func = function ($header) {
             return preg_replace('/[^a-z0-9]/', '-', strtolower($header));
         };

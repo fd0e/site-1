@@ -15,7 +15,7 @@ category:
 > all users are now required to use an ssh keypair for login, or will be required to proceed with manual account recovery with [~ben](/~ben/) or another admin. drop a line to [sudoers@tilde.team](mailto:sudoers@tilde.team) or hop on [irc](https://web.tilde.chat/?join=sudoers) for assistance.
 
 
-** if you just want to get right to a tutorial you can [skip over this background info](#tutorial)**
+** if you just want to get right to a tutorial you can [skip over this background info](#how-to-make-an-ssh-key)**
 
 while [tilde.team](https://tilde.team) is accessible on the web and features lovely web pages written by its users, all of the interaction with tilde.team takes place **inside the machine** that runs tilde.team as opposed to via web forms that have an effect from **outside** tilde.team's computer.
 

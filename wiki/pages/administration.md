@@ -91,6 +91,6 @@ tarsnap -x -f name-of-backup
 we keep backups of:
 * `/home`
 * `/etc`
-* `/var` (excluding `/var/log`)
+* `/var` (excluding `/var/log` and `/var/lib/lxd`)
 
 see the [tarsnap documentation](https://www.tarsnap.com/usage.html) for more information.

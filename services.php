@@ -10,7 +10,7 @@ $services = [
     'cryptpad' => ['fa' => 'sticky-note', 'url' => 'https://pad.tilde.team'],
     'pastebin' => ['fa' => 'paste', 'url' => 'https://paste.tilde.team/'],
     'termbin' => ['fa' => 'terminal', 'url' => 'https://bin.tilde.team/'],
-    'nullpointer' => ['fa' => 'file-code-o', 'url' => 'https://0x0.tilde.team'],
+    'nullpointer' => ['fa' => 'file-code-o', 'url' => 'https://ttm.sh'],
     'gopher' => ['fa' => 'floppy-o', 'url' => 'https://gopher.tilde.team'],
 ];
 

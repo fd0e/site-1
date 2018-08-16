@@ -30,8 +30,9 @@ you have a couple options:
 
 ---
 
-because [~ben](https://tilde.team/~ben/) likes to buy domain names, you can use the following domains with your tildemail:
+because [~ben](https://tilde.team/~ben/) hoards domain names, you can use the following domains with your tildemail:
 
+* ttm.sh
 * tilde.zone
 * tilde.chat
 * tilde.site
@@ -40,6 +41,7 @@ because [~ben](https://tilde.team/~ben/) likes to buy domain names, you can use 
 * tildeverse.org
 
 mail sent to yourusername@ any of those domains will end up in your inbox. most clients will allow you to add additional identities/aliases. 
+
 additionally, any address with a `-` or `+` and arbitrary text behind it will be forwarded to you email: ie. `your_username+somethingcool@tildeverse.org` or `yourusername-notcool@tilde.site`.
 feel free to use as many as you'd like :)
 
