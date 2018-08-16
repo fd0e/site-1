@@ -8,7 +8,6 @@ category:
 ---
 
 # administration
----
 
 
 ## adding users
@@ -73,7 +72,6 @@ welcome mail template:
 
 
 
----
 ## backups
 
 tilde.team uses [tarsnap](https://tarsnap.com) for backups and is configured to save 12 hourly backups, 7 daily backups, 6 weekly backups, and 2 years' worth of monthly backups.

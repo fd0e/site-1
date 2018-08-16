@@ -2,7 +2,7 @@
 author: ~ben
 published: true
 title: gopher
-description: tilde.team gopher server and proxy
+description: gopher server and proxy
 category: 
     - main
 ---

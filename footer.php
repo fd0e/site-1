@@ -1,6 +1,5 @@
         <hr>
     </div>
-    <footer class="text-center"><a href="/wiki/?page=code-of-conduct">code of conduct</a></footer>
 
     <br>
     <br>

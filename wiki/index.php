@@ -1,16 +1,19 @@
 <?php
 require __DIR__.'/../vendor/autoload.php';
 
-$additional_head = '
-<style>
-:target:before {
-    content:"";
-    display:block;
-    height:90px; /* fixed header height*/
-    margin:-90px 0 0; /* negative fixed header height */
-}
-</style>
-';
+$additional_head = "
+    <style>
+    :target:before {
+        content:\"\";
+        display:block;
+        height:90px; /* fixed header height*/
+        margin:-90px 0 0; /* negative fixed header height */
+    }
+    </style>
+    <meta property='og:type' content='website'>
+    <meta property='og:image' content='https://tilde.team/apple-icon.png'>
+    <meta property='og:site_name' content='tilde.team wiki'>
+";
 
 class MDParser implements Mni\FrontYAML\Markdown\MarkdownParser {
     public function __construct() {
@@ -29,14 +32,12 @@ $parser = new Mni\FrontYAML\Parser(null, new MDParser());
 
 
 if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
+
     $title = "tilde.team~wiki";
     $additional_head .= "
     <meta property='og:title' content='$title'>
-    <meta property='og:type' content='website'>
-    <meta property='og:image' content='https://tilde.team/apple-icon.png'>
     <meta property='og:url' content='https://tilde.team{$_SERVER['REQUEST_URI']}'>
     <meta property='og:description' content='tilde.team wiki'>
-    <meta property='og:site_name' content='tilde.team wiki'>
     ";
     include __DIR__.'/../header.php';
     // render wiki index ?>
@@ -60,17 +61,15 @@ if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
     <?php }
 
 } else {
+
     $pg = $parser->parse(file_get_contents("pages/{$_GET["page"]}.md"));
     $yml = $pg->getYAML();
     $title = $yml['title'] . " | tilde.team~wiki";
     $description = $yml['description'] ?? "tilde.team wiki article {$yml['title']}";
     $additional_head .= "
     <meta property='og:title' content='$title'>
-    <meta property='og:type' content='website'>
-    <meta property='og:image' content='https://tilde.team/apple-icon.png'>
     <meta property='og:url' content='https://tilde.team{$_SERVER['REQUEST_URI']}'>
     <meta property='og:description' content='$description'>
-    <meta property='og:site_name' content='tilde.team wiki'>
     ";
     include __DIR__.'/../header.php';
     // show a single page ?>
@@ -83,6 +82,7 @@ if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
     <a href="https://git.tildeverse.org/team/site/src/branch/master/wiki/pages/<?=$_GET["page"]?>.md">
         <i class="fa fa-edit"></i> source
     </a>
+
 <?php }
 
 include __DIR__.'/../footer.php';
