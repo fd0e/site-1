@@ -94,3 +94,19 @@ we keep backups of:
 * `/var` (excluding `/var/log` and `/var/lib/lxd`)
 
 see the [tarsnap documentation](https://www.tarsnap.com/usage.html) for more information.
+
+## bypassing resource limits
+
+(by [~khuxkm](https://khuxkm.tilde.team/))
+
+So occasionally, when you're working with the services user, you'll run into "error: fork: retry: Resource temporarily unavailable" errors.
+
+Here's how to fix it:
+
+    07:11 <~khuxkm>  so this is seriously dumb
+    07:11 <~khuxkm>  so how you fix limits is
+    07:12 <~khuxkm>  sudo -iu services
+    07:12 <~khuxkm>  use ps -aux to find the bash process ("-bash")
+    07:12 <~khuxkm>  then `sudo prlimit --pid <pid> --nproc 1000000:100000000`
+    07:12 <~khuxkm>  then do what you need to do
+    07:12 <~khuxkm>  then exit the bash session
