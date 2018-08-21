@@ -14,7 +14,7 @@
             <p>a digital community for socializing, learning, and making cool stuff</p>
         </div>
 
-        <p>tilde.team is a shared system that provides a radically inclusive, non-commercial space for teaching, learning, practicing and enjoying the social medium of unix.</p>
+        <p>tilde.team is a shared system that provides an inclusive, non-commercial space for teaching, learning, practicing and enjoying the social medium of unix.</p>
         <p>i created this tilde after hearing about paul ford's <a href="http://tilde.club/">tilde.club</a>. when i was unable to join due to the waitlist, i decided to create my own tilde.</p>
         <p>thanks for stopping by!</p>
         <p><a href="/~ben/">~ben</a></p>

@@ -9,7 +9,7 @@ category:
 
 # tilde.team manifesto
 
-> tilde.team is a shared system that provides a radically inclusive, non-commercial space for teaching, learning, practicing and enjoying the social medium of unix.
+> tilde.team is a shared system that provides an inclusive, non-commercial space for teaching, learning, practicing and enjoying the social medium of unix.
 
 
 here are some of our most important values:
