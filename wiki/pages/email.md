@@ -33,9 +33,10 @@ you have a couple options:
 because [~ben](https://tilde.team/~ben/) hoards domain names, you can use the following domains with your tildemail:
 
 * ttm.sh
-* tilde.zone
 * tilde.chat
+* tilde.news
 * tilde.site
+* tilde.zone
 * tildeteam.org
 * tildenet.org
 * tildeverse.org
