@@ -35,7 +35,9 @@ because [~ben](https://tilde.team/~ben/) hoards domain names, you can use the fo
 * ttm.sh
 * tilde.chat
 * tilde.news
+* tilde.ninja
 * tilde.site
+* tilde.wtf
 * tilde.zone
 * tildeteam.org
 * tildenet.org
