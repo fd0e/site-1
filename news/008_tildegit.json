@@ -1,7 +1,7 @@
 {
     "published": false,
     "date": "jan 2018",
-    "title": "<a href=\"https://git.tilde.team\">tildegit</a>",
+    "title": "<a href=\"https://tildegit.org\">tildegit</a>",
     "author": "<a href=\"/~ben/\">~ben</a>",
     "content": "for some reason, i have this desire to run all kinds of self-hosted tools on the tilde box. i used to run a gitlab instance under my own personal domain, but it turned out to be way more work than it was worth. i had been interested by <a href=\"http://gogs.io\">gogs</a> in the past and stumbled upon the community fork <a href=\"https://gitea.io\">gitea</a>, which is more up to date and full-featured. at this point, it's just some mirrored repos from my github page and the tilde.team org. let me know if you have any ideas for it!"
 }

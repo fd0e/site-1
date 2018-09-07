@@ -24,7 +24,7 @@ here are some of our most important values:
 
 
 ---
-this document is still a work in progress. if you have any ideas or suggestions, [send a pr](https://git.tilde.team/meta/site/src/branch/master/wiki/pages/manifesto.md)!
+this document is still a work in progress. if you have any ideas or suggestions, [send a pr](https://tildegit.org/team/site/src/branch/master/wiki/pages/manifesto.md)!
 
 [living draft of this document here](https://pad.tilde.team/code/#/2/code/edit/RFBUqXec+9+MlZzx4mnhU3ps/)
 

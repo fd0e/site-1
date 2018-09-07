@@ -1,7 +1,7 @@
 {
     "published": true,
     "date": "mar 2018",
-    "title": "github projects on homepage",
+    "title": "git projects on homepage",
     "author": "<a href=\"/~ben/\">~ben</a>",
-    "content": "the homepage now lists all public projects on the <a href=\"https://git.tilde.team/meta\">tilde.team github org</a>! let me know if you want me to add you :)"
+    "content": "the homepage now lists all public projects on the <a href=\"https://tildegit.org/team\">tilde.team gitea org</a>! let me know if you want me to add you :)"
 }

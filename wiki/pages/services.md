@@ -14,36 +14,39 @@ i'll keep this wiki page updated with the services that are running on our littl
 
 ### our deployed projects
 
-* [forum](https://forum.tilde.team) ([source](https://git.tilde.team/team/forum)) - mostly defunct in favor of bbj
+* [forum](https://forum.tilde.team) ([source](https://tildegit.org/team/forum)) - mostly defunct in favor of bbj
 
 
 ### code related stuff
 
-* [gitea](https://git.tilde.team/) tilde team git hosting
+* [gitea](https://tildegit.org/) tilde team git hosting
 
 
 ### general utilities
 
-* [cryptpad](https://pad.tilde.team)
-    - [cryptdrive](https://pad.tilde.team/drive/)
-    - [markdown/code editor](https://pad.tilde.team/code/)
-    - [presentation slides editor](https://pad.tilde.team/slides/)
-    - [polls](https://pad.tilde.team/poll/)
-    - [kanban boards](https://pad.tilde.team/kanban/)
-    - [whiteboard](https://pad.tilde.team/whiteboard/)
-    - [file drop](https://pad.tilde.team/file/)
-    - [todo lists](https://pad.tilde.team/todo/)
-* [paste bin](https://paste.tilde.team)
-* [nullpointer fileshare](https://0x0.tilde.team)
+* [cryptpad](https://pad.tildeverse.org)
+    - [cryptdrive](https://pad.tildeverse.org/drive/)
+    - [markdown/code editor](https://pad.tildeverse.org/code/)
+    - [presentation slides editor](https://pad.tildeverse.org/slides/)
+    - [polls](https://pad.tildeverse.org/poll/)
+    - [kanban boards](https://pad.tildeverse.org/kanban/)
+    - [whiteboard](https://pad.tildeverse.org/whiteboard/)
+    - [file drop](https://pad.tildeverse.org/file/)
+    - [todo lists](https://pad.tildeverse.org/todo/)
+* [paste bin](https://paste.tildeverse.org)
+* [nullpointer fileshare](https://ttm.sh)
 * [termbin](https://bin.tilde.team)
 
 
 ### social/communications
 
 * [irc](https://tilde.chat) tilde.chat irc network for the tildeverse
+* [pleroma](https://pleroma.tilde.zone) federated social network
 * [mastodon](https://tilde.zone) federated social network
     - [pinafore front-end](https://pinafore.tilde.zone)
     - [halcyon front-end](https://halcyon.tilde.zone)
+    - [tooty front-end](https://tooty.tilde.zone)
 * [email](?page=email) ([webmail](https://mail.tilde.team), smtp/imap, mutt, and alpine)
-* [bbj](https://git.tildeverse.org/team/bbj) ([web mirror here](https://bbj.tilde.team)) - forked from [desvox/bbj](https://github.com/desvox/bbj)
+* [bbj](https://tildegit.org/team/bbj) ([web mirror here](https://bbj.tilde.team)) - forked from [desvox/bbj](https://github.com/desvox/bbj)
 * [gopher proxy](https://gopher.tilde.team)
+

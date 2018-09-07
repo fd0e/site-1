@@ -35,7 +35,7 @@ php -S localhost:9000
 git checkout -b my-cool-feature
 ```
 
-1. [open a PR](https://git.tilde.team/meta/site/pulls)
+1. [open a PR](https://tildegit.org/team/site/pulls)
 
 thanks!
 
