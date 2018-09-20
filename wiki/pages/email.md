@@ -30,22 +30,7 @@ you have a couple options:
 
 ---
 
-because [~ben](https://tilde.team/~ben/) hoards domain names, you can use the following domains with your tildemail:
-
-* ttm.sh
-* tild3.org
-* tild3.club
-* tilde.chat
-* tilde.life
-* tilde.news
-* tilde.ninja
-* tilde.pizza
-* tilde.site
-* tilde.wtf
-* tilde.zone
-* tildeteam.org
-* tildenet.org
-* tildeverse.org
+because [~ben](https://tilde.team/~ben/) hoards domain names, you can use any of the [domains on this list](?page=domains) with your tildemail:
 
 mail sent to yourusername@ any of those domains will end up in your inbox. most clients will allow you to add additional identities/aliases. 
 
