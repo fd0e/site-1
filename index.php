@@ -81,7 +81,7 @@
                     if (!is_dir("$user/public_html")) continue;
                     $user = basename($user); ?>
                     <div class="list-group">
-                        <a href="https://tilde.team/~<?=$user?>/" class="list-group-item">
+                        <a href="/~<?=$user?>/" class="list-group-item">
                             <h5 class="list-group-item-heading">~<?=$user?></h5>
                         </a>
                     </div>
