@@ -4,7 +4,7 @@ require __DIR__.'/../vendor/autoload.php';
 if ($_SERVER["SERVER_NAME"] != "localhost")
     require_once "/home/ben/ultimate-email/support/smtp.php";
 
-$reserved_names = ['git', 'irc', 'mail', 'pad', 'sudo', 'root', 'admin', 'postmaster', 'paste', 'quotes'];
+$reserved_names = ['git', 'irc', 'mail', 'sudo', 'root', 'admin', 'postmaster', 'retro', 'lounge', '0x0', 'auth', 'bbj', 'gopher'];
 
 $message = "";
 if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
@@ -43,6 +43,8 @@ contact email: {$_REQUEST["email"]}
 reason: {$_REQUEST["interest"]}
 ssh key:
 {$_REQUEST["sshkey"]}
+
+sudo ./makeuser {$_REQUEST["username"]} {$_REQUEST["email"]} \"{$_REQUEST["sshkey"]}\"
 ";
 
         if (mail('sudoers', 'new tilde.team signup', $msgbody, "Reply-To: {$_REQUEST["email"]}")) {
