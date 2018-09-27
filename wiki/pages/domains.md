@@ -12,7 +12,7 @@ category:
 because [~ben](https://tilde.team/~ben/) hoards domain names, you can use the following domains are associated with tilde.team somehow:
 
 * nand.pub - not sure yet
-* nand.sh - not sure yet
+* nand.sh - alias
 * nand.team - not sure yet
 * nand.zone - not sure yet
 * ttm.sh - url shortener

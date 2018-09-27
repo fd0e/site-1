@@ -14,6 +14,7 @@ because [~ben](https://tilde.team/~ben/) hoards domain names, you can use the fo
 
 see also the [master list of domains](?page=domains).
 
+* nand.sh
 * ttm.sh
 * tild3.org
 * tild3.club
