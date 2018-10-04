@@ -9,10 +9,10 @@ category:
 
 # email
 
+tilde.team has a mailserver. here are your options:
 
-as of june 10, 2018, the mx record for tilde.team is now set to our own mailserver!
 
-you have a couple options:
+### clients and connection settings
 
 * mutt - should work out of the box
 
@@ -28,7 +28,9 @@ you have a couple options:
     - smtp: smtp.tilde.team port 587 (starttls)
     - (any subdomain of tilde.team works for smtp and imap. just make sure you have tls selected)
 
----
+these settings may or may not be automatically configured in your client.
+
+### alternate domains and addresses
 
 because [~ben](https://tilde.team/~ben/) hoards domain names, you can use any of the [domains on this list](?page=domains) with your tildemail:
 
@@ -37,6 +39,25 @@ mail sent to yourusername@ any of those domains will end up in your inbox. most 
 additionally, any address with a `-` or `+` and arbitrary text behind it will be forwarded to you email: ie. `your_username+somethingcool@tildeverse.org` or `yourusername-notcool@tilde.site`.
 feel free to use as many as you'd like :)
 
+
+### forwarding and sieve
+
 if you would like your tildemail to be forwarded somewhere else, put that email address in ~/.forward
+
+```bash
+echo myotheraddress@example.com > ~/.forward
+```
+
+we also have [sieve](http://sieve.info) and [managesieve](https://wiki1.dovecot.org/ManageSieve) support.
+
+scripts belong in `~/sieve/`, with the active sieve script in `~/.dovecot.sieve` (to conform with managesieve).
+
+here are some [example sieve scripts](https://wiki.dovecot.org/Pigeonhole/Sieve/Examples)
+
+managesieve is available on the default port (4190) if you want to use an external managesieve client (like the [thunderbird add-on](https://github.com/thsmi/sieve)).
+
+[webmail](https://mail.tilde.team) is pre-configured to work with your local sieve scripts.
+
+---
 
 ask [~ben](/~ben/) if you have any questions
