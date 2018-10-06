@@ -4,3 +4,5 @@ node_modules/
 mg.key
 /vendor/
 tilde.json
+graffiti.txt
+.well-known/
