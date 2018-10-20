@@ -39,7 +39,7 @@
         <div class="row">
             <div class="col-md-7">
                 <h1>~news~</h1>
-                <?php foreach (array_reverse(glob("news/*.json")) as $file):
+                <?php foreach (array_slice(array_reverse(glob("news/*.json")),0,4) as $file):
                     $post = json_decode(file_get_contents($file));
                     if (!$post->published) continue; ?>
 
@@ -76,16 +76,20 @@
                 <h1>~users~</h1>
                 <em><a href="https://tilde.team/tilde.24h.html"><i class="fa fa-clock-o"></i> recent updates</a></em>
                 <br><br>
+                <div class="list-group">
+                <ul>
                 <?php
                 foreach (glob("/home/*") as $user):
                     if (!is_dir("$user/public_html")) continue;
                     $user = basename($user); ?>
-                    <div class="list-group">
+                    <li style="list-style: none; margin-left: -40px;">
                         <a href="/~<?=$user?>/" class="list-group-item">
-                            <h5 class="list-group-item-heading">~<?=$user?></h5>
+                            <h6 class="list-group-item-heading">~<?=$user?></h5>
                         </a>
-                    </div>
+                    </li>
                 <?php endforeach; ?>
+                </ul>
+                </div>
             </div>
         </div>
 
