@@ -27,6 +27,7 @@ because [~ben](https://tilde.team/~ben/) hoards domain names, you can use the fo
 * tilde.wtf - redirect
 * tilde.zone - mastodon and related stuff
 * tildegit.org - gitea
+* tilderadio.org - tildeverse radio
 * tildeteam.org - alias
 * tildenet.org - redirect to tilde.chat
 * tildeverse.org - the tildeverse!
