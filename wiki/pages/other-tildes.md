@@ -13,6 +13,7 @@ if you're starting a tilde and want to be added to this list, [open a PR :)](htt
 
 | tilde name | description | where to join |
 |---|---|---|
+| [nand.club](http://nand.club) | a new anti-capitalist, solarpunk tilde | [signup info here](http://nand.club) |
 | [thunix](https://thunix.org) | thunix offers Secure Shell (SSH) accounts, Web Hosting, Email Accounts, and many other things to people free of charge. | [signup info here](https://www.thunix.org) |
 | [tildespark](https://tildespark.ddns.net) | Tilde Spark is a constantly evolving intentional community devoted to free software, open hardware and meeting new people! | [signup info here](https://tildespark.ddns.net/ikiwiki/tildespark/howtojoin/) |
 | [tilde.fun](https://tilde.fun) | This is a Linux machine on the internet where you can get a shell account. | `ssh tilde@tilde.fun` |
