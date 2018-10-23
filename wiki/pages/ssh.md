@@ -34,8 +34,18 @@ for a long time, people used a tool called [`telnet`](https://en.wikipedia.org/w
 ---
 ## how to make an ssh key
 
-pick your fighter: [[mac](#mac)] | [[windows](#windows)] | [[linux](#linux)]
+SSH supports a handful of types of cryptographic keys. The most used are [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) and the more modern [Ed25519](https://en.wikipedia.org/wiki/EdDSA#Ed25519).
 
+RSA is the de-facto standard and is supported everywhere (just choose a big enough key like 4096bits to be secure). Ed25519 is designed to be faster and smaller withouth sacrificing security, so is best suited for embedded devices or machines with low resources. It's supported on tilde (and really on anymodern system) but you may find older systems which do not support it.
+
+Below you'll find instructions to genereate either type (or both if you want).
+
+Keep in mind that these instructions leave your private keys unencrypted in your local hard disk. So keep them private, never share them.
+A good solution is to provide a password for them at creation time, but this implies entering a password any time you used them (impractical) or use something like [ssh-agent](https://man.openbsd.org/ssh-agent.1) (a bit more complex)
+
+We don't have documentation for this (yet) so either go with no password keys, or ask on IRC (#team) for help.
+
+pick your fighter: [[mac](#mac)] | [[windows](#windows)] | [[linux](#linux)]
 
 ---
 ### mac
@@ -50,13 +60,20 @@ mkdir -m 700 ~/.ssh
 ```
 
 1. create your keys: 
+
+For RSA keys:
 ```bash
-ssh-keygen -t rsa -b 2048
+ssh-keygen -t rsa -b 4096
 ```
 
-1. if you press enter to accept the defaults, your public and private key will be located at `~/.ssh/id_rsa.pub` and `~/.ssh/id_rsa` respectively
+For Ed25519 keys:
+```bash
+ssh-keygen -t ed25519 -a 100
+```
 
-1. `cat ~/.ssh/id_rsa.pub`
+1. if you press enter to accept the defaults, your public and private key will be located at `~/.ssh/id_rsa.pub` and `~/.ssh/id_rsa` respectively (or `~/.ssh/id_ed25519.pub` and `~/.ssh/id_ed25519` if you chose ed25519 type)
+
+1. `cat ~/.ssh/id_rsa.pub` (or `cat ~/.ssh/id_ed25519.pub` for ed25519)
 
 1. copy the output of the last command and paste it in the sshkey field on the signup form (or email it to [~ben](mailto:ben@tilde.team) if you already have an account)
 
@@ -98,13 +115,20 @@ mkdir .ssh
 ```
 
 1. create your keypair
+
+For RSA keys:
 ```bash
-ssh-keygen -t rsa -b 2048
+ssh-keygen -t rsa -b 4096
 ```
 
-1. if you press enter to accept the defaults, your public and private key will be located at `~/.ssh/id_rsa.pub` and `~/.ssh/id_rsa` respectively
+For Ed25519 keys:
+```bash
+ssh-keygen -t ed25519 -a 100
+```
 
-1. `cat ~/.ssh/id_rsa.pub`
+1. if you press enter to accept the defaults, your public and private key will be located at `~/.ssh/id_rsa.pub` and `~/.ssh/id_rsa` respectively (or `~/.ssh/id_ed25519.pub` and `~/.ssh/id_ed25519` if you chose ed25519 type)
+
+1. `cat ~/.ssh/id_rsa.pub` (or `cat ~/.ssh/id_ed25519.pub` for ed25519)
 
 1. copy the output of the last command and paste it in the sshkey field on the signup form (or email it to [~ben](mailto:ben@tilde.team) if you already have an account)
 
@@ -137,13 +161,20 @@ mkdir -m 700 ~/.ssh
 ```
 
 1. create your keys
+
+For RSA keys:
 ```bash
-ssh-keygen -t rsa -b 2048
+ssh-keygen -t rsa -b 4096
 ```
 
-1. if you press enter to accept the defaults, your public and private key will be located at `~/.ssh/id_rsa.pub` and `~/.ssh/id_rsa` respectively
+For Ed25519 keys:
+```bash
+ssh-keygen -t ed25519 -a 100
+```
 
-1. `cat ~/.ssh/id_rsa.pub`
+1. if you press enter to accept the defaults, your public and private key will be located at `~/.ssh/id_rsa.pub` and `~/.ssh/id_rsa` respectively (or `~/.ssh/id_ed25519.pub` and `~/.ssh/id_ed25519` if you chose ed25519 type)
+
+1. `cat ~/.ssh/id_rsa.pub` (or `cat ~/.ssh/id_ed25519.pub` for ed25519)
 
 1. copy the output of the last command and paste it in the sshkey field on the signup form (or email it to [sudoers@tilde.team](mailto:sudoers@tilde.team) if you already have an account)
 
