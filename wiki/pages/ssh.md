@@ -38,12 +38,12 @@ SSH supports a handful of types of cryptographic keys. The most used are [RSA](h
 
 RSA is the de-facto standard and is supported everywhere (just choose a big enough key like 4096bits to be secure). Ed25519 is designed to be faster and smaller withouth sacrificing security, so is best suited for embedded devices or machines with low resources. It's supported on tilde (and really on anymodern system) but you may find older systems which do not support it.
 
-Below you'll find instructions to genereate either type (or both if you want).
+Below you'll find instructions to generate either type (or both if you want).
 
-Keep in mind that these instructions leave your private keys unencrypted in your local hard disk. So keep them private, never share them.
+Keep in mind that these instructions leave your private keys unencrypted in your local hard disk. So keep them private; never share them.
 A good solution is to provide a password for them at creation time, but this implies entering a password any time you used them (impractical) or use something like [ssh-agent](https://man.openbsd.org/ssh-agent.1) (a bit more complex)
 
-We don't have documentation for this (yet) so either go with no password keys, or ask on IRC (#team) for help.
+We don't have documentation for this [(yet)](https://tildegit.org/team/site/src/branch/master/wiki) so either go with no password keys, or ask on IRC (#team) for help.
 
 pick your fighter: [[mac](#mac)] | [[windows](#windows)] | [[linux](#linux)]
 
@@ -75,7 +75,7 @@ ssh-keygen -t ed25519 -a 100
 
 1. `cat ~/.ssh/id_rsa.pub` (or `cat ~/.ssh/id_ed25519.pub` for ed25519)
 
-1. copy the output of the last command and paste it in the sshkey field on the signup form (or email it to [~ben](mailto:ben@tilde.team) if you already have an account)
+1. copy the output of the last command and paste it in the sshkey field on the signup form (or email it to [~sudoers](mailto:sudoers@tilde.team) if you already have an account)
 
 #### using your keypair
 
@@ -130,7 +130,7 @@ ssh-keygen -t ed25519 -a 100
 
 1. `cat ~/.ssh/id_rsa.pub` (or `cat ~/.ssh/id_ed25519.pub` for ed25519)
 
-1. copy the output of the last command and paste it in the sshkey field on the signup form (or email it to [~ben](mailto:ben@tilde.team) if you already have an account)
+1. copy the output of the last command and paste it in the sshkey field on the signup form (or email it to [~sudoers](mailto:sudoers@tilde.team) if you already have an account)
 
 
 #### using your keypair
@@ -196,3 +196,4 @@ where username is your username (~ben would use `ssh ben@tilde.team`)
 ---
 
 this tutorial is based on and uses parts of [the tilde.club ssh primer](https://github.com/tildeclub/tilde.club/blob/master/docs/ssh.md) and [the tilde.town ssh guide](https://tilde.town/wiki/ssh.html).
+
