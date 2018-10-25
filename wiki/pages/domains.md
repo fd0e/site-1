@@ -20,7 +20,7 @@ because [~ben](https://tilde.team/~ben/) hoards domain names, the following doma
 * [tild3.club](https://tild3.club/) - alias
 * [tilde.chat](https://tilde.chat/) - irc net
 * [tilde.life](https://tilde.life/) - redirect
-* [tilde.news](https://tilde.news/) - redirect
+* [tilde.news](https://tilde.news/) - lobste.rs clone
 * [tilde.ninja](https://tilde.ninja/) - redirect
 * [tilde.pizza](https://tilde.pizza/) - redirect
 * [tilde.site](https://tilde.site/) - alias
