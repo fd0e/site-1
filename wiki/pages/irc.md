@@ -9,7 +9,7 @@ category:
 
 # [tildeverse irc](https://tilde.chat)
 
-hi tildizens!
+hi teammates!
 
 the tilde.chat irc network is available at tilde.chat:+6697 (with ssl)
 

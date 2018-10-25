@@ -9,7 +9,7 @@ category:
 
 # tilde.team services
 
-i'll keep this wiki page updated with the services that are running on our little vps box :)
+i'll keep this wiki page updated with the services that we run and maintain :)
 
 
 ### our deployed projects
@@ -50,3 +50,8 @@ i'll keep this wiki page updated with the services that are running on our littl
 * [bbj](https://tildegit.org/team/bbj) ([web mirror here](https://bbj.tilde.team)) - forked from [desvox/bbj](https://github.com/desvox/bbj)
 * [gopher proxy](https://gopher.tilde.team)
 
+### tildeverse service
+
+tilde.team hosts several services for the tildeverse. 
+
+see [tildeverse.org](https://tildeverse.org) for more info.

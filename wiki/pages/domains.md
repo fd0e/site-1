@@ -9,28 +9,28 @@ category:
 
 # tilde.team domains
 
-because [~ben](https://tilde.team/~ben/) hoards domain names, you can use the following domains are associated with tilde.team somehow:
+because [~ben](https://tilde.team/~ben/) hoards domain names, the following domains are associated with tilde.team and/or the tildeverse somehow:
 
-* nand.pub - not sure yet
-* nand.sh - alias
-* nand.team - not sure yet
-* nand.zone - not sure yet
-* ttm.sh - url shortener
-* tild3.org - alias
-* tild3.club - alias
-* tilde.chat - irc net
-* tilde.life - redirect
-* tilde.news - redirect
-* tilde.ninja - redirect
-* tilde.pizza - redirect
-* tilde.site - alias
-* tilde.wtf - redirect
-* tilde.zone - mastodon and related stuff
-* tildegit.org - gitea
-* tilderadio.org - tildeverse radio
-* tildeteam.org - alias
-* tildenet.org - redirect to tilde.chat
-* tildeverse.org - the tildeverse!
+* [nand.pub](https://nand.pub/) - not sure yet
+* [nand.sh](https://nand.sh/) - alias
+* [nand.team](https://nand.team/) - not sure yet
+* [nand.zone](https://nand.zone/) - not sure yet
+* [ttm.sh](https://ttm.sh/) - url shortener
+* [tild3.org](https://tild3.org/) - alias
+* [tild3.club](https://tild3.club/) - alias
+* [tilde.chat](https://tilde.chat/) - irc net
+* [tilde.life](https://tilde.life/) - redirect
+* [tilde.news](https://tilde.news/) - redirect
+* [tilde.ninja](https://tilde.ninja/) - redirect
+* [tilde.pizza](https://tilde.pizza/) - redirect
+* [tilde.site](https://tilde.site/) - alias
+* [tilde.wtf](https://tilde.wtf/) - redirect
+* [tilde.zone](https://tilde.zone/) - mastodon and related stuff
+* [tildegit.org](https://tildegit.org/) - gitea
+* [tilderadio.org](https://tilderadio.org/) - tildeverse radio
+* [tildeteam.org](https://tildeteam.org/) - alias
+* [tildenet.org](https://tildenet.org/) - redirect to tilde.chat
+* [tildeverse.org](https://tildeverse.org/) - the tildeverse!
 
 aliases can be used as-is, where redirects will simply change to a tilde.team url.
 

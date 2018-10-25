@@ -9,12 +9,12 @@ category:
 
 # code of conduct
 
-**tl;dr** learn by doing and helping. be excellent to each other. have fun!
+> **tl;dr** learn by doing and helping. be excellent to each other. have fun!
 
 
 ## 1. purpose
 
-a primary goal of tilde.team is to be inclusive to the largest number of contributors, with the most varied and diverse backgrounds possible. as such, we are committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status, and religion (or lack thereof).
+a primary goal of tilde.team is to be inclusive to the largest number of contributors, with the most varied and diverse backgrounds possible. as such, we are committed to providing a friendly, safe and welcoming environment for all.
 
 this code of conduct outlines our expectations for all those who participate in our community, as well as the consequences for unacceptable behavior.
 

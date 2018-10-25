@@ -12,7 +12,12 @@ category:
 
 ## adding users
 
-1. generate a random password (12-20 characters, no spaces)
+> this is deprecated. use the new [makeuser](https://tildegit.org/team/makeuser/src/branch/bash-edition) script
+
+1. generate a random password
+    ```
+    pwgen -1B 15
+    ```
 
 1. create a new user account:
     ```
@@ -110,3 +115,74 @@ Here's how to fix it:
     07:12 <~khuxkm>  then `sudo prlimit --pid <pid> --nproc 1000000:100000000`
     07:12 <~khuxkm>  then do what you need to do
     07:12 <~khuxkm>  then exit the bash session
+
+
+## lxd
+
+this is the process that i use to create lxd containers for users.
+
+you need two things from the user: an ssh public key (on their ~team shell) and a [distro choice](https://us.images.linuxcontainers.org/)
+
+
+1. create the container
+    ```
+    # debian
+    lxc launch images:debian/stretch <username>
+    # ubuntu
+    lxc launch ubuntu: <username>
+    ```
+
+1. make sure the container has an sshd running
+    ```
+    lxc exec <username> bash
+    # might have to adjust this if the image is not a debian-derivative
+    root@<username> $ apt install openssh-server
+    ```
+
+1. copy the user's ssh pubkey to root on the container
+    ```
+    lxc exec <username> bash
+    mkdir -m 700 .ssh
+    echo "pubkey" >> ~/.ssh/authorized_keys
+    chmod 600 ~/.ssh/authorized_keys
+    ```
+
+> now the user can run `ssh root@<username>.lxd` to get a shell inside their container
+> the .lxd dns resolver is provided by the lxd daemon itself through dnsmasq
+
+### make the container public
+
+> check with the user and find out what they want the container to be available as (which domain)
+> nginx matches concrete `server_name`s first, so you can replace the `*.tilde.team` match
+
+1. copy user-lxd.template
+    ```
+    cd /etc/nginx/sites-available
+    sudo cp user-lxd.template <username>.tilde.team
+    sudo vim <username>.tilde.team
+    ```
+
+1. replace the username
+    ```
+    :%s/<user>/<username>/g
+    :wq
+    ```
+
+1. enable the vhost
+    ```
+    cd /etc/nginx/sites-enabled
+    sudo ln -s ../sites-available/<username>.tilde.team .
+    ```
+
+1. reload nginx
+    ```
+    # make sure the configs look ok
+    sudo nginx -t
+    sudo service nginx reload
+    ```
+
+bam! now `<username>.tilde.team` will forward requests to the container.
+
+make sure that the user is running some kind of webserver on port 80 inside the container!
+
+feel free to add other configs to their vhost or use any of the other [tildepage domains](?page=tildepages)

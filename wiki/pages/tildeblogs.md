@@ -1,7 +1,7 @@
 ---
 author: ~ben
 published: true
-title: tildeblogs
+title: tildeblogs with bashblog
 description: tildeblogs information
 category: 
     - main

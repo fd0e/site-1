@@ -24,7 +24,7 @@ see also the [master list of domains](?page=domains).
 
 this means you can access your user page from any of the following url formats, substituting domain and username:
 
-* `https://domain/~username/`
-* `https://domain/u/username/`
-* `https://username.domain/`
+* `https://domain.tld/~username/`
+* `https://domain.tld/u/username/`
+* `https://username.domain.tld/`
 
