@@ -1,5 +1,5 @@
 ---
-author: ~ben
+author: ~ben and ~khuxkm
 published: true
 title: administration
 description: ~team admin guide
@@ -8,7 +8,10 @@ category:
 ---
 
 # administration
-
+ 1. [adding users](#adding-users)
+ 2. [backups](#backups)
+ 3. [bypassing resource limits as services user](#bypassing-resource-limits)
+ 4. [lxd](#lxd)
 
 ## adding users
 
