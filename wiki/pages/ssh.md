@@ -14,6 +14,24 @@ category:
 
 > all users are now required to use an ssh keypair for login, or will be required to proceed with manual account recovery with [~ben](/~ben/) or another admin. drop a line to [sudoers@tilde.team](mailto:sudoers@tilde.team) or hop on [irc](https://web.tilde.chat/?join=sudoers) for assistance.
 
+## tilde.team details
+
+ports 22, 80, 443, and 2222 are available for ssh.
+
+the primary ip has 80 and 443 in use by nginx. 
+
+use ssh.tilde.team to reach the secondary ip and use 80 and 443 for ssh.
+
+so, for example, you can do:
+
+```
+ssh -p 443 user@ssh.tilde.team
+ssh user@tilde.team  # this uses port 22, which can be blocked on some networks
+```
+
+
+---
+## intro
 
 ** if you just want to get right to a tutorial you can [skip over this background info](#how-to-make-an-ssh-key)**
 
