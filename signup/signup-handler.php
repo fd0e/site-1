@@ -4,7 +4,60 @@ require __DIR__.'/../vendor/autoload.php';
 if ($_SERVER["SERVER_NAME"] != "localhost")
     require_once "/home/ben/ultimate-email/support/smtp.php";
 
-$reserved_names = ['git', 'irc', 'mail', 'sudo', 'root', 'admin', 'postmaster', 'retro', 'lounge', '0x0', 'auth', 'bbj', 'gopher'];
+function forbidden_name($name) {
+    return in_array($name, [
+        '0x0',
+        'abuse',
+        'admin',
+        'administrator',
+        'auth',
+        'autoconfig',
+        'bbj',
+        'broadcasthost',
+        'forum',
+        'ftp',
+        'git',
+        'gopher',
+        'hostmaster',
+        'imap',
+        'info',
+        'irc',
+        'is',
+        'isatap',
+        'it',
+        'localdomain',
+        'localhost',
+        'lounge',
+        'mail',
+        'mailer-daemon',
+        'marketing',
+        'marketting',
+        'mis',
+        'news',
+        'nobody',
+        'noc',
+        'noreply',
+        'pop',
+        'pop3',
+        'postmaster',
+        'retro',
+        'root',
+        'sales',
+        'security',
+        'smtp',
+        'ssladmin',
+        'ssladministrator',
+        'sslwebmaster',
+        'support',
+        'sysadmin',
+        'team',
+        'usenet',
+        'uucp',
+        'webmaster',
+        'wpad',
+        'www',
+    ]);
+}
 
 $message = "";
 if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
@@ -16,7 +69,7 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
         $message .= "<li>username too long (32 character max)</li>";
     if (!preg_match('/^[A-Za-z][A-Za-z0-9]{2,31}$/', $name))
         $message .= "<li>username contains invalid characters (lowercase only, must start with a letter)</li>";
-    if (posix_getpwnam($name) || in_array($name, $reserved_names))
+    if (posix_getpwnam($name) || forbidden_name($name))
         $message .= "<li>sorry, the username $name is unavailable</li>";
 
     // Check the e-mail address.
