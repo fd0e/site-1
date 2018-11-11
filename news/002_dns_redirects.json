@@ -1,7 +1,0 @@
-{
-    "published": true,
-    "date": "dec 2017",
-    "title": "username dns redirects",
-    "author": "<a href=\"/~ben/\">~ben</a>",
-    "content": "hey all<br>there is now a dns record (and virtual host) that will redirect requests from [user].tilde.team to tilde.team/~[user] -- for example ben.tilde.team redirects to tilde.team/~ben<br><br>also, the redirect preserves paths, so you can link to something under your user directory like this ben.tilde.team/blog => becomes tilde.team/~ben/blog<br><br>there are no ssl certs for these subdomains, so you will have to request those with plain http<br><br>edit: there is now a wildcard cert from letsencrypt for *.tilde.team, so you can use https with your username as a subdomain!! :)"
-}

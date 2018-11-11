@@ -1,7 +1,0 @@
-{
-    "published": true,
-    "date": "jun 2018",
-    "title": "<a href=\"https://tildegit.org\">tilde.team gitea :)</a>",
-    "author": "<a href=\"/~ben/\">~ben</a>",
-    "content": "there's a <a href=\"https://gitea.io\">gitea</a> instance up on the tilde.team server. i migrated most repos from our github org to the meta org on gitea. hit me up on discord/irc or email if you have any questions!"
-}

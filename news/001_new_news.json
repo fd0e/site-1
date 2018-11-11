@@ -1,7 +1,0 @@
-{
-    "published": true,
-    "date": "dec 2017",
-    "title": "good news everyone",
-    "author": "<a href=\"/~ben/\">~ben</a>",
-    "content": "there's a news feed on the homepage now!! whenever there is any news, it will be posted here. if you have any big news, make a pull request on the <a href=\"https://tildegit.org/team/site\">git repo</a> and then <a href=\"/~ben/\">~ben</a> or another github admin can merge it"
-}

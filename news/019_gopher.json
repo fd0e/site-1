@@ -1,7 +1,0 @@
-{
-    "published": true,
-    "date": "jul 2018",
-    "title": "tilde.team gopher <a href=\"/wiki/?page=gopher\">server</a> and <a href=\"https://gopher.tilde.team\">proxy</a>",
-    "author": "<a href=\"/~ben/\">~ben</a>",
-    "content": "we're now running a gopher server and http proxy! connect to <a href=\"gopher://tilde.team\">gopher://tilde.team</a> or use <a href=\"https://gopher.tilde.team\">our http proxy</a> for when you don't have a gopher-capable browser handy"
-}

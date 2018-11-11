@@ -1,7 +1,0 @@
-{
-    "published": true,
-    "date": "jun 2018",
-    "title": "tildemail",
-    "author": "<a href=\"/~ben/\">~ben</a>",
-    "content": "what started as an initiative to get local mail working ended up with us just setting up a full mailserver with smtp and imap. see the <a href=\"https://tilde.team/wiki/?page=email\">email wiki</a> for more info and <a href=\"https://mail.tilde.team\">webmail</a> for easy access."
-}
