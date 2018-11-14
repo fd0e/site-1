@@ -3,7 +3,7 @@ author: ~ben
 published: true
 title: terms of service
 description: tilde.team terms of service
-category: 
+category:
     - main
 ---
 
@@ -30,18 +30,18 @@ here are some things that we don't allow:
 
 outgoing net- and portscanning is prohibited on tilde.team.
 
-after the [major outage](/~ben/blog/november-13-post-mortem.html) of november 13th, we have run in to the clause in the [hetzner tos](https://www.hetzner.com/rechtliches/root-server/) that prohibits net- and portscanning. please don't try to reach anything in the [RFC1918](https://tools.ietf.org/html/rfc1918) private address space. for some reason, packets sent there will end up at the default gateway and may be interpreted as an attack. 
+after the [major outage](/~ben/blog/november-13-post-mortem.html) of november 13th, we have run in to the clause in the [hetzner tos](https://www.hetzner.com/rechtliches/root-server/) that prohibits net- and portscanning. please don't try to reach anything in the [RFC1918](https://tools.ietf.org/html/rfc1918) private address space. for some reason, packets sent there will end up at the default gateway and may be interpreted as an attack.
 
 i've added firewall rule to prevent outgoing requests to these subnets:
 
-* 10.0.0.0/8            
+* 10.0.0.0/8
 * 172.16.0.0/12
 * 192.168.0.0/16
 
 
 ## resource usage
 
-in general, we have plenty of resources available. 
+in general, we have plenty of resources available.
 
 however, make sure to not run anything that would disrupt other users.
 
