@@ -12,3 +12,5 @@ later!
 ~brendantcc
 
 update: i've written up a [post mortem](/~ben/blog/november-13-post-mortem.html) ~ben
+
+update 2: i've written a [article from my perspective](https://tilde.team/~fosslinux/blog/on-november-13th-i-made-a-bit-of-an-oops.html) ~fosslinux
