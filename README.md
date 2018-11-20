@@ -14,6 +14,9 @@ tilde.team is one tiny standard unix computer in the cloud that anyone can use a
 
 this repo contains the frontpage and wiki for tilde.team. feel free to send pull requests or [sign up](https://tilde.team/signup/) for an account! thanks for checking it out.
 
+
+see also [css/](css/) for info on the theme and working with that.
+
 ---
 
 ## contributing
