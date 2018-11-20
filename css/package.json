@@ -1,20 +1,14 @@
 {
     "name": "tildeteam-css",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "a fork of brobin's h4x0r bootstrap theme, used by tilde.team",
     "author": "Ben Harris <ben@tilde.team>",
-    "scripts": {
-        "build": "npm run build-hacker & npm run build-dracula",
-        "build-hacker": "lessc less/hacker.less hacker.css --clean-css=\"--s1 --advanced --compatibility=ie8\"",
-        "build-dracula": "lessc less/dracula.less dracula.css --clean-css=\"--s1 --advanced --compatibility=ie8\"",
-        "dev": "npm run build && light-server -s . -p 9000 -w \"index.html, **/*.less # npm run build\" -o"
-    },
     "repository": {
         "type": "git",
-        "url": "https://tildegit.org/team/css"
+        "url": "https://tildegit.org/team/site/src/branch/master/css"
     },
     "bugs": {
-        "url": "https://tildegit.org/team/css/issues"
+        "url": "https://tildegit.org/team/site/issues"
     },
     "dependencies": {
         "bootstrap": "3.3.7",
