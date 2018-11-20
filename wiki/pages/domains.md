@@ -24,6 +24,7 @@ because [~ben](https://tilde.team/~ben/) hoards domain names, the following doma
 * [tilde.ninja](https://tilde.ninja/) - redirect
 * [tilde.pizza](https://tilde.pizza/) - redirect
 * [tilde.site](https://tilde.site/) - alias
+* [tilde.wiki](https://tilde.wiki/) - redirect
 * [tilde.wtf](https://tilde.wtf/) - redirect
 * [tilde.zone](https://tilde.zone/) - mastodon and related stuff
 * [tildegit.org](https://tildegit.org/) - gitea
