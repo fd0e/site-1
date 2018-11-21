@@ -1,6 +1,6 @@
 ---
 author: ~ben
-published: false
+published: true
 title: terms of service
 description: tilde.team terms of service
 category: 

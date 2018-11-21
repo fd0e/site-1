@@ -101,11 +101,13 @@ you can also send a mail to [sudoers@tilde.team](mailto:sudoers@tilde.team) to m
 * [cmccabe](https://tilde.team/~cmccabe/):
   - [cmccabe@tilde.team](mailto:cmccabe@tilde.team)
   - on irc `/query cmccabe hello`
-* [virtual](https://tilde.team/~virtual/):
-  - [virtual@tilde.team](mailto:virtual@tilde.team)
-  - on irc `/query virtual hello`
 
 
 ## 10. license and attribution
 
 this code of conduct is based on [citizencodeofconduct.org](http://citizencodeofconduct.org/) and [tilde.town coc](http://tilde.town/wiki/conduct.html) under the terms of the [creative commons attribution-sharealike license](http://creativecommons.org/licenses/by-sa/3.0/).
+
+
+## 11. terms of service
+
+please also see the [terms of service](?page=tos)
