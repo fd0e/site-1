@@ -11,6 +11,7 @@ category:
 
 because [~ben](https://tilde.team/~ben/) hoards domain names, the following domains are associated with tilde.team and/or the tildeverse somehow:
 
+* [fuckup.club](http://fuckup.club) - redirect, not sure yet
 * [nand.pub](https://nand.pub/) - not sure yet
 * [nand.sh](https://nand.sh/) - alias
 * [nand.team](https://nand.team/) - not sure yet
