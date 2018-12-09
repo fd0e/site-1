@@ -11,7 +11,7 @@ category:
 
 because [~ben](https://tilde.team/~ben/) hoards domain names, the following domains are associated with tilde.team and/or the tildeverse somehow:
 
-* [fuckup.club](http://fuckup.club) - redirect, not sure yet
+* [fuckup.club](http://fuckup.club) - alias
 * [nand.pub](https://nand.pub/) - not sure yet
 * [nand.sh](https://nand.sh/) - alias
 * [nand.team](https://nand.team/) - not sure yet
@@ -22,10 +22,10 @@ because [~ben](https://tilde.team/~ben/) hoards domain names, the following doma
 * [tilde.chat](https://tilde.chat/) - irc net
 * [tilde.life](https://tilde.life/) - redirect
 * [tilde.news](https://tilde.news/) - lobste.rs clone
-* [tilde.ninja](https://tilde.ninja/) - redirect
+* [tilde.ninja](https://tilde.ninja/) - alias
 * [tilde.pizza](https://tilde.pizza/) - redirect
 * [tilde.site](https://tilde.site/) - alias
-* [tilde.wiki](https://tilde.wiki/) - redirect
+* [tilde.wiki](https://tilde.wiki/) - alias of [tilde.team wiki](https://tilde.team/wiki/)
 * [tilde.wtf](https://tilde.wtf/) - redirect
 * [tilde.zone](https://tilde.zone/) - mastodon and related stuff
 * [tildegit.org](https://tildegit.org/) - gitea
