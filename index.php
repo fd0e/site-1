@@ -94,8 +94,9 @@ $parser = new Mni\FrontYAML\Parser();
                 <ul>
                 <?php
                 foreach (glob("/home/*") as $user):
-                    if (!is_dir("$user/public_html") 
-                        || sha1_file("/etc/skel/public_html/index.php") == sha1_file("$user/public_html/index.php")) 
+                    if (!is_dir("$user/public_html")
+                        || (file_exists("$user/public_html/index.php")
+                            && sha1_file("/etc/skel/public_html/index.php") == sha1_file("$user/public_html/index.php")))
                         continue;
                     $user = basename($user); ?>
                     <li style="list-style: none; margin-left: -40px;">
