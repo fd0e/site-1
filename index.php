@@ -88,7 +88,8 @@ $parser = new Mni\FrontYAML\Parser();
 
             <div class="col-md-5">
                 <h1>~users~</h1>
-                <em><a href="https://tilde.team/tilde.24h.html"><i class="fa fa-clock-o"></i> recent updates</a></em>
+                <p><em><a href="https://tilde.team/tilde.24h.html"><i class="fa fa-clock-o"></i> recent updates</a></em></p>
+                <p>if you're not listed here, make some changes to your page</p>
                 <br><br>
                 <div class="list-group">
                 <ul>
@@ -96,7 +97,9 @@ $parser = new Mni\FrontYAML\Parser();
                 foreach (glob("/home/*") as $user):
                     if (!is_dir("$user/public_html")
                         || (file_exists("$user/public_html/index.php")
-                            && sha1_file("/etc/skel/public_html/index.php") == sha1_file("$user/public_html/index.php")))
+                            && in_array(sha1_file("$user/public_html/index.php"),
+                            // these are the sha1s of two previous default pages
+                            ["ca32714c33abb57430583ad07efec6097ae1a044", "f190ba3a1ed796a20bea83304e45e799420c0716"])))
                         continue;
                     $user = basename($user); ?>
                     <li style="list-style: none; margin-left: -40px;">
