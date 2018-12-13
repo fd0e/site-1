@@ -4,6 +4,8 @@ this is a fork of [brobin's hacker bootstrap](https://github.com/brobin/hacker-b
 
 the latest compiled css will be available [here](https://tilde.team/css/hacker.css)
 
+if you want a quick start, feel free to use [skeleton.html](skeleton.html).
+
 the major changes from the original are a few tweaks to colors of code samples and font sizes.
 
 feel free to use and modify as you like!
