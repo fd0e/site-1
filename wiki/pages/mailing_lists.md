@@ -10,8 +10,7 @@ category:
 # mailing lists netiquette
 
 The tildeverse has now its own mailing list service. You can take a look at:
-
-    [lists.tildeverse.org]https://lists.tildeverse.org/
+[lists.tildeverse.org]https://lists.tildeverse.org/
 
 This is a description of the basic *netiquette* rules for this service. Most of
 the text is taken shamelessly from https://man.sr.ht/lists.sr.ht/etiquette.md
