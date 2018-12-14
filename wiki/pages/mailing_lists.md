@@ -7,11 +7,11 @@ category:
     - main
 ----
 
-# description
+# mailind lists netiquette
 
 The tildeverse has now its own mailing list service. You can take a look at:
 
-    https://lists.tildeverse.org/
+    [lists.tildeverse.org]https://lists.tildeverse.org/
 
 This is a description of the basic *netiquette* rules for this service. Most of
 the text is taken shamelessly from https://man.sr.ht/lists.sr.ht/etiquette.md
@@ -24,7 +24,7 @@ participating more smoothly in discussions on the tildeverse.  This advice will
 likely serve you well outside of the tildeverse as well.
 
 If you have any troubles following this guides or don't know how to configure
-your email client for this purpose, ask on IRC (#meta or #tilde), you'll find
+your email client for this purpose, ask on IRC (#meta or #team), you'll find
 always somebody willing to help.
 
 ## Plain text
@@ -99,13 +99,14 @@ inline signature. Look in your local PGP implementation's documentation for
 
 ## Attachments
 
-Try not to send attachment to the list or, if you do it, try them to be small
-files. Think about people with bad internet connection or limited resources.
-It's better to send a link to download whatever you want to share. If you send
-links, it's a good practice to describe the content and the size, so the reader
-can choose to download it or not before following the link. As an example:
+Try not to send attachment to the list or, if you do it, make sure they are
+small files. Think about people with bad internet connection or limited
+resources.  It's better to send a link to download whatever you want to share.
+If you send links, it's a good practice to describe the content and the size,
+so the reader can choose to download it or not before following the link. As an
+example:
 
-    https://mysite.com/myfiletoshare (pdf, 3,5MB)
+    https://ttm.sh/mydocument.pdf (pdf, 3,5MB)
 
 # Conclusion
 
