@@ -7,7 +7,7 @@ category:
     - main
 ----
 
-# mailind lists netiquette
+# mailing lists netiquette
 
 The tildeverse has now its own mailing list service. You can take a look at:
 
@@ -103,8 +103,9 @@ Try not to send attachment to the list or, if you do it, make sure they are
 small files. Think about people with bad internet connection or limited
 resources.  It's better to send a link to download whatever you want to share.
 If you send links, it's a good practice to describe the content and the size,
-so the reader can choose to download it or not before following the link. As an
-example:
+so the reader can choose to download it or not before following the link. For
+example, you can upload a file to [ttm.sh](https://ttm.sh) or drop it in your
+`~/public_html` directory and then send the link to the list like so:
 
     https://ttm.sh/mydocument.pdf (pdf, 3,5MB)
 
