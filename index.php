@@ -44,7 +44,7 @@ $parser = new Mni\FrontYAML\Parser();
             <div class="col-md-7">
                 <h1>~news~</h1>
                 <?php
-                foreach (array_slice(array_reverse(glob("news/pages/*.md")), 0, 3) as $page):
+                foreach (array_slice(array_reverse(glob("news/pages/*.md")), 0, 4) as $page):
                     $parsed = $parser->parse(file_get_contents($page));
                     $yaml = $parsed->getYAML();
                     if (!$yaml["published"]) continue; ?>
