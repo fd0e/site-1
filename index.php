@@ -21,7 +21,7 @@ $parser = new Mni\FrontYAML\Parser();
         <p>tilde.team is a shared system that provides an inclusive, non-commercial space for teaching, learning, practicing and enjoying the social medium of unix.</p>
         <p>i created this tilde after hearing about paul ford's <a href="http://tilde.club/">tilde.club</a>. when i was unable to join due to the waitlist, i decided to create my own tilde.</p>
         <p>thanks for stopping by!</p>
-        <p>tilde.team is a founding member of <a href="https://tildeverse.org">tildeverse.org</a>, which is a collaborative effort among several <a href="https://tildeverse.org/members.php">other tilde servers</a>.</p>
+        <p>tilde.team is a founding member of <a href="https://tildeverse.org">tildeverse.org</a>, which is a collaborative effort among several <a href="https://tildeverse.org/members/">other tilde servers</a>.</p>
         <p><a href="/~ben/">~ben</a></p>
 
         <br>
