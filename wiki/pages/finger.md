@@ -26,13 +26,11 @@ finger user@host
 which displays login name, home directory, shell, real name, current login time, idle time, whether or not the user has mail, and the contents of the user's ~/.plan file. Here is an example of the output:
 
 ```
-Login: ahriman                          Name:
-Directory: /home/ahriman                Shell: /bin/bash
-On since Wed Jan  2 04:04 (EST) on pts/94 from 168.235.67.38 via mosh [6420]
+Login: username                          Name: Bob Bobson XXII
+Directory: /home/username                Shell: /bin/bash
+On since Wed Jan  2 04:04 (EST) on pts/94 from 168.297.83.21 via mosh [6420]
     8 minutes 26 seconds idle
-On since Wed Jan  2 04:33 (EST) on pts/215 from 168.235.67.38 via mosh [3216]
-    2 seconds idle
-Last login Wed Jan  2 04:33 (EST) on pts/91 from 168.235.67.38
+Last login Wed Jan  2 04:33 (EST) on pts/91 from 168.297.83.21
 No mail.
 Plan:
 hey hey hey everybody!
