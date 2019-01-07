@@ -3,42 +3,36 @@ author: ~ben
 published: true
 title: email
 description: email settings for tilde.team
-category: 
-    - main
+category:
+  - main
 ---
 
 # email
 
 tilde.team has a mailserver. here are your options:
 
-
 ### clients and connection settings
 
-* mutt - should work out of the box
-
-* alpine - should work out of the box
-
-* [webmail](https://mail.tilde.team)
-
-* imap/smtp
-    - email address: username@tilde.team (or any of the aliased domains)
-    - username: username (without the domain)
-    - password: your shell password
-    - imap: imap.tilde.team port 143 (starttls)
-    - smtp: smtp.tilde.team port 587 (starttls)
-    - (any subdomain of tilde.team works for smtp and imap. just make sure you have tls selected)
-
-these settings may or may not be automatically configured in your client.
+- mutt - should work out of the box
+- alpine - should work out of the box
+- [webmail](https://mail.tilde.team)
+- imap/smtp
+  - email address: username@tilde.team (or any of the aliased [domains](?page=domains))
+  - username: username (without the domain)
+  - password: your shell password
+  - imap: imap.tilde.team port 143 (starttls)
+  - smtp: smtp.tilde.team port 587 (starttls)
+  - (any subdomain of tilde.team works for smtp and imap. just make sure you have tls selected)
+  - some clients will autoconfigure (tested with thunderbird)
 
 ### alternate domains and addresses
 
 because [~ben](https://tilde.team/~ben/) hoards domain names, you can use any of the [domains on this list](?page=domains) with your tildemail:
 
-mail sent to yourusername@ any of those domains will end up in your inbox. most clients will allow you to add additional identities/aliases. 
+mail sent to yourusername@ any of those domains will end up in your inbox. most clients will allow you to add additional identities/aliases.
 
-additionally, any address with a `-` or `+` and arbitrary text behind it will be forwarded to you email: ie. `your_username+somethingcool@tildeverse.org` or `yourusername-notcool@tilde.site`.
+additionally, any address with a `-` or `+` and arbitrary text behind it will be forwarded to you email: ie. `your_username+somethingcool@tildeteam.org` or `yourusername-notcool@tilde.site`.
 feel free to use as many as you'd like :)
-
 
 ### forwarding and sieve
 

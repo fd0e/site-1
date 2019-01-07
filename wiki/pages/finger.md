@@ -3,17 +3,23 @@ author: ~ahriman
 published: false
 title: finger
 description: finger as a social network
-category: 
-    - main
+category:
+  - main
 ---
 
 # finger
 
 the [finger protocol](https://en.wikipedia.org/wiki/Finger_protocol) was created way back in 1977. its purpose was to display information about the queried user of a system, or all the users of a system.
 
-it fell out of use in the 1990s due to various security concerns. the old finger daemons were buggy and easily exploited, while the information garnered from a query could be used for social engineering attacks. nowadays, the finger daemons have been refined and are no longer so vulnerable. 
+it fell out of use in the 1990s due to various security concerns. the old finger daemons were buggy and easily exploited, while the information garnered from a query could be used for social engineering attacks. nowadays, the finger daemons have been refined and are no longer so vulnerable.
 
 in the post-facebook world, new types of social networks are popping up. the latest in this movement is a resurgence of the finger protocol. what follows is a rough guide for getting yourself up to speed with finger on [tilde.team](https://tilde.team).
+
+## tilde.team specifics
+
+here on ~team, we run efingerd. see `man efingerd` for more info.
+
+you can create a script called `~/.efingerd` which will be run when anyone fingers you.
 
 ## querying
 
@@ -45,4 +51,3 @@ For example, say you want to use it as a personal summary, like having a blurb a
 For a more traditional social network style format, put dated and timed status updates as if you're tooting on a mastodon instance. The sky's the limit! Well, actually, text is the limit. But you get the idea. Right?
 
 hope to see you on finger soon!
-
