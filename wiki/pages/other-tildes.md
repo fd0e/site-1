@@ -14,6 +14,7 @@ if you're starting a tilde and want to be added to this list, [open a PR :)](htt
 | tilde name | description | where to join | notes |
 |---|---|---|---|
 | [tilde.institute](https://tilde.institute) | Provides a space dedicated to the OpenBSD operating system. Includes a functional BCHS stack for users to experiment with and use to create web applications. | [signup form](https://tilde.institute/signup) | |
+| [tilde.center](https://tilde.center) | A public unix server focused around decentralization, federation, and home-brewed open source projects. | [signup form](https://tilde.center/signup.php) | |
 | [nand.club](http://nand.club) | a new anti-capitalist, solarpunk tilde | [signup info here](http://nand.club) | |
 | [thunix](https://thunix.org) | thunix offers Secure Shell (SSH) accounts, Web Hosting, Email Accounts, and many other things to people free of charge. | [signup info here](https://www.thunix.org) | down |
 | [tildespark](https://tildespark.ddns.net) | Tilde Spark is a constantly evolving intentional community devoted to free software, open hardware and meeting new people! | [signup info here](https://tildespark.ddns.net/ikiwiki/tildespark/howtojoin/) | down |
