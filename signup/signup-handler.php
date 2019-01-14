@@ -1,8 +1,6 @@
 <?php
 require __DIR__.'/../vendor/autoload.php';
-
-if ($_SERVER["SERVER_NAME"] != "localhost")
-    require_once "/home/ben/ultimate-email/support/smtp.php";
+require_once "email/smtp.php";
 
 function forbidden_name($name) {
     return in_array($name, [
