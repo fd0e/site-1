@@ -1,4 +1,9 @@
         <hr>
+        <footer class="text-center">
+            <a href="https://tildegit.org/team/site">page source</a>
+            &mdash;
+            <a href="https://bhh.sh/donate/">donate</a>
+        </footer>
     </div>
 
     <br>

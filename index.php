@@ -22,6 +22,7 @@ $parser = new Mni\FrontYAML\Parser();
         <p>i created this tilde after hearing about paul ford's <a href="http://tilde.club/">tilde.club</a>. when i was unable to join due to the waitlist, i decided to create my own tilde.</p>
         <p>thanks for stopping by!</p>
         <p>tilde.team is a founding member of <a href="https://tildeverse.org">tildeverse.org</a>, which is a collaborative effort among several <a href="https://tildeverse.org/members/">other tilde servers</a>.</p>
+        <p>hosting and domains are paid out-of-pocket. tilde.team will always be free to use. however, if you are able and willing to pitch in, you can <a href="https://bhh.sh/donate/">donate here</a>.</p>
         <p><a href="/~ben/">~ben</a></p>
 
         <br>
