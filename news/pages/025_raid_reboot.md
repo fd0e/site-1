@@ -22,6 +22,6 @@ running will now be stopped and you will have to reconnect back to irc if you
 had your irc client running on ~team. thelounge should have automatically
 reconnected.
 
-if there's any further issues, let ~ben know on irc or at <ben at ttm dot sh>.
+if there's any further issues, let ~ben know on irc or at &lt;ben at ttm dot sh>.
 
 once again, thanks to ~ben for the work he does maintaining ~team!
