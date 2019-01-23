@@ -78,4 +78,4 @@ Refresh your tilde page in your browser to see your new website
 
 Note: If at any time you feel you made a mistake in editing, you can exit and n to not save.
 
-see the [advanced ssh key guide](/wiki/view.php?page=advanced-ssh) for more information and cool tips :)
+see the [advanced ssh key guide](?page=advanced-ssh) for more information and cool tips :)
