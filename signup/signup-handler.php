@@ -98,7 +98,7 @@ ssh key:
 sudo ./makeuser {$_REQUEST["username"]} {$_REQUEST["email"]} \"{$_REQUEST["sshkey"]}\"
 ";
 
-        if (mail('sudoers', 'new tilde.team signup', $msgbody, "Reply-To: {$_REQUEST["email"]}")) {
+        if (mail('sudoers', 'new tilde.team signup', $msgbody)) {
             echo '<div class="alert alert-success" role="alert">
                     email sent! i\'ll get back to you soon with login instructions! <a href="/">back to tilde.team home</a>
                   </div>';
