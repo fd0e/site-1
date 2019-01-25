@@ -1,5 +1,5 @@
-<?php 
-include 'header.php'; 
+<?php
+include 'header.php';
 require __DIR__.'/vendor/autoload.php';
 $parser = new Mni\FrontYAML\Parser();
 ?>
@@ -82,15 +82,16 @@ $parser = new Mni\FrontYAML\Parser();
                         </div>
                     <?php endforeach; ?>
                 </div>
-                
+
                 <h1>our <a href="https://tilde.zone/@tildeteam">mastodon</a> feed</h1>
                 <iframe allowfullscreen sandbox="allow-top-navigation allow-scripts" width="100%" height="800" src="https://www.mastofeed.com/api/feed?url=https%3A%2F%2Ftilde.zone%2Fusers%2Ftildeteam.atom&theme=dark&size=100&header=true&replies=true&boosts=true"></iframe>
             </div>
 
             <div class="col-md-5">
                 <h1>~users~</h1>
-                <p><em><a href="https://tilde.team/tilde.24h.html"><i class="fa fa-clock-o"></i> recent updates</a></em></p>
+                <p><em><a href="/tilde.24h.html"><i class="fa fa-clock-o"></i> recent updates</a></em></p>
                 <p>if you're not listed here, make some changes to your page</p>
+                <p><a href="/users/">all users</a></p>
                 <br><br>
                 <div class="list-group">
                 <ul>
