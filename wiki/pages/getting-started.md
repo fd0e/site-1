@@ -3,8 +3,8 @@ author: ~ben
 published: true
 title: getting started
 description: tilde.team getting started guide
-category: 
-    - main
+category:
+  - main
 ---
 
 # getting started
@@ -32,41 +32,38 @@ New to the command line and all this webby cowfoolery? You're in luck! Here's a 
 
 ### PC (windows)
 
-* On a PC, you'll need to get an ssh client. [PuTTY](http://www.putty.org/) is a good one.
-    - host: tilde.team
-* another option is to use [WSL (windows subsystem for linux)](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
-* or [git bash](https://git-scm.com) included with a standard git install
+- [git bash](https://gitforwindows.org) included with a standard git install
+- [msys2](https://msys2.github.io) is quite nice and has support for [mosh](https://mosh.org)
+- another option is to use [WSL (windows subsystem for linux)](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 ### Linux
 
-* Open a terminal. Try ctrl + alt + t.
-* `ssh your_username@tilde.team`
-* Enter your password.
-
+- Open a terminal. Try ctrl + alt + t.
+- `ssh your_username@tilde.team`
+- Enter your password.
 
 ### Mac
 
-* Browse to Applications/Utilities/Terminal and launch Terminal (or press cmd+space, start typing Terminal, and press return)
-* `ssh your_username@tilde.team`
-* Enter your password.
+- Browse to Applications/Utilities/Terminal and launch Terminal (or press cmd+space, start typing Terminal, and press return)
+- `ssh your_username@tilde.team`
+- Enter your password.
 
-
-## Finding your index.html file
+## Finding your index.php file
 
 There are some basic command line commands you'll want to Google and learn, but for this tutorial you only need a few:
 
-* `ls` = list files and folders in current directory
-* `cd` = change directories
-* `nano` = a command line text editor
+- `ls` = list files and folders in current directory
+- `cd` = change directories
+- `nano` = a command line text editor
 
 Type: `ls` to see where you are. You should see a directory called "public_html"
 
 Type: `cd public_html` to move into that folder. (cd stands for change directory.)
 
-Type: `ls` to see where you are. You should see your index.html file
-Editing your index.html file
+Type: `ls` to see where you are. You should see your index.php file
+Editing your index.php file
 
-Type: `nano index.html` to open your index.html file and begin editing
+Type: `nano index.php` to open your index.php file and begin editing
 
 Edit your file, willy nilly
 
