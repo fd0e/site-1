@@ -15,13 +15,13 @@ the tilde.chat irc network is available at tilde.chat:+6697 (with ssl)
 
 this is the beginning of the [tilde.chat](https://tilde.chat) irc federation! more info on that site.
 
-### here are you options to connect:
+### here are some options to connect:
 
 * `weechat` when logged in with ssh
 * `irssi`
-* `znc` running on your tilde.team shell
-* `webirc` to register your thelounge account for [our webchat](https://irc.tilde.team)
-* any other client that you like: connect to tilde.chat:6697 with ssl
+* [`znc`](https://znc.tilde.team/) - log in with your shell password and configure as needed
+* run `webirc` to register your thelounge account for [our webchat](https://irc.tilde.team)
+* any other client that you like: connect to team.tilde.chat:6697 with ssl
 
 local connections (weechat, irssi, znc) can use 6667 without ssl
 

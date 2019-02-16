@@ -32,6 +32,7 @@ as a founding member of the [tildeverse](https://tildeverse.org), tilde.team hos
   - [whiteboard](https://pad.tildeverse.org/whiteboard/)
   - [file drop](https://pad.tildeverse.org/file/)
   - [todo lists](https://pad.tildeverse.org/todo/)
+- [nextcloud](https://cloud.tilde.team/) - 250mb limit: log in with your shell password
 - [paste bin](https://paste.tildeverse.org)
 - [nullpointer fileshare](https://ttm.sh)
 - [termbin](https://bin.tilde.team)
@@ -43,6 +44,7 @@ as a founding member of the [tildeverse](https://tildeverse.org), tilde.team hos
 - [irc](https://tilde.chat) tilde.chat irc network for the tildeverse
   - we host one node of the [network](https://tilde.chat/wiki/?page=servers)
   - we host [quotes.tilde.chat](https://quotes.tilde.chat)
+  - [znc bouncer](https://znc.tilde.team/) - log in with your shell password
   - [thelounge webclient](https://irc.tilde.team) - runs in private mode: it stays connected for you. run `webirc` to create a login.
 - [pleroma](https://pleroma.tilde.zone) federated social network
 - [mastodon](https://tilde.zone) federated social network
