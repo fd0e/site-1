@@ -12,6 +12,7 @@ function forbidden_name($name) {
         'autoconfig',
         'bbj',
         'broadcasthost',
+        'cloud',
         'forum',
         'ftp',
         'git',
@@ -54,6 +55,7 @@ function forbidden_name($name) {
         'webmaster',
         'wpad',
         'www',
+        'znc',
     ]);
 }
 
