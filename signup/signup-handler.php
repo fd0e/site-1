@@ -97,7 +97,7 @@ reason: {$_REQUEST["interest"]}
 ssh key:
 {$_REQUEST["sshkey"]}
 
-sudo ./makeuser {$_REQUEST["username"]} {$_REQUEST["email"]} \"{$_REQUEST["sshkey"]}\"
+sudo makeuser {$_REQUEST["username"]} {$_REQUEST["email"]} \"{$_REQUEST["sshkey"]}\"
 ";
 
         if (mail('sudoers', 'new tilde.team signup', $msgbody)) {
