@@ -40,6 +40,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/signup/">sign up</a></li>
                 <li><a href="/wiki/">wiki</a></li>
+                <li><a href="https://bhh.sh/donate/">donate</a></li>
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">~team stuff
