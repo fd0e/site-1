@@ -18,3 +18,7 @@ This will affect all tildeverse services hosted on the tilde.team server. This i
 Always working to help improve this server,
 
 ~khuxkm and the tilde.team admins
+
+edit: i had some free time tonight and did the migration early. we're on the new box! everything should be up and running on the new box. please let an admin know if something is amiss.
+if you get a MITM warning from ssh, please remove the offending entry from known_hosts. the expected key signature is: SHA256:R3qNfKIF3IiXhKCbFX6rCKl73yzexi9Wodsow6XFres. ~ben
+
