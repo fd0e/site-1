@@ -32,4 +32,5 @@ if you're starting a tilde and want to be added to this list, [open a PR :)](htt
 | [remotes.club](https://remotes.club) | Anyone who works remotely is welcome. | [signup form](https://www.remotes.club/request.php) |
 | [tilde.cat](https://tilde.cat) | This is (or rather might be) public shell server like [the club](https://tilde.club), [the town](https://tilde.town), or other ~ servers. | [signup form](http://signup.tilde.cat) | |
 | [tilde.pink](gopher://tilde.pink) | A gopher only tilde, providing shell acounts with email and gopher services running on a DragonflyBSD server. The site is accessable via [web proxy](https://proxy.tilde.pink) |  [signup form](gopher://tilde.pink/1/signup.gph) | |
-| [rw.rs](http://rw.rs) | An experimental software community with a 199X aesthetic. | [signup via pull request](https://github.com/adsr/rw.rs/) | |
+| [rw.rs](http://rw.rs) | An experimental software community with a 199X aesthetic. | [signup via pull request](https://github.com/adsr/rw.rs/) | 
+| [theasylum] (https://theasylum.team) Closed tilde catering to programmers of all languages, join #theasylum on irc.tilde.team, and let us get to know you
