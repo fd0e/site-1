@@ -13,6 +13,7 @@ if you're starting a tilde and want to be added to this list, [open a PR :)](htt
 
 | tilde name | description | where to join | notes |
 |---|---|---|---|
+| rawtext.club | rawtext.club (RTC) is an experimental public access shell server with a focus on use of collaborative projects for gnu/linux skill building. Projects include simple, command line social tools and utilities, or whatever lightweight programs users are interested in.  RTC does not use IRC, and instead focuses on other slower and more thoughtful forms of user interaction.  | Send email to admin@rawtext.club with your ssh pubkey, desired username, and a statement describing your interest in joining.  | |
 | [tilde.institute](https://tilde.institute) | Provides a space dedicated to the OpenBSD operating system. Includes a functional BCHS stack for users to experiment with and use to create web applications. | [signup form](https://tilde.institute/signup) | |
 | [tilde.center](https://tilde.center) | A public unix server focused around decentralization, federation, and home-brewed open source projects. | [signup form](https://tilde.center/signup.php) | |
 | [nand.club](http://nand.club) | a new anti-capitalist, solarpunk tilde | [signup info here](http://nand.club) | |
