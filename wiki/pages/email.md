@@ -31,7 +31,7 @@ because [~ben](https://tilde.team/~ben/) hoards domain names, you can use any of
 
 mail sent to yourusername@ any of those domains will end up in your inbox. most clients will allow you to add additional identities/aliases.
 
-additionally, any address with a `-` or `+` and arbitrary text behind it will be forwarded to you email: ie. `your_username+somethingcool@tildeteam.org` or `yourusername-notcool@tilde.site`.
+additionally, any address with a `+` and arbitrary text behind it will be forwarded to you email: ie. `your_username+somethingcool@tildeteam.org`.
 feel free to use as many as you'd like :)
 
 ### forwarding and sieve
