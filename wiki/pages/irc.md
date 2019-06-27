@@ -48,14 +48,14 @@ location (`~/.weechat/relay_socket`). to get started using it, follow these step
 
 1. in your relay client:
     * glowing-bear:
-        - <user>.ttm.sh
+        - $user.ttm.sh
         - port 443
         - your relay password
 
     * weechat-android:
         - connection type: websocket (ssl)
         - websocket path: weechat
-        - relay host: <user>.ttm.sh
+        - relay host: $user.ttm.sh
         - relay port: 443
         - your relay password
 
