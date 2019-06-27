@@ -27,4 +27,39 @@ this is the beginning of the [tilde.chat](https://tilde.chat) irc federation! mo
 
 local connections (weechat, irssi, znc) can use 6667 without ssl
 
+## weechat relays
+
+weechat introduced [unix socket relays](
+https://weechat.org/files/doc/stable/weechat_user.en.html#relay_unix_socket)
+in version 2.5 which is a much easier way to offer per-user relay access.
+
+<user>.ttm.sh/weechat is configured to proxy to the default unix relay socket
+location (`~/.weechat/relay_socket`). to get started using it, follow these steps.
+
+in weechat:
+* `/relay add unix.weechat %h/relay_socket`
+* `/set relay.network.password mysupersecretpassword` - don't use this password
+    of course. note that you might already have this set.
+
+at your shell:
+* `chmod o+rw ~/.weechat/relay_socket` - note that other members of the team group
+    are not included in the granted permissions. this allows nginx to connect
+    to your socket on your behalf
+
+in your relay client:
+* glowing-bear:
+    - <user>.ttm.sh
+    - port 443
+    - your relay password
+
+* weechat-android:
+    - connection type: websocket (ssl)
+    - websocket path: weechat
+    - relay host: <user>.ttm.sh
+    - relay port: 443
+    - your relay password
+
+---
+
 for more info, see the [tilde.chat wiki](https://tilde.chat/wiki/) for info on bots and other specifics.
+
