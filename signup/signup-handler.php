@@ -65,10 +65,21 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
     $name = trim($_REQUEST["username"]);
     if ($name == "")
         $message .= "<li>please fill in your desired username</li>";
+
     if (strlen($name) > 32)
         $message .= "<li>username too long (32 character max)</li>";
+
     if (!preg_match('/^[a-z][a-z0-9]{2,31}$/', $name))
         $message .= "<li>username contains invalid characters (lowercase only, must start with a letter)</li>";
+
+    if ($_REQUEST["sshkey"] == "")
+        $message .= '<li>ssh key required: please create one and submit the public key. '
+            . 'see our <a href="https://tilde.team/wiki/?page=ssh">ssh wiki</a> or '
+            . 'hop on <a href="https://web.tilde.chat/?join=team">irc</a> and ask for help</li>';
+
+    if ($_REQUEST["interest"] == "")
+        $message .= "<li>please explain why you're interested so we can make sure you're a real human being</li>";
+
     if (posix_getpwnam($name) || forbidden_name($name))
         $message .= "<li>sorry, the username $name is unavailable</li>";
 
@@ -84,25 +95,20 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
             $message .= "<li>invalid email address. did you mean:  " . htmlspecialchars($result["email"]) . "</li>";
     }
 
-    if ($_REQUEST["sshkey"] == "") {
-        $message .= "<li>ssh key required: please create one and submit the public key</li>";
-    }
 
-
-    if ($message == "") { // no validation errors
+    // no validation errors
+    if ($message == "") { 
         $msgbody = "
-desired username: {$_REQUEST["username"]}
-contact email: {$_REQUEST["email"]}
+username: {$_REQUEST["username"]}
+email: {$_REQUEST["email"]}
 reason: {$_REQUEST["interest"]}
-ssh key:
-{$_REQUEST["sshkey"]}
 
 makeuser {$_REQUEST["username"]} {$_REQUEST["email"]} \"{$_REQUEST["sshkey"]}\"
 ";
 
         if (mail('sudoers', 'new tilde.team signup', $msgbody)) {
             echo '<div class="alert alert-success" role="alert">
-                    email sent! we\'ll get back to you soon with login instructions! <a href="/">back to tilde.team home</a>
+                    email sent! we\'ll get back to you soon (usually within a day) with login instructions! <a href="/">back to tilde.team home</a>
                   </div>';
         } else {
             echo '<div class="alert alert-danger" role="alert">
