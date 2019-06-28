@@ -67,7 +67,7 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
         $message .= "<li>please fill in your desired username</li>";
     if (strlen($name) > 32)
         $message .= "<li>username too long (32 character max)</li>";
-    if (!preg_match('/^[A-Za-z][A-Za-z0-9]{2,31}$/', $name))
+    if (!preg_match('/^[a-z][a-z0-9]{2,31}$/', $name))
         $message .= "<li>username contains invalid characters (lowercase only, must start with a letter)</li>";
     if (posix_getpwnam($name) || forbidden_name($name))
         $message .= "<li>sorry, the username $name is unavailable</li>";
@@ -97,12 +97,12 @@ reason: {$_REQUEST["interest"]}
 ssh key:
 {$_REQUEST["sshkey"]}
 
-sudo makeuser {$_REQUEST["username"]} {$_REQUEST["email"]} \"{$_REQUEST["sshkey"]}\"
+makeuser {$_REQUEST["username"]} {$_REQUEST["email"]} \"{$_REQUEST["sshkey"]}\"
 ";
 
         if (mail('sudoers', 'new tilde.team signup', $msgbody)) {
             echo '<div class="alert alert-success" role="alert">
-                    email sent! i\'ll get back to you soon with login instructions! <a href="/">back to tilde.team home</a>
+                    email sent! we\'ll get back to you soon with login instructions! <a href="/">back to tilde.team home</a>
                   </div>';
         } else {
             echo '<div class="alert alert-danger" role="alert">
@@ -120,3 +120,4 @@ sudo makeuser {$_REQUEST["username"]} {$_REQUEST["email"]} \"{$_REQUEST["sshkey"
     }
 }
 ?>
+
