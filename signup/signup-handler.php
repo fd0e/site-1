@@ -72,7 +72,7 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
     if (!preg_match('/^[a-z][a-z0-9]{2,31}$/', $name))
         $message .= "<li>username contains invalid characters (lowercase only, must start with a letter)</li>";
 
-    if ($_REQUEST["sshkey"] == "")
+    if ($_REQUEST["sshkey"] == "" || mb_substr($_REQUEST["sshkey"], 0, 4) !== "ssh-")
         $message .= '<li>ssh key required: please create one and submit the public key. '
             . 'see our <a href="https://tilde.team/wiki/?page=ssh">ssh wiki</a> or '
             . 'hop on <a href="https://web.tilde.chat/?join=team">irc</a> and ask for help</li>';
