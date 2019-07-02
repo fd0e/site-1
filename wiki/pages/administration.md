@@ -122,6 +122,8 @@ Here's how to fix it:
 
 ## lxd
 
+> we're not provisioning lxd containers for users at this time
+
 this is the process that i use to create lxd containers for users.
 
 you need two things from the user: an ssh public key (on their ~team shell) and a [distro choice](https://us.images.linuxcontainers.org/)

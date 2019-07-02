@@ -9,9 +9,11 @@ category:
 
 # terms of service
 
-tilde.team relies on the common courtesy and consideration of users to make its services fair for everyone. the following offences will result in a service ban:
+tilde.team relies on the common courtesy and consideration of users to make 
+its services fair for everyone. the following offences will result in a service ban:
 
-tl;dr: don't do anything illegal or harmful, especially anything that could [anger the hosting company](https://www.hetzner.com/rechtliches/root-server/)
+tl;dr: don't do anything illegal or harmful, especially anything that could 
+[anger the hosting company](https://www.ovh.com/world/support/terms-and-conditions/)
 
 here are some things that we don't allow:
 
@@ -30,7 +32,14 @@ here are some things that we don't allow:
 
 outgoing net- and portscanning is prohibited on tilde.team.
 
-after the [major outage](/~ben/blog/november-13-post-mortem.html) of november 13th, we have run in to the clause in the [hetzner tos](https://www.hetzner.com/rechtliches/root-server/) that prohibits net- and portscanning. please don't try to reach anything in the [RFC1918](https://tools.ietf.org/html/rfc1918) private address space. for some reason, packets sent there will end up at the default gateway and may be interpreted as an attack.
+> this is outdated now that tilde.team lives on ovh
+
+after the [major outage](/~ben/blog/november-13-post-mortem.html) of november 13th, 
+we have run in to the clause in the [hetzner tos](
+https://www.hetzner.com/rechtliches/root-server/) that prohibits net- and 
+portscanning. please don't try to reach anything in the [RFC-1918](
+https://tools.ietf.org/html/rfc1918) private address space. for some reason, 
+packets sent there will end up at the default gateway and may be interpreted as an attack.
 
 i've added firewall rule to prevent outgoing requests to these subnets:
 

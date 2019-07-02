@@ -17,7 +17,8 @@ tmux or screen session. let's use systemd user units to manage it!
 mkdir -p ~/.config/systemd/user/
 ```
 
-1. create a basic service. save something like this in ~/.config/systemd/user/my-new-service.service (adjusting where necessary)
+1. create a basic service. save something like this in 
+`~/.config/systemd/user/my-new-service.service` (adjusting where necessary)
 ```bash
 [Unit]
 Description=foo
@@ -44,3 +45,5 @@ done!
 
 you can now use `systemctl --user` to manage your daemonized process.
 
+pro-tip: add `alias sysu='systemctl --user'` to your shell's configuration
+for a handy shortcut (or any other alias as you choose)

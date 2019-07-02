@@ -1,7 +1,7 @@
 <?php
 include 'header.php';
 require __DIR__.'/vendor/autoload.php';
-$parser = new Mni\FrontYAML\Parser();
+$parser = Wiki\MDParser::factory();
 ?>
 
         <div class="jumbotron">
@@ -15,14 +15,34 @@ $parser = new Mni\FrontYAML\Parser();
 </pre>
 
             <br>
+
             <p>a digital community for socializing, learning, and making cool stuff</p>
         </div>
 
-        <p>tilde.team is a shared system that provides an inclusive, non-commercial space for teaching, learning, practicing and enjoying the social medium of unix.</p>
-        <p>i created this tilde after hearing about paul ford's <a href="http://tilde.club/">tilde.club</a>. when i was unable to join due to the waitlist, i decided to create my own tilde.</p>
+        <p>
+            tilde.team is a shared system that provides an inclusive, 
+            non-commercial space for teaching, learning, practicing and 
+            enjoying the social medium of unix.
+        </p>
+        <p>
+            i created this tilde after hearing about paul ford's 
+            <a href="http://tilde.club/">tilde.club</a>. when i was unable 
+            to join due to the waitlist, i decided to create my own tilde.
+        </p>
+
         <p>thanks for stopping by!</p>
-        <p>tilde.team is a founding member of <a href="https://tildeverse.org">tildeverse.org</a>, which is a collaborative effort among several <a href="https://tildeverse.org/members/">other tilde servers</a>.</p>
-        <p>hosting and domains are paid out-of-pocket. tilde.team will always be free to use. however, if you are able and willing to pitch in, you can <a href="https://bhh.sh/donate/">donate here</a>.</p>
+
+        <p>
+            tilde.team is a founding member of <a href="https://tildeverse.org">tildeverse.org</a>, 
+            which is a collaborative effort among several <a href="https://tildeverse.org/members/">
+            other tilde servers</a>.
+        </p>
+        <p>
+            hosting and domains are paid out-of-pocket. tilde.team will always 
+            be free to use. however, if you are able and willing to pitch in, 
+            you can <a href="https://bhh.sh/donate/">donate here</a>.
+        </p>
+
         <p><a href="/~ben/">~ben</a></p>
 
         <br>
@@ -44,20 +64,25 @@ $parser = new Mni\FrontYAML\Parser();
         <div class="row">
             <div class="col-md-7">
                 <h1>~news~</h1>
-                <?php
-                foreach (array_slice(array_reverse(glob("news/pages/*.md")), 0, 4) as $page):
+                <?php foreach (array_slice(array_reverse(glob("news/pages/*.md")), 0, 4) as $page):
                     $parsed = $parser->parse(file_get_contents($page));
                     $yaml = $parsed->getYAML();
                     if (!$yaml["published"]) continue; ?>
+
                     <div class="list-group">
                         <div class="list-group-item">
                             <h3 class="list-group-item-heading"><?=$yaml["title"]?></h3>
-                            <em><a href="/news/?page=<?=basename($page, ".md")?>"><?=$yaml["date"]?></a> - <a href="/~<?=$yaml["author"]?>/"><?=$yaml["author"]?></a></em>
+                            <em>
+                                <a href="/news/?page=<?=basename($page, ".md")?>">
+                                <?=$yaml["date"]?></a> - <a href="/~<?=$yaml["author"]?>/"><?=$yaml["author"]?></a>
+                            </em>
                             <hr>
                             <p class="list-group-item-text"><?=$parsed->getContent()?></p>
                         </div>
                     </div>
+
                 <?php endforeach; ?>
+
                 <div class="list-group">
                     <div class="list-group-item">
                         <p class="list-group-item-text"><a href="/news/">news archive here...</a></p>
@@ -116,4 +141,3 @@ $parser = new Mni\FrontYAML\Parser();
         </div>
 
 <?php include 'footer.php'; ?>
-

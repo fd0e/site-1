@@ -33,7 +33,7 @@ weechat introduced [unix socket relays](
 https://weechat.org/files/doc/stable/weechat_user.en.html#relay_unix_socket)
 in version 2.5 which is a much easier way to offer per-user relay access.
 
-<user>.ttm.sh/weechat is configured to proxy to the default unix relay socket
+username.ttm.sh/weechat is configured to proxy to the default unix relay socket
 location (`~/.weechat/relay_socket`). to get started using it, follow these steps.
 
 1. in weechat:

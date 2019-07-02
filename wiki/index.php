@@ -15,20 +15,7 @@ $additional_head = "
     <meta property='og:site_name' content='tilde.team wiki'>
 ";
 
-class MDParser implements Mni\FrontYAML\Markdown\MarkdownParser {
-    public function __construct() {
-        $this->mdparser = new Michelf\MarkdownExtra();
-        $this->mdparser->header_id_func = function ($header) {
-            return preg_replace('/[^a-z0-9]/', '-', strtolower($header));
-        };
-    }
-
-    public function parse($markdown) {
-        return $this->mdparser->transform($markdown);
-    }
-}
-
-$parser = new Mni\FrontYAML\Parser(null, new MDParser());
+$parser = Wiki\MDParser::factory();
 
 
 if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
@@ -77,7 +64,7 @@ if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
     <a href=".">&lt; ~wiki</a>
 
     <hr>
-        <?=str_replace("<table", '<table class="table table-striped"', $pg->getContent())?>
+        <?=$pg->getContent()?>
     <hr>
     <a href="https://tildegit.org/team/site/src/branch/master/wiki/pages/<?=$_GET["page"]?>.md">
         <i class="fa fa-edit"></i> source

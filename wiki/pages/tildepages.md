@@ -10,7 +10,8 @@ category:
 # tildepages
 
 
-because [~ben](https://tilde.team/~ben/) hoards domain names, you can use the following domains with your tildepage:
+because [~ben](https://tilde.team/~ben/) hoards domain names, you can 
+use the following domains with your tildepage:
 
 see also the [master list of domains](?page=domains).
 
@@ -24,7 +25,8 @@ see also the [master list of domains](?page=domains).
 * tilde.team
 * tildeteam.org
 
-this means you can access your user page from any of the following url formats, substituting domain and username:
+this means you can access your user page from any of the following 
+url formats, substituting domain and username:
 
 * `https://domain.tld/~username/`
 * `https://domain.tld/u/username/`
