@@ -1,7 +1,6 @@
 {
     "require": {
         "mnapoli/front-yaml": "^1.6",
-        "michelf/php-markdown": "^1.8",
         "erusev/parsedown-extra": "^0.7.1"
     },
     "autoload": {
