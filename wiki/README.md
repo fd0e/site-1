@@ -23,6 +23,12 @@ cp template.md my-new-page.md
 
 * edit as needed!
 
+* test your changes with a local php server
+```sh
+composer install
+php -S localhost:9000
+```
+
 * commit your changes and [create a pull request](https://tildegit.org/team/site/pulls) :)
 ```sh
 git add --all
