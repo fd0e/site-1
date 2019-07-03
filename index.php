@@ -1,7 +1,7 @@
 <?php
 include 'header.php';
 require __DIR__.'/vendor/autoload.php';
-$parser = Wiki\MDParser::factory();
+$parser = Tildeverse\Wiki\Parser::factory();
 ?>
 
         <div class="jumbotron">

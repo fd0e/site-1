@@ -1,11 +1,11 @@
 {
     "require": {
-        "mnapoli/front-yaml": "^1.6",
-        "erusev/parsedown-extra": "^0.7.1"
+        "tildeverse/wiki": "dev-master"
     },
-    "autoload": {
-        "psr-4": {
-            "Wiki\\": "src/"
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://tildegit.org/ben/tildewiki"
         }
-    }
+    ]
 }

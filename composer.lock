@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "db7c98dc793b27a7aff27ee1d448fa42",
+    "content-hash": "3ab3df15c4e40417f427b37691e83088",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -247,12 +247,44 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2019-04-06T14:04:46+00:00"
+        },
+        {
+            "name": "tildeverse/wiki",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://tildegit.org/ben/tildewiki",
+                "reference": "751eb64c383cb7c6ec643eaf683b88aa1de351ea"
+            },
+            "require": {
+                "erusev/parsedown-extra": "^0.7.1",
+                "mnapoli/front-yaml": "^1.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tildeverse\\Wiki\\": "src/"
+                }
+            },
+            "license": [
+                "GPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Harris",
+                    "email": "ben@tilde.team"
+                }
+            ],
+            "description": "parsedown extensions for tilde wikis",
+            "time": "2019-07-03T05:06:34+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "tildeverse/wiki": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
