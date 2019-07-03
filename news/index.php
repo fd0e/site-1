@@ -15,7 +15,7 @@ $additional_head = "
     <meta property='og:site_name' content='tilde.team news'>
 ";
 
-$parser = Wiki\MDParser::factory();
+$parser = Tildeverse\Wiki\Parser::factory();
 
 
 if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
