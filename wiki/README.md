@@ -38,6 +38,19 @@ git push origin my-new-page # this should match the branch name you created earl
 
 * create a pull request on the [site](https://tildegit.org/team/site) repo
 
+## deployment notes
+
+as of a7305c7b the wiki uses pretty urls (while still supporting the old style
+of `?page=` urls). to enable this functionality, add the following location
+block to your nginx configs for this site:
+
+```
+location ~* ^/wiki/(.+)$ {
+    try_files $uri $uri/ /wiki/index.php?page=$1;
+    include snippets/php.conf;
+}
+```
+
 thanks!~
 
 ps. if you have any questions, ask on irc! (preferably in #team)
