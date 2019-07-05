@@ -44,7 +44,7 @@ if (!isset($_GET["page"]) || !file_exists("pages/{$_GET['page']}.md")) {
     foreach (glob("pages/*.md") as $page) {
         $yaml = $parser->parse(file_get_contents($page))->getYAML();
         if (!$yaml["published"]) continue; ?>
-        <a href="?page=<?=basename($page, ".md")?>"><?=$yaml["title"]?></a><br>
+        <a href="<?=basename($page, ".md")?>"><?=$yaml["title"]?></a><br>
     <?php }
 
 } else {
