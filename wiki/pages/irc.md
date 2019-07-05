@@ -16,7 +16,7 @@ the tilde.chat irc network is available at irc.tilde.chat:6697 (with ssl) as a r
 
 this is the beginning of the [tilde.chat](https://tilde.chat) irc federation! more info on that site.
 
-### here are some options to connect:
+## here are some options to connect:
 
 * `weechat` when logged in with ssh
 * `irssi`
@@ -58,6 +58,21 @@ location (`~/.weechat/relay_socket`). to get started using it, follow these step
         - relay host: $user.ttm.sh
         - relay port: 443
         - your relay password
+
+## znc 
+
+the system znc authenticates using your shell password (same as with email and
+[nextcloud](https://cloud.tilde.team). reach out to an admin on irc or send an
+email to [sudoers@tilde.team](mailto:sudoers@tilde.teaem).
+
+the webadmin interface is available at [znc.tilde.team](https://znc.tilde.team).
+
+client connections are on port 6699 with ssl.
+
+you can add network connections (up to 10) via webadmin or via a direct client
+connection.
+
+see the [znc wiki](https://wiki.znc.in/Connecting_to_ZNC) for more information.
 
 ---
 
