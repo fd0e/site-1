@@ -23,7 +23,7 @@ we invite all those who participate in tilde.team to help us create safe and pos
 
 ## 2. tilde.team mission
 
-[full goals/roadmap document](https://tilde.team/wiki/?page=goals-roadmap)
+[full goals/roadmap document](https://tilde.team/wiki/goals-roadmap)
 
 **tilde.team exists to foster an engaged community for socializing, learning, and making cool stuff**
 
@@ -110,4 +110,4 @@ this code of conduct is based on [citizencodeofconduct.org](http://citizencodeof
 
 ## 11. terms of service
 
-please also see the [terms of service](?page=tos)
+please also see the [terms of service](tos)

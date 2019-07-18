@@ -17,7 +17,7 @@ You'll find a lot of people online arguing that GNU+Linux is _not_ a text-based 
 
 ## How do I connect to a shell server?
 
-The most common way to connect remote GNU+Linux system is with an SSH client. SSH stands for secure-shell. SSH allows you to make a private connection between your computer and a shell server like [tilde.team](https://tilde.team), and it ensures that nobody else along the wire can listen in on your connection. Check out [our SSH page](https://tilde.team/wiki/?page=ssh) for information on connecting to tilde.team over SSH.
+The most common way to connect remote GNU+Linux system is with an SSH client. SSH stands for secure-shell. SSH allows you to make a private connection between your computer and a shell server like [tilde.team](https://tilde.team), and it ensures that nobody else along the wire can listen in on your connection. Check out [our SSH page](https://tilde.team/wiki/ssh) for information on connecting to tilde.team over SSH.
 
 If you are having trouble with making your first SSH connection to tilde.team, or anything else while you're learning from this tutorial, drop by the [tilde.team web chat](https://web.tilde.chat/) or email an admin for help ([sudoers@tilde.team](mailto:sudoers@tilde.team)).
 
@@ -57,7 +57,7 @@ Skipping some specifics for now, you can log into tilde.town from a tilde.team s
 
 > `ssh tilde.team`
 
-Some shell servers allow you to log in with nothing more than a username and password. But increasingly, many servers (like both tilde.team and tilde.town) require you to use ssh keys. To learn more about ssh keys, again, see our SSH page: https://tilde.team/wiki/?page=ssh
+Some shell servers allow you to log in with nothing more than a username and password. But increasingly, many servers (like both tilde.team and tilde.town) require you to use ssh keys. To learn more about ssh keys, again, see our [SSH page](ssh).
 
 ### Logging Out, with `logout` or `exit`
 

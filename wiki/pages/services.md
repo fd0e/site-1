@@ -42,7 +42,7 @@ as a founding member of the [tildeverse](https://tildeverse.org), tilde.team hos
 
 - [tilde.news](https://tilde.news) - [lobste.rs](https://lobste.rs) sister site for tilde-related links
 - [irc](https://tilde.chat) tilde.chat irc network for the tildeverse
-  - we host one node of the [network](https://tilde.chat/wiki/?page=servers)
+  - we host one node of the [network](https://tilde.chat/wiki/servers)
   - we host [quotes.tilde.chat](https://quotes.tilde.chat)
   - [znc bouncer](https://znc.tilde.team/) - log in with your shell password
   - [thelounge webclient](https://irc.tilde.team) - runs in private mode: it stays connected for you. run `webirc` to create a login.
@@ -51,7 +51,7 @@ as a founding member of the [tildeverse](https://tildeverse.org), tilde.team hos
   - [pinafore front-end](https://pinafore.tilde.zone)
   - [halcyon front-end](https://halcyon.tilde.zone)
   - [tooty front-end](https://tooty.tilde.zone)
-- [email](?page=email) ([webmail](https://mail.tilde.team), smtp/imap, mutt, and alpine)
+- [email](email) ([webmail](https://mail.tilde.team), smtp/imap, mutt, and alpine)
   - [mailing lists](https://lists.tildeverse.org) - hosted on top of our mailserver
 - [bbj](https://tildegit.org/team/bbj) ([web mirror here](https://bbj.tilde.team)) - forked from [desvox/bbj](https://github.com/bbj-dev/bbj)
 - [gopher proxy](https://gopher.tilde.team) - defaults to our local gopherd: gopher://tilde.team

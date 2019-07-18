@@ -28,9 +28,9 @@ to use, run `feels` while logged in to tilde.team
 
 this is a project that runs on tilde.team, so all users of this program are
 expected to operate under the tilde.team [code of
-conduct](http://tilde.team/wiki/?page=code-of-conduct). content/personal issues should be
+conduct](http://tilde.team/wiki/code-of-conduct). content/personal issues should be
 worked out according to the CoC, with support from the [administrative
-team](http://tilde.team/wiki/?page=administration) if needed.
+team](http://tilde.team/wiki/administration) if needed.
 
 
 ### QUICK START

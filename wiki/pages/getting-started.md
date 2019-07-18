@@ -9,7 +9,7 @@ category:
 
 # getting started
 
-this guide is not very thorough or complete. if you want something nicer, try [our cli for beginners article](?page=cli-for-beginners).
+this guide is not very thorough or complete. if you want something nicer, try [our cli for beginners article](cli-for-beginners).
 
 ---
 
@@ -75,4 +75,4 @@ Refresh your tilde page in your browser to see your new website
 
 Note: If at any time you feel you made a mistake in editing, you can exit and n to not save.
 
-see the [advanced ssh key guide](?page=advanced-ssh) for more information and cool tips :)
+see the [advanced ssh key guide](advanced-ssh) for more information and cool tips :)

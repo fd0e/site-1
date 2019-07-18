@@ -69,7 +69,7 @@ welcome mail template:
     our irc is tilde.chat, an irc network connecting several
     tilde servers. the `chat` command on your ~team shell will open up
     weechat with some nice default configs and plugins.
-    see our wiki article (https://tilde.team/wiki/?page=irc)
+    see our wiki article (https://tilde.team/wiki/irc)
     or https://tilde.chat site for information on how to connect from elsewhere.
     we also have a webclient at https://irc.tilde.team that you can
     register for by running the `webirc` command from a shell session.
@@ -190,4 +190,4 @@ bam! now `<username>.tilde.team` will forward requests to the container.
 
 make sure that the user is running some kind of webserver on port 80 inside the container!
 
-feel free to add other configs to their vhost or use any of the other [tildepage domains](?page=tildepages)
+feel free to add other configs to their vhost or use any of the other [tildepage domains](tildepages)

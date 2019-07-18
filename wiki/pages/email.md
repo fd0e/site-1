@@ -17,7 +17,7 @@ tilde.team has a mailserver. here are your options:
 - alpine - should work out of the box
 - [webmail](https://mail.tilde.team)
 - imap/smtp
-  - email address: username@tilde.team (or any of the aliased [domains](?page=domains))
+  - email address: username@tilde.team (or any of the aliased [domains](domains))
   - username: username (without the domain)
   - password: your shell password
   - imap: imap.tilde.team port 143 (starttls)
@@ -27,7 +27,7 @@ tilde.team has a mailserver. here are your options:
 
 ### alternate domains and addresses
 
-because [~ben](https://tilde.team/~ben/) hoards domain names, you can use any of the [domains on this list](?page=domains) with your tildemail:
+because [~ben](https://tilde.team/~ben/) hoards domain names, you can use any of the [domains on this list](domains) with your tildemail:
 
 mail sent to yourusername@ any of those domains will end up in your inbox. most clients will allow you to add additional identities/aliases.
 

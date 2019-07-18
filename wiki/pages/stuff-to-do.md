@@ -23,7 +23,7 @@ category:
 - `finger` - get info on other users (local and remote on other tildeverse member servers)
 - `toot` - submit a post to the [tilde.team mastodon account](https://tilde.zone/@tildeteam)
 - `botany` - tend to your plants and visit teammates' gardens
-- `bb` - [bashblog tool](?page=tildeblogs)
+- `bb` - [bashblog tool](tildeblogs)
 - `feels` - ttbp feels engine, forked from [tilde.town/~endorphant](https://tilde.town/~endorphant/ttbp/). post to gopher, web, or internal only.
 - `dcss` - connect to [tildecrawl](https://crawl.tildeverse.org) and get your roguelike on
 

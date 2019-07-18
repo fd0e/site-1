@@ -13,7 +13,7 @@ category:
 because [~ben](https://tilde.team/~ben/) hoards domain names, you can 
 use the following domains with your tildepage:
 
-see also the [master list of domains](?page=domains).
+see also the [master list of domains](domains).
 
 * fuckup.club
 * nand.sh

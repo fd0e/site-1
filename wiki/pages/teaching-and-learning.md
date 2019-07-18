@@ -23,14 +23,14 @@ you're stuck on something, and to offer help to others who are learning.
 
 stuck for ideas? or looking for a bigger challenge? tilde.team also maintains
 a [list of internship opportunities and code challenge websites](
-    https://tilde.team/wiki/?page=learning-opportunities). this list is a new
+    https://tilde.team/wiki/learning-opportunities). this list is a new
     feature of the site, so please contribute by letting us know (by email,
     IRC or pull request) of any other opportunities you know of.
 
 ## 2. learning resources
 
 tilde.team's IRC server is the social hub around which a lot of learning
-occurs. [log on](https://tilde.team/wiki/?page=irc) and get to know some people.
+occurs. [log on](https://tilde.team/wiki/irc) and get to know some people.
 
 we have numerous compilers and interpreters installed in the shell, including
 g++, python, ruby, perl and many others. if you need something that is not
