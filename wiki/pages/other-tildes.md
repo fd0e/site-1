@@ -9,14 +9,16 @@ category:
 
 # other tildes
 
-if you're starting a tilde and want to be added to this list, [open a PR :)](https://tildegit.org/team/site)
+if you're starting a tilde and want to be added to this list, [open a PR :)](
+https://tildegit.org/team/site/src/branch/master/wiki/pages/other-tildes.md)
 
 | tilde name | description | where to join | notes |
 | --- | --- | --- | ---|
+| [envs.net](https://envs.net/) | envs.net is a minimalist, non-commercial shared unix system and will always be free to use. | [signup here](https://envs.net/signup) | |
 | [rawtext.club](https://rawtext.club) | rawtext.club (RTC) is an experimental public access shell server with a focus on use of collaborative projects for gnu/linux skill building. Projects include simple, command line social tools and utilities, or whatever lightweight programs users are interested in.  RTC does not use IRC, and instead focuses on other slower and more thoughtful forms of user interaction.  | Send email to admin@rawtext.club with your ssh pubkey, desired username, and a statement describing your interest in joining.  | |
 | [tilde.institute](https://tilde.institute) | Provides a space dedicated to the OpenBSD operating system. Includes a functional BCHS stack for users to experiment with and use to create web applications. | [signup form](https://tilde.institute/signup) | |
-| [tilde.center](https://tilde.center) | A public unix server focused around decentralization, federation, and home-brewed open source projects. | [signup form](https://tilde.center/signup.php) | |
-| [nand.club](http://nand.club) | a new anti-capitalist, solarpunk tilde | [signup info here](http://nand.club) | |
+| [tilde.center](https://tilde.center) | A public unix server focused around decentralization, federation, and home-brewed open source projects. | [signup form](https://tilde.center/signup.php) | down |
+| [nand.club](http://nand.club) | a new anti-capitalist, solarpunk tilde | [signup info here](http://nand.club) | down |
 | [thunix](https://thunix.net) | thunix offers Secure Shell (SSH) accounts, Web Hosting, Email Accounts, and many other things to people free of charge. | [signup info here](https://www.thunix.net/signup.php) | |
 | [tildespark](https://tildespark.ddns.net) | Tilde Spark is a constantly evolving intentional community devoted to free software, open hardware and meeting new people! | [signup info here](https://tildespark.ddns.net/ikiwiki/tildespark/howtojoin/) | down |
 | [tilde.fun](https://tilde.fun) | This is a Linux machine on the internet where you can get a shell account. | `ssh tilde@tilde.fun` | down |
