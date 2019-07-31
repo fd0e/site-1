@@ -17,14 +17,12 @@ we're trying to keep this cool corner of the web alive.
 
 ## add and create your gophersite
 
-to add your own gopher site, run the following command:
-this is created along with your account. to get listed on the [main gophermap](gopher://tilde.team),
-make some changes to your root gophermap. the listing script diffs against the default gophermap.
-```bash
-mkdir -p -m 755 ~/public_gopher
-```
-(this presumes you don't already have a public_gopher dir in your $HOME.
-new users from here on out will have a public_gopher by default)
+tilde.team serves user gopherholes from your `~/public_gopher` directory.
+
+to get listed on the [main gophermap](gopher://tilde.team),
+make some changes to your root gophermap. the [root gophermap](
+https://tildegit.org/team/gopherhole/src/branch/master/gophermap)
+diffs against the default gophermap that was included with your account.
 
 if a file called `gophermap` exists in the directory you're currently
 browsing to in gopher, it will get processed and displayed.
@@ -48,7 +46,7 @@ if you're currently connected from a tilde.team shell, you can use the
 lynx gopher://tilde.team
 ```
 
-if you want to access the gophersite in your public_gopher dir, use the following
+if you want to access the gophersite in your public\_gopher dir, use the following
 link structure: [gopher://tilde.team/1/~username](gopher://tilde.team/1/~username)
 
 you can install it on your local machine too :)
@@ -56,3 +54,4 @@ you can install it on your local machine too :)
 otherwise, you can use our [http proxy](https://gopher.tildeverse.org/tilde.team) to browse the gophernet.
 
 hope to see you on there soon!
+
