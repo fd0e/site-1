@@ -78,3 +78,5 @@ make a mkdocs site called mywiki available on the web, you could do:
 * [jekyll](https://jekyllrb.com/) - static site generator used by github for 
 [github pages](https://pages.github.com) built in ruby
 
+* [zola](https://getzola.org/) - single-binary static site generator written in rust
+
