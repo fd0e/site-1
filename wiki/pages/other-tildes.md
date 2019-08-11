@@ -14,6 +14,7 @@ https://tildegit.org/team/site/src/branch/master/wiki/pages/other-tildes.md)
 
 | tilde name | description | where to join | notes |
 | --- | --- | --- | ---|
+| [tilde.best](https://tilde.best) | tilde.best is a Debian server which is aiming to have a *best* community and *best* features. | email [root@tilde.best](mailto:root@tilde.best) with your ssh pubkey, desired username and reason why you want to join | |
 | [cosmic.voyage](https://cosmic.voyage) | cosmic.voyage is an Ubuntu server focused on collaborative sci-fi storytelling. The background story is visible on the homepage. New authors are welcome to join and take on the voice of various ships, outposts, and colonies scattered across the universe, sending text messages back to a relay at Earth's L4 point. | email [tomasino@lavabit.com](mailto:tomasino@lavabit.com) with your ssh pubkey, desired username, and the name of your first ship | |
 | [ctrl-c.club](http://ctrl-c.club) | A place for the curious to poke around and play. SSH access, web pages, games, and programming languages on tap. | [signup form](http://goo.gl/forms/oviL1wYSrV) | |
 | [envs.net](https://envs.net/) | envs.net is a minimalist, non-commercial shared unix system and will always be free to use. | [signup here](https://envs.net/signup) | |
