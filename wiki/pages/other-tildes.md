@@ -14,7 +14,7 @@ https://tildegit.org/team/site/src/branch/master/wiki/pages/other-tildes.md)
 
 | tilde name | description | where to join | notes |
 | --- | --- | --- | ---|
-| [cosmic.voyage](https://cosmic.voyage) | cosmic.voyage is an Ubuntu server focused on collaborative sci-fi storytelling. The background story is visible on the homepage. New authors are welcome to join and take on the voice of various ships, outposts, and colonies scattered across the universe, sending text messages back to a relay at Earth's L4 point. | email [tomasino@lavabit.com](mailto:tomasino@lavabit.com) with your ssh pubkey, desired username, and the name of your first ship | |
+| [cosmic.voyage](https://cosmic.voyage) | cosmic.voyage is an Ubuntu server focused on collaborative sci-fi storytelling. The background story is visible on the homepage. New authors are welcome to join and take on the voice of various ships, outposts, and colonies scattered across the universe, sending text messages back to a relay at Earth's L4 point. | email register(at)cosmic.voyage with your ssh pubkey, desired username, and the name of your first ship | |
 | [ctrl-c.club](http://ctrl-c.club) | A place for the curious to poke around and play. SSH access, web pages, games, and programming languages on tap. | [signup form](http://goo.gl/forms/oviL1wYSrV) | |
 | [envs.net](https://envs.net/) | envs.net is a minimalist, non-commercial shared unix system and will always be free to use. | [signup here](https://envs.net/signup) | |
 | [hackers.cool](http://hackers.cool) | A tilde.club started by some nerd at Hacker School. As such, it's got a lot of Hacker Schoolers on it, but everyone is welcome! | [signup form](https://docs.google.com/forms/d/1PHnXadDW1WySCB9frIefjXI3P6bt8n_p4YMyiPPD4O4/viewform) | |
