@@ -38,13 +38,17 @@ url formats, substituting domain and username:
 are served at the addresses described above.
 
 static files are served normally, along with the following dynamic options:
-* php - name the file with a php extension or use index.php
-* perl - name the file with a pl extension and make it executable
+* php - name the file with a .php extension or use index.php
+* perl - name the file with a .pl extension
+* sh/cgi - name the file with a .sh or .cgi extension
+* python - name the file with a .py extension
+* lua - name the file with a .lua extension
 * cgi-bin - name it whatever you want and place it in `~/public_html/cgi-bin/`
     don't forget to make the cgi-bin script executable
 
-if you're having trouble with .pl or cgi-bin scripts, make sure that you're
-sending the content-type header as the first thing.
+if you're having trouble with any of these cgi scripts, make sure that the script
+has a correct shebang, is executable, and that you're sending the content-type 
+header as the first thing.
 
 ## static page generators
 
