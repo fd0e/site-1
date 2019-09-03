@@ -18,7 +18,6 @@ because [~ben](https://tilde.team/~ben/) hoards domain names, the following doma
 * [nand.zone](http://nand.zone/) - not sure yet
 * [ttm.sh](https://ttm.sh/) - url shortener
 * [tild3.org](https://tild3.org/) - alias
-* [tild3.club](https://tild3.club/) - alias
 * [tilde.chat](https://tilde.chat/) - irc net
 * [tilde.life](http://tilde.life/) - redirect
 * [tilde.news](https://tilde.news/) - lobste.rs clone
@@ -26,7 +25,6 @@ because [~ben](https://tilde.team/~ben/) hoards domain names, the following doma
 * [tilde.pizza](http://tilde.pizza/) - redirect
 * [tilde.site](https://tilde.site/) - alias
 * [tilde.wiki](https://tilde.wiki/) - alias of [tilde.team wiki](https://tilde.team/wiki/)
-* [tilde.wtf](http://tilde.wtf/) - redirect
 * [tilde.zone](https://tilde.zone/) - mastodon and related stuff
 * [tildegit.org](https://tildegit.org/) - gitea
 * [tilderadio.org](https://tilderadio.org/) - tildeverse radio
