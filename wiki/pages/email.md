@@ -21,8 +21,9 @@ tilde.team has a mailserver. here are your options:
   - username: username (without the domain)
   - password: your shell password
   - imap: imap.tilde.team port 143 (starttls)
+  - pop3: pop3.tilde.team port 995 (tls)
   - smtp: smtp.tilde.team port 587 (starttls)
-  - (any subdomain of tilde.team works for smtp and imap. just make sure you have tls selected)
+  - (any subdomain of tilde.team works for smtp, pop3, and imap. just make sure you have tls selected)
   - some clients will autoconfigure (tested with thunderbird)
 
 ### alternate domains and addresses
