@@ -1,7 +1,7 @@
 <?php
 $services = [
     'gitea' => ['fa' => 'code-fork', 'url' => 'https://tildegit.org/team/'],
-    'forum' => ['fa' => 'comment', 'url' => 'https://bbj.tilde.team'],
+    'forum' => ['fa' => 'comment', 'url' => 'https://bbj.tildeverse.org'],
     'mastodon' => ['fa' => 'retweet', 'url' => 'https://tilde.zone'],
     'chat' => ['fa' => 'comments-o', 'url' => '/wiki/?page=irc'],
     'nextcloud' => ['fa' => 'cloud', 'url' => 'https://cloud.tilde.team/'],

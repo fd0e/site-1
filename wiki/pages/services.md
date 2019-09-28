@@ -15,7 +15,7 @@ as a founding member of the [tildeverse](https://tildeverse.org), tilde.team hos
 
 ### our deployed projects
 
-- [forum](https://forum.tilde.team) ([source](https://tildegit.org/team/forum)) - mostly defunct in favor of [bbj](https://bbj.tilde.team)
+- [forum](https://forum.tilde.team) ([source](https://tildegit.org/team/forum)) - mostly defunct in favor of [bbj](https://bbj.tildeverse.org)
 
 ### code related stuff
 
@@ -53,5 +53,5 @@ as a founding member of the [tildeverse](https://tildeverse.org), tilde.team hos
   - [tooty front-end](https://tooty.tilde.zone)
 - [email](email) ([webmail](https://mail.tilde.team), smtp/imap, mutt, and alpine)
   - [mailing lists](https://lists.tildeverse.org) - hosted on top of our mailserver
-- [bbj](https://tildegit.org/team/bbj) ([web mirror here](https://bbj.tilde.team)) - forked from [desvox/bbj](https://github.com/bbj-dev/bbj)
+- [bbj](https://tildegit.org/bbj/bbj) ([web mirror here](https://bbj.tildeverse.org)) - forked from [desvox/bbj](https://github.com/bbj-dev/bbj)
 - [gopher proxy](https://gopher.tilde.team) - defaults to our local gopherd: gopher://tilde.team
