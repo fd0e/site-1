@@ -12,10 +12,7 @@ category:
 because [~ben](https://tilde.team/~ben/) hoards domain names, the following domains are associated with tilde.team and/or the tildeverse somehow:
 
 * [fuckup.club](http://fuckup.club) - alias
-* [nand.pub](http://nand.pub/) - planned [sr.ht](https://meta.sr.ht) instance; WIP
 * [nand.sh](https://nand.sh/) - alias
-* [nand.team](http://nand.team/) - not sure yet
-* [nand.zone](http://nand.zone/) - not sure yet
 * [ttm.sh](https://ttm.sh/) - url shortener
 * [tild3.org](https://tild3.org/) - alias
 * [tilde.chat](https://tilde.chat/) - irc net
