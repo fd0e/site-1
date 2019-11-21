@@ -39,4 +39,4 @@ https://tildegit.org/team/site/src/branch/master/wiki/pages/other-tildes.md)
 | [tilde.town](https://tilde.town) | tilde.town is an open, welcoming and safe place for the exploration of lo-fi HTML art, hi-fi javascript experiments, generative poetic works, and digital socialization in a post-facebook age. | [signup form](https://cgi.tilde.town/users/signup) | |
 | [tildespark](https://tildespark.ddns.net) | Tilde Spark is a constantly evolving intentional community devoted to free software, open hardware and meeting new people! | [signup info here](https://tildespark.ddns.net/ikiwiki/tildespark/howtojoin/) | down |
 | [wilde.ftp.sh](http://wilde.ftp.sh/) | The world's first (and possibly only) Windows-based tilde! | [signup form](http://wilde.ftp.sh/signup.php) | |
-| [yourtilde.com](https://yourtilde.com) | If you're looking for a new ~, to learn and play, come check us out. | [signup form](https://tilde.team/signup/) | |
+| [yourtilde.com](https://yourtilde.com) | If you're looking for a new ~, to learn and play, come check us out. | [signup form](https://tilde.team/signup/) | down, merged with [~club](https://tilde.club/) |
