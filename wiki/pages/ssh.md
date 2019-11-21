@@ -151,14 +151,64 @@ where username is your username (~ben would use `ssh ben@tilde.team`)
 
 ---
 
-### windows
+### windows 10
 
-there are a couple options for using ssh on windows these days.
-i like to use [git bash](https://git-scm.com).
+windows 10 1809 or later has openssh built in, so you no longer need to install third-party tools. if openssh is not enabled, please see microsoft's documentation on [openssh in windows](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_overview).
 
 #### generating your keypair
 
-choose from any of the following options:
+1. open your new shell
+
+1. create your .ssh directory
+
+```powershell
+mkdir .ssh
+```
+
+1. create your keypair
+
+for rsa keys:
+
+```powershell
+ssh-keygen -t rsa -b 4096
+```
+
+for ed25519 keys:
+
+```powershell
+ssh-keygen -t ed25519 -a 100
+```
+
+1. if you press enter to accept the defaults, your public and private key will
+be located at `%UserProfile%\.ssh\id_rsa.pub` and `%UserProfile$\.ssh\id_rsa` respectively (or
+`%UserProfile%\.ssh\id_ed25519.pub` and `%UserProfile%\.ssh\id_ed25519` if you chose ed25519 type)
+
+1. `type %UserProfile%\.ssh\id_rsa.pub` (or `type %UserProfile%\.ssh\id_ed25519.pub` for ed25519)
+
+1. copy the output of the last command and paste it in the sshkey field on the
+signup form (or email it to [~sudoers](mailto:sudoers@tilde.team) if you already have an account)
+
+#### using your keypair
+
+once [~ben](https://tilde.team/~ben/) or another admin approves your signup, you can join the tilde.team
+
+1. open powershell (right click start button and select "windows powershell")
+
+1. `ssh` to tilde.team:
+
+```bash
+ssh username@tilde.team
+```
+
+where username is your username (~ben would use `ssh ben@tilde.team`)
+
+1. profit???
+
+---
+
+### legacy windows
+
+older versions of windows unfortunately do not come with openssh, and you will need to install a third-party tool. you may choose from any of the following options:
 
 - [windows subsystem for linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 - [msys2](http://www.msys2.org/)
@@ -199,7 +249,7 @@ signup form (or email it to [~sudoers](mailto:sudoers@tilde.team) if you already
 
 once [~ben](https://tilde.team/~ben/) or another admin approves your signup, you can join the tilde.team
 
-1. open terminal (it's in `/Applications/Utilities`)
+1. open terminal (location will vary depending on your choice)
 
 1. `ssh` to tilde.team:
 
