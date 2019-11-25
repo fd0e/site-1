@@ -17,7 +17,11 @@ for user in users:
 	if user=="asm":
 		continue
 	tdpuser = dict(username=user)
-	title = bs(requests.get("https://tilde.team/~{}".format(user)).text,"lxml").title
+	try:
+		title = bs(requests.get("https://tilde.team/~{}".format(user)).text,"lxml").title
+	except:
+		if user=="ahriman": pass
+		else: raise
 	if title is None:
 		title = "No title"
 	else:
