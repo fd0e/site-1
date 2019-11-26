@@ -14,7 +14,7 @@ because [~ben](https://tilde.team/~ben/) hoards domain names, the following doma
 * [fuckup.club](http://fuckup.club) - alias
 * [nand.sh](https://nand.sh/) - alias
 * [ttm.sh](https://ttm.sh/) - url shortener
-* [tild3.org](https://tild3.org/) - alias
+* [tild3.org](https://tild3.org/) - alias *note*: this is tentatively planned to be decommissioned
 * [tilde.chat](https://tilde.chat/) - irc net
 * [tilde.life](http://tilde.life/) - redirect
 * [tilde.news](https://tilde.news/) - lobste.rs clone
@@ -25,8 +25,10 @@ because [~ben](https://tilde.team/~ben/) hoards domain names, the following doma
 * [tilde.zone](https://tilde.zone/) - mastodon and related stuff
 * [tildegit.org](https://tildegit.org/) - gitea
 * [tilderadio.org](https://tilderadio.org/) - tildeverse radio
-* [tildeteam.org](https://tildeteam.org/) - alias
+* [tildeteam.net](https://tildeteam.net/) - alias
+* [tildeteam.org](https://tildeteam.org/) - alias *note*: this is tentatively planned to be decommissioned
 * [tildenet.org](http://tildenet.org/) - redirect to tilde.chat
+* [tildeverse.net](https://tildeverse.net/) - the tildeverse! (registered due to impending .org price hikes)
 * [tildeverse.org](https://tildeverse.org/) - the tildeverse!
 
 aliases can be used as-is, where redirects will simply change to a tilde.team url.

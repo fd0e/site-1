@@ -23,6 +23,7 @@ see also the [master list of domains](domains).
 * tilde.ninja
 * tilde.site
 * tilde.team
+* tildeteam.net
 * tildeteam.org
 
 this means you can access your user page from any of the following 
