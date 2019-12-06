@@ -1,5 +1,7 @@
 # [tilde.team](https://tilde.team/)
 
+[![Build Status](https://drone.tildegit.org/api/badges/team/site/status.svg)](https://drone.tildegit.org/team/site)
+
 tilde.team homepage
 
 ```
