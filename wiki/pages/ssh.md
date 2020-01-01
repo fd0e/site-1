@@ -33,6 +33,15 @@ ssh -p 443 user@ssh.tilde.team
 ssh user@tilde.team  # this uses port 22, which can be blocked on some networks
 ```
 
+tilde.team's ECDSA key fingerprint is SHA256:R3qNfKIF3IiXhKCbFX6rCKl73yzexi9Wodsow6XFres.
+
+the key fingerprints are in dns as sshfp records as well, which you can check against
+by setting VerifyHostKeyDNS to yes in your `~/.ssh/config`.
+
+you can check the records yourself with the `dig` tool like this:
+
+    dig sshfp tilde.team
+
 ---
 
 ## intro
