@@ -109,7 +109,6 @@ $parser = Tildeverse\Wiki\Parser::factory();
                 </div>
 
                 <h1>our <a href="https://tilde.zone/@tildeteam">mastodon</a> feed</h1>
-                <iframe allowfullscreen style="position: absolute; width: 100%; border: none" sandbox="allow-top-navigation allow-scripts" height="800" src="https://www.mastofeed.com/api/feed?url=https%3A%2F%2Ftilde.zone%2Fusers%2Ftildeteam.atom&theme=dark&size=100&header=true&replies=true&boosts=true"></iframe>
             </div>
 
             <div class="col-md-5">
