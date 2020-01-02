@@ -77,7 +77,7 @@ $parser = Tildeverse\Wiki\Parser::factory();
                                 <?=$yaml["date"]?></a> - <a href="/~<?=$yaml["author"]?>/"><?=$yaml["author"]?></a>
                             </em>
                             <hr>
-                            <p class="list-group-item-text"><?=$parsed->getContent()?></p>
+                            <div class="list-group-item-text"><?=$parsed->getContent()?></div>
                         </div>
                     </div>
 
@@ -109,7 +109,7 @@ $parser = Tildeverse\Wiki\Parser::factory();
                 </div>
 
                 <h1>our <a href="https://tilde.zone/@tildeteam">mastodon</a> feed</h1>
-                <iframe allowfullscreen sandbox="allow-top-navigation allow-scripts" width="100%" height="800" src="https://www.mastofeed.com/api/feed?url=https%3A%2F%2Ftilde.zone%2Fusers%2Ftildeteam.atom&theme=dark&size=100&header=true&replies=true&boosts=true"></iframe>
+                <iframe allowfullscreen style="position: absolute; width: 100%; border: none" sandbox="allow-top-navigation allow-scripts" height="800" src="https://www.mastofeed.com/api/feed?url=https%3A%2F%2Ftilde.zone%2Fusers%2Ftildeteam.atom&theme=dark&size=100&header=true&replies=true&boosts=true"></iframe>
             </div>
 
             <div class="col-md-5">
@@ -131,7 +131,7 @@ $parser = Tildeverse\Wiki\Parser::factory();
                     $user = basename($user); ?>
                     <li style="list-style: none; margin-left: -40px;">
                         <a href="/~<?=$user?>/" class="list-group-item">
-                            <h6 class="list-group-item-heading">~<?=$user?></h5>
+                            <h6 class="list-group-item-heading">~<?=$user?></h6>
                         </a>
                     </li>
                 <?php endforeach; ?>
