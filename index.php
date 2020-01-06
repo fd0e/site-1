@@ -108,7 +108,6 @@ $parser = Tildeverse\Wiki\Parser::factory();
                     <?php endforeach; ?>
                 </div>
 
-                <h1>our <a href="https://tilde.zone/@tildeteam">mastodon</a> feed</h1>
             </div>
 
             <div class="col-md-5">
