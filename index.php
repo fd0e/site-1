@@ -73,7 +73,7 @@ $parser = Tildeverse\Wiki\Parser::factory();
                         <div class="list-group-item">
                             <h3 class="list-group-item-heading"><?=$yaml["title"]?></h3>
                             <em>
-                                <a href="/news/?page=<?=basename($page, ".md")?>">
+                                <a href="/news/<?=basename($page, ".md")?>">
                                 <?=$yaml["date"]?></a> - <a href="/~<?=$yaml["author"]?>/"><?=$yaml["author"]?></a>
                             </em>
                             <hr>
