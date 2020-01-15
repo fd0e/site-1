@@ -30,7 +30,14 @@ New to the command line and all this webby cowfoolery? You're in luck! Here's a 
 
 ## Logging in
 
-### PC (windows)
+### Windows 10
+
+- Launch PowerShell (or press win+x, and click "Windows PowerShell")
+- `ssh your_username@tilde.team`
+- Enter your password.
+
+
+### Legacy Windows
 
 - [git bash](https://gitforwindows.org) included with a standard git install
 - [msys2](https://msys2.github.io) is quite nice and has support for [mosh](https://mosh.org)
@@ -42,7 +49,7 @@ New to the command line and all this webby cowfoolery? You're in luck! Here's a 
 - `ssh your_username@tilde.team`
 - Enter your password.
 
-### Mac
+### MacOS
 
 - Browse to Applications/Utilities/Terminal and launch Terminal (or press cmd+space, start typing Terminal, and press return)
 - `ssh your_username@tilde.team`
