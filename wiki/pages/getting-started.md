@@ -34,7 +34,7 @@ New to the command line and all this webby cowfoolery? You're in luck! Here's a 
 
 - Launch PowerShell (or press win+x, and click "Windows PowerShell")
 - `ssh your_username@tilde.team`
-- Enter your password.
+- Enter your ssh key passphrase (if you set one).
 
 
 ### Legacy Windows
@@ -47,13 +47,13 @@ New to the command line and all this webby cowfoolery? You're in luck! Here's a 
 
 - Open a terminal. Try ctrl + alt + t.
 - `ssh your_username@tilde.team`
-- Enter your password.
+- Enter your ssh key passphrase (if you set one).
 
 ### MacOS
 
 - Browse to Applications/Utilities/Terminal and launch Terminal (or press cmd+space, start typing Terminal, and press return)
 - `ssh your_username@tilde.team`
-- Enter your password.
+- Enter your ssh key passphrase (if you set one).
 
 ## Finding your index.php file
 
