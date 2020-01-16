@@ -165,7 +165,7 @@ $makeuser
     } else {
         ?>
         <div class="alert alert-warning" role="alert">
-            <strong>please correct the following errors: </strong>
+            <strong>notice: </strong>
             <?=$message?>
         </div>
         <?php
