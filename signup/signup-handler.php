@@ -2,6 +2,19 @@
 require __DIR__.'/../vendor/autoload.php';
 require_once "email/smtp.php";
 
+function getUserIpAddr() {
+    if(!empty($_SERVER['HTTP_CLIENT_IP'])) {
+        //ip from share internet
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
+    } elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        //ip pass from proxy
+        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    } else {
+        $ip = $_SERVER['REMOTE_ADDR'];
+    }
+    return $ip;
+}
+
 function forbidden_name($name) {
     return in_array($name, [
         '0x0',
@@ -57,31 +70,43 @@ function forbidden_name($name) {
         'www',
         'znc',
     ]);
+
+    $current = file("/var/signups_current", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    $banned = file("/var/banned_names.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+
+    $tmp = array_merge($forbidden, $current);
+    $fname = array_merge($tmp, $banned);
+
 }
+
+function forbidden_email($email) {
+    $femail = file("/var/banned_emails.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+
+    return in_array($email, $femail);
+}
+
 
 $message = "";
 if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
     // Check the name.
     $name = trim($_REQUEST["username"]);
     if ($name == "")
-        $message .= "<li>please fill in your desired username</li>";
+        $message .= "<li>fill in your desired username</li>\n";
 
     if (strlen($name) > 32)
-        $message .= "<li>username too long (32 character max)</li>";
+        $message .= "<li>username too long (32 character max)</li>\n";
 
-    if (!preg_match('/^[a-z][a-z0-9]{2,31}$/', $name))
-        $message .= "<li>username contains invalid characters (lowercase only, must start with a letter)</li>";
+    if ($name != "" && strlen($name) < 2)
+        $message .= "<li>username is too short (2 character min)</li>\n";
 
-    if ($_REQUEST["sshkey"] == "" || mb_substr($_REQUEST["sshkey"], 0, 4) !== "ssh-")
-        $message .= '<li>ssh key required: please create one and submit the public key. '
-            . 'see our <a href="https://tilde.team/wiki/?page=ssh">ssh wiki</a> or '
-            . 'hop on <a href="https://web.tilde.chat/?join=team">irc</a> and ask for help</li>';
-
-    if ($_REQUEST["interest"] == "")
-        $message .= "<li>please explain why you're interested so we can make sure you're a real human being</li>";
+    if (strlen($name) > 1 && !preg_match('/^[a-z][a-z0-9]{1,31}$/', $name))
+        $message .= "<li>username contains invalid characters (lowercase only, must start with a letter).</li>\n";
 
     if (posix_getpwnam($name) || forbidden_name($name))
-        $message .= "<li>sorry, the username $name is unavailable</li>";
+        $message .= "<li>sorry, the username $name is unavailable</li>\n";
+
+    if ($email == "")
+        $message .= "<li>fill in your email address</li>\n";
 
     // Check the e-mail address.
     $email = trim($_REQUEST["email"]);
@@ -93,11 +118,26 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
             $message .= "<li>invalid email address: " . htmlspecialchars($result["error"]) . "</li>";
         elseif ($result["email"] != $email)
             $message .= "<li>invalid email address. did you mean:  " . htmlspecialchars($result["email"]) . "</li>";
+
+        if (forbidden_email($email)) {
+            $user_ip = getUserIpAddr();
+            $user_info = "$name - $email - $user_ip";
+            $message .= "<li>your email is banned!<br />IP: $user_ip</li>\n";
+            file_put_contents("/var/signups_banned", $user_info.PHP_EOL, FILE_APPEND);
+        }
     }
+
+    if ($_REQUEST["interest"] == "")
+        $message .= "<li>please explain why you're interested so we can make sure you're a real human being</li>";
+
+    if ($_REQUEST["sshkey"] == "" || mb_substr($_REQUEST["sshkey"], 0, 4) !== "ssh-")
+        $message .= '<li>ssh key required: please create one and submit the public key. '
+            . 'see our <a href="https://tilde.team/wiki/?page=ssh">ssh wiki</a> or '
+            . 'hop on <a href="https://web.tilde.chat/?join=team">irc</a> and ask for help</li>';
 
 
     // no validation errors
-    if ($message == "") { 
+    if ($message == "") {
         $sshkey = trim($_REQUEST["sshkey"]);
         $makeuser = "makeuser {$_REQUEST["username"]} {$_REQUEST["email"]} \"{$sshkey}\"";
 
@@ -113,6 +153,8 @@ $makeuser
             echo '<div class="alert alert-success" role="alert">
                     email sent! we\'ll get back to you soon (usually within a day) with login instructions! <a href="/">back to tilde.team home</a>
                   </div>';
+            // temp. add to forbidden to prevent double signups (cleanup after user creation)
+            file_put_contents("/var/signups_current", $name.PHP_EOL, FILE_APPEND);
             file_put_contents("/var/signups", $makeuser.PHP_EOL, FILE_APPEND);
         } else {
             echo '<div class="alert alert-danger" role="alert">
