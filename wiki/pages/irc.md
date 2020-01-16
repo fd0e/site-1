@@ -20,7 +20,8 @@ this is the beginning of the [tilde.chat](https://tilde.chat) irc federation! mo
 
 * `weechat` when logged in with ssh
 * `irssi`
-* [`znc`](https://znc.tilde.team/) - log in with your shell password and configure as needed
+* [`znc`](https://znc.tilde.team/) - contact ben (via irc or email) to request an account,
+  then log in with your shell password and configure as needed
 * run `webirc` to register your thelounge account for [our webchat](https://irc.tilde.team)
   note that thelounge does not authenticate with your shell password.
 * any other client that you like: connect to our node at team.tilde.chat:6697 with ssl

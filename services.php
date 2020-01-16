@@ -3,7 +3,7 @@ $services = [
     'gitea' => ['fa' => 'code-fork', 'url' => 'https://tildegit.org/team/'],
     'forum' => ['fa' => 'comment', 'url' => 'https://bbj.tildeverse.org'],
     'mastodon' => ['fa' => 'retweet', 'url' => 'https://tilde.zone'],
-    'chat' => ['fa' => 'comments-o', 'url' => '/wiki/?page=irc'],
+    'chat' => ['fa' => 'comments-o', 'url' => '/wiki/irc'],
     'nextcloud' => ['fa' => 'cloud', 'url' => 'https://cloud.tilde.team/'],
     'webmail' => ['fa' => 'envelope', 'url' => 'https://mail.tilde.team/'],
     'cryptpad' => ['fa' => 'sticky-note', 'url' => 'https://pad.tildeverse.org'],
@@ -21,3 +21,4 @@ foreach ($services as $name => $service) { ?>
     <a href="<?=$service['url']?>" <?php if (!$nav) echo 'class="btn btn-default"'; ?>><i class="fa fa-<?=$service['fa']?>"></i> ~<?=$name?>~</a>
     <?php if ($nav) echo '</li>'; ?>
 <?php }
+

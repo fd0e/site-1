@@ -54,7 +54,7 @@ $parser = Tildeverse\Wiki\Parser::factory();
         <br>
         <hr>
 
-        <h3>other tilde.team stuff</h3>
+        <h3>tilde.team services</h3>
 
         <?php include 'services.php'; ?>
 
