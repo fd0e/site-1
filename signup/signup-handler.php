@@ -16,7 +16,7 @@ function getUserIpAddr() {
 }
 
 function forbidden_name($name) {
-    return in_array($name, [
+    $badnames = [
         '0x0',
         'abuse',
         'admin',
@@ -69,19 +69,20 @@ function forbidden_name($name) {
         'wpad',
         'www',
         'znc',
-    ]);
+    ];
 
-    $current = file("/var/signups_current", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-    $banned = file("/var/banned_names.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-
-    $tmp = array_merge($forbidden, $current);
-    $fname = array_merge($tmp, $banned);
-
+    return in_array(
+        $name,
+        array_merge(
+            $badnames,
+            file("/var/signups_current", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES),
+            file("/var/banned_names.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES)
+        )
+    );
 }
 
 function forbidden_email($email) {
     $femail = file("/var/banned_emails.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-
     return in_array($email, $femail);
 }
 
@@ -105,9 +106,6 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
     if (posix_getpwnam($name) || forbidden_name($name))
         $message .= "<li>sorry, the username $name is unavailable</li>\n";
 
-    if ($email == "")
-        $message .= "<li>fill in your email address</li>\n";
-
     // Check the e-mail address.
     $email = trim($_REQUEST["email"]);
     if ($email == "")
@@ -119,10 +117,10 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
         elseif ($result["email"] != $email)
             $message .= "<li>invalid email address. did you mean:  " . htmlspecialchars($result["email"]) . "</li>";
 
-        if (forbidden_email($email)) {
+        elseif (forbidden_email($email)) {
             $user_ip = getUserIpAddr();
             $user_info = "$name - $email - $user_ip";
-            $message .= "<li>your email is banned!<br />IP: $user_ip</li>\n";
+            $message .= "<li>your email is banned!</li><br />";
             file_put_contents("/var/signups_banned", $user_info.PHP_EOL, FILE_APPEND);
         }
     }
