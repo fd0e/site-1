@@ -150,9 +150,11 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
             . 'see our <a href="https://tilde.team/wiki/?page=ssh">ssh wiki</a> or '
             . 'hop on <a href="https://web.tilde.chat/?join=team">irc</a> and ask for help</li>';
     else {
-        if (forbidden_sshkey($sshkey)) {
-            $message .= "<li>your sshkey is banned!</li>\n";
-            add_ban_info($name, $email);
+        if ($name != "" && $email != "") {
+            if (forbidden_sshkey($sshkey)) {
+                $message .= "<li>your sshkey is banned!</li>\n";
+                add_ban_info($name, $email);
+            }
         }
     }
 
