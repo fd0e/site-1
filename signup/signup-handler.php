@@ -15,6 +15,12 @@ function getUserIpAddr() {
     return $ip;
 }
 
+function add_ban_info($name, $email) {
+    $user_ip = getUserIpAddr();
+    $user_info = "$name - $email - $user_ip";
+    file_put_contents("/var/signups_banned", $user_info.PHP_EOL, FILE_APPEND);
+}
+
 function forbidden_name($name) {
     $badnames = [
         '0x0',
@@ -86,6 +92,18 @@ function forbidden_email($email) {
     return in_array($email, $femail);
 }
 
+function forbidden_sshkey($sshkey) {
+    $fsshkey = file("/var/banned_sshkeys.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    foreach ($fsshkey as $line_num => $line) {
+        $fsk_line = explode(' ',trim($line));
+        $fsk[] = $fsk_line[1];
+    }
+
+    $sk = explode(' ',trim($sshkey));
+
+    return in_array($sk[1], $fsk);
+}
+
 
 $message = "";
 if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
@@ -118,25 +136,29 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
             $message .= "<li>invalid email address. did you mean:  " . htmlspecialchars($result["email"]) . "</li>";
 
         elseif (forbidden_email($email)) {
-            $user_ip = getUserIpAddr();
-            $user_info = "$name - $email - $user_ip";
             $message .= "<li>your email is banned!</li><br />";
-            file_put_contents("/var/signups_banned", $user_info.PHP_EOL, FILE_APPEND);
+            add_ban_info($name, $email);
         }
     }
 
     if ($_REQUEST["interest"] == "")
         $message .= "<li>please explain why you're interested so we can make sure you're a real human being</li>";
 
-    if ($_REQUEST["sshkey"] == "" || mb_substr($_REQUEST["sshkey"], 0, 4) !== "ssh-")
+    $sshkey = trim($_REQUEST["sshkey"]);
+    if ($sshkey == "" || mb_substr($sshkey, 0, 4) !== "ssh-")
         $message .= '<li>ssh key required: please create one and submit the public key. '
             . 'see our <a href="https://tilde.team/wiki/?page=ssh">ssh wiki</a> or '
             . 'hop on <a href="https://web.tilde.chat/?join=team">irc</a> and ask for help</li>';
+    else {
+        if ($sshkey != "" && forbidden_sshkey($sshkey)) {
+            $message .= "<li>your sshkey is banned!</li>\n";
+            add_ban_info($name, $email);
+        }
+    }
 
 
     // no validation errors
     if ($message == "") {
-        $sshkey = trim($_REQUEST["sshkey"]);
         $makeuser = "makeuser {$_REQUEST["username"]} {$_REQUEST["email"]} \"{$sshkey}\"";
 
         $msgbody = "
