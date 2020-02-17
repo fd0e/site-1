@@ -11,7 +11,7 @@
         "url": "https://tildegit.org/team/site/issues"
     },
     "dependencies": {
-        "bootstrap": "3.3.7",
+        "bootstrap": "3.4.1",
         "less": "2.7.3",
         "less-plugin-clean-css": "1.5.1",
         "light-server": "^2.5.1"
