@@ -59,6 +59,9 @@ location (`~/.weechat/relay_socket`). to get started using it, follow these step
         - relay host: $user.ttm.sh
         - relay port: 443
         - your relay password
+	- (if you get "Error: Could not connect using WebSocket", check to be sure
+	   ~/ and ~/.weechat have at least o+rx permissions so nginx can reach
+	   ~/.weechat/relay_socket)
 
 ## znc 
 
