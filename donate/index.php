@@ -1,2 +1,2 @@
-<?php header("Location: https://bhh.bh/donate/"); die();
+<?php header("Location: https://bhh.sh/donate/"); die();
 
