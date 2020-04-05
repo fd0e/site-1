@@ -27,7 +27,7 @@ diffs against the default gophermap that was included with your account.
 if a file called `gophermap` exists in the directory you're currently
 browsing to in gopher, it will get processed and displayed.
 
-see [this example](https://github.com/gophernicus/gophernicus/blob/master/README.Gophermap)
+see [this example](https://github.com/gophernicus/gophernicus/blob/master/README.gophermap)
 for more information on file types and special chars.
 
 one of the coolest item types supported in gophernicus is `=` which allows you
