@@ -17,6 +17,17 @@ category:
 
 > see the [makeuser](https://tildegit.org/team/makeuser) script's documentation
 
+the signup page ([source](
+https://tildegit.org/team/site/src/branch/master/signup/signup-handler.php))
+writes `makeuser` commands into `/var/signups`.
+
+once you've looked through signups and removed spam (by just commenting that
+line in the signups file), you can run
+
+    sh /var/signups
+
+and enter your sudo password to approve all pending requests
+
 
 ## backups
 
@@ -35,7 +46,7 @@ to see general backup stats:
 
 to restore a backup:
 
-    sudo borgmatic extract --archive <archive name> --progress --restore-path=/path/to/restore
+    sudo borgmatic extract --archive <archive name> --progress --path /path/to/restore
 
 we keep backups of:
 * `/home`
