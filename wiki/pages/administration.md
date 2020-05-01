@@ -28,6 +28,16 @@ line in the signups file), you can run
 
 and enter your sudo password to approve all pending requests
 
+## services
+
+for hosted services that formerly lived in `/home/services`, see `/opt`.
+
+other projects that are installed with a `make install` type of install
+can now be found in `/usr/local/src`.
+
+as needed, feel free to git pull and make install. for hosted services
+like tilde.news and pad.tildeverse.org, be sure to check release notes,
+fetch from upstream, and rebase any commit sets we keep on top.
 
 ## backups
 
