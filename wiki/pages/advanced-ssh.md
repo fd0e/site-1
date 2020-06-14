@@ -34,7 +34,7 @@ You can do this for any arbitrary port.
 
 What if you don't want to edit files on the team server, but instead, you want to create it on your local machine? You don't want to have to copy/paste or re-type all of that, right?
 
-SCP to the rescue! SCP copies files over the ssh protocol. It works just like the cp command, but alllows you to do this:
+SCP to the rescue! SCP copies files over the ssh protocol. It works just like the cp command, but allows you to do this:
 
 `scp MyNewFileILove.txt tilde.team:~/AhYesOnTheServerNow.txt`
 
